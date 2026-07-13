@@ -1,0 +1,14 @@
+run,lipid,form,ns,bb_rmsd,bb_rmsd_sd,com_A,bound_pct
+epa_50ns,EPA,free acid,50.0,1.87,0.27,2.6,100
+methyl_epa_50ns,EPA,methyl ester,50.0,1.66,0.22,2.3,100
+epa_deprot_50ns,EPA,carboxylate,50.0,1.82,0.12,1.7,100
+gla_50ns,GLA,free acid,50.0,1.91,0.17,1.2,100
+gla_ester_50ns,GLA,methyl ester,50.0,2.12,0.15,2.0,100
+gla_deprot_50ns,GLA,carboxylate,50.0,1.65,0.21,1.9,100
+palmitic_50ns,palmitic,free acid,50.0,1.96,0.14,3.4,100
+methyl_palmitate_50ns,palmitic,methyl ester,50.0,2.32,0.19,3.0,100
+palmitic_deprot_50ns,palmitic,carboxylate,50.0,1.46,0.13,2.2,100
+pam_50ns,palmitoleate (PAM),free acid [+ctrl],50.0,1.64,0.14,1.5,100
+glucose_decoy_50ns,glucose,decoy [-ctrl],50.0,2.0,0.3,8.9,95
+pentadecanal_50ns,pentadecanal,aldehyde [weak],50.0,2.11,0.19,1.7,100
+tridecanoic_50ns,tridecanoic,free acid [weak],50.0,1.65,0.14,2.0,100

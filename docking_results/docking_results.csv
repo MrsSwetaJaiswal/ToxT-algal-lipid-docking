@@ -1,0 +1,4 @@
+Ligand,Binding_Affinity_kcal_mol,Ki_uM,Strength,Vina_version,Prep,Box_center_xyz,Box_size_xyz
+neophytadiene,-8.115,1.12,Very strong,1.2.7,meeko 0.7.1,"54.65,44.65,18.85","15.0,19.1,15.7"
+polyunsaturated_ester,-7.969,1.44,Strong,1.2.7,meeko 0.7.1,"54.65,44.65,18.85","15.0,19.1,15.7"
+palmitic_acid,-7.317,4.33,Strong,1.2.7,meeko 0.7.1,"54.65,44.65,18.85","15.0,19.1,15.7"

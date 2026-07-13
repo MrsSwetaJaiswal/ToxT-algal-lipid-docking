@@ -1,0 +1,15 @@
+receptor = prepared_structures/3GBG_meeko.pdbqt
+
+center_x = 54.649
+center_y = 44.645
+center_z = 18.852
+
+size_x = 15.044
+size_y = 19.121
+size_z = 15.676
+
+exhaustiveness = 16
+num_modes = 20
+energy_range = 3
+seed = 42
+cpu = 4

@@ -1,0 +1,5 @@
+ligand,top_affinity,top_pose_dist_to_pocket_A,top_in_pocket,modes_in_pocket
+EPA,-8.477,2.9,YES,15/15
+gamma-linolenic,-8.305,1.2,YES,8/8
+palmitic,-5.722,1.5,YES,1/20
+palmitoleic (native PAM),-7.602,0.6,YES,10/13

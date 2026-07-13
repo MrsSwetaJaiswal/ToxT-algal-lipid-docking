@@ -1,0 +1,30 @@
+[{
+ "name": "2026-07-13_19:21",
+ "modelSeeds": [
+  "665226657"
+ ],
+ "sequences": [
+  {
+   "proteinChain": {
+    "sequence": "MIGKKSFQTNVYRMSKFDTYIFNNLYINDYKMFWIDSGIAKLIDKNCLVSYEINSSSIILLKKNSIQRFSLTSLSDENINVSVITISDSFIRSLKSYILGDLMIRNLYSENKDLLLWNCEHNDIAVLSEVVNGFREINYSDEFLKVFFSGFFSKVEKKYNSIFITDDLDAMEKISCLVKSDITRNWRWADICGELRTNRMILKKELESRGVKFRELINSIRISYSISLMKTGEFKIKQIAYQSGFASVSYFSTVFKSTMNVAPSEYLFMLTGVAEK",
+    "count": 1,
+    "useStructureTemplate": true
+   }
+  },
+  {
+   "dnaSequence": {
+    "sequence": "GCACATTTTAATAAAATACATTTTAATAAAATGC",
+    "count": 1
+   }
+  },
+  {
+   "dnaSequence": {
+    "sequence": "GCATTTTATTAAAATGTATTTTATTAAAATGTGC",
+    "count": 1
+   }
+  }
+ ],
+ "dialect": "alphafoldserver",
+ "version": 3
+}
+]

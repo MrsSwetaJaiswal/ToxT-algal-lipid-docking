@@ -1,0 +1,34 @@
+# ---- Python / conda environments (recreate from env files) ----
+.venv/
+env/
+create/
+isolated/
+__pycache__/
+*.pyc
+*.pyo
+
+# ---- Node ----
+node_modules/
+
+# ---- Large MD data -> deposit on Zenodo, NOT GitHub ----
+# Trajectories (~90 MB each) and serialized systems are too large for git.
+md/*/traj.dcd
+md/*/system.xml
+md/*/system.pdb
+md/*/checkpoint.chk
+md/*/final_state.xml
+md/*/equilibrated.xml
+# NOTE: md/*/system_pub.pdb (published-numbered topology) IS kept in git so that
+#       reported residues can be checked against a small shared coordinate file.
+
+# ---- Large binaries (download from source; see README) ----
+tools/*.exe
+
+# ---- Office / OS temp ----
+~$*
+*.tmp
+.DS_Store
+Thumbs.db
+
+# ---- Scratch ----
+md/epa_smoketest/
