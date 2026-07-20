@@ -1,0 +1,296 @@
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 16:16:31 ===
+Loaded existing system.
+Starting production from equilibrated state.
+Running 12500000 steps (50.0 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 17:26:32 ===
+Loaded existing system.
+Resuming from checkpoint at 4.8 ns (1187500/12500000 steps).
+Running 11312500 steps (45.2 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 17:38:50 ===
+Loaded existing system.
+Resuming from checkpoint at 5.2 ns (1312500/12500000 steps).
+Running 11187500 steps (44.8 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 17:48:50 ===
+Loaded existing system.
+Resuming from checkpoint at 5.8 ns (1437500/12500000 steps).
+Running 11062500 steps (44.2 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 17:55:35 ===
+Loaded existing system.
+Resuming from checkpoint at 6.0 ns (1500000/12500000 steps).
+Running 11000000 steps (44.0 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 18:05:38 ===
+Loaded existing system.
+Resuming from checkpoint at 6.5 ns (1625000/12500000 steps).
+Running 10875000 steps (43.5 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 18:15:25 ===
+Loaded existing system.
+Resuming from checkpoint at 7.0 ns (1750000/12500000 steps).
+Running 10750000 steps (43.0 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 18:24:27 ===
+Loaded existing system.
+Resuming from checkpoint at 7.2 ns (1812500/12500000 steps).
+Running 10687500 steps (42.8 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 18:33:28 ===
+Loaded existing system.
+Resuming from checkpoint at 7.5 ns (1875000/12500000 steps).
+Running 10625000 steps (42.5 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 18:43:16 ===
+Loaded existing system.
+Resuming from checkpoint at 8.0 ns (2000000/12500000 steps).
+Running 10500000 steps (42.0 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 18:51:47 ===
+Loaded existing system.
+Resuming from checkpoint at 8.2 ns (2062500/12500000 steps).
+Running 10437500 steps (41.8 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 19:00:34 ===
+Loaded existing system.
+Resuming from checkpoint at 8.5 ns (2125000/12500000 steps).
+Running 10375000 steps (41.5 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 19:07:02 ===
+Loaded existing system.
+Resuming from checkpoint at 8.8 ns (2187500/12500000 steps).
+Running 10312500 steps (41.2 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 19:15:18 ===
+Loaded existing system.
+Resuming from checkpoint at 9.0 ns (2250000/12500000 steps).
+Running 10250000 steps (41.0 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 19:21:47 ===
+Loaded existing system.
+Resuming from checkpoint at 9.2 ns (2312500/12500000 steps).
+Running 10187500 steps (40.8 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 19:30:34 ===
+Loaded existing system.
+Resuming from checkpoint at 9.5 ns (2375000/12500000 steps).
+Running 10125000 steps (40.5 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 19:37:19 ===
+Loaded existing system.
+Resuming from checkpoint at 9.8 ns (2437500/12500000 steps).
+Running 10062500 steps (40.2 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 19:46:52 ===
+Loaded existing system.
+Resuming from checkpoint at 10.2 ns (2562500/12500000 steps).
+Running 9937500 steps (39.8 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 19:56:24 ===
+Loaded existing system.
+Resuming from checkpoint at 10.8 ns (2687500/12500000 steps).
+Running 9812500 steps (39.2 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 20:02:54 ===
+Loaded existing system.
+Resuming from checkpoint at 11.0 ns (2750000/12500000 steps).
+Running 9750000 steps (39.0 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 20:09:37 ===
+Loaded existing system.
+Resuming from checkpoint at 11.2 ns (2812500/12500000 steps).
+Running 9687500 steps (38.8 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 20:19:09 ===
+Loaded existing system.
+Resuming from checkpoint at 11.8 ns (2937500/12500000 steps).
+Running 9562500 steps (38.2 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 20:27:53 ===
+Loaded existing system.
+Resuming from checkpoint at 12.0 ns (3000000/12500000 steps).
+Running 9500000 steps (38.0 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 20:36:39 ===
+Loaded existing system.
+Resuming from checkpoint at 12.2 ns (3062500/12500000 steps).
+Running 9437500 steps (37.8 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 20:45:55 ===
+Loaded existing system.
+Resuming from checkpoint at 12.8 ns (3187500/12500000 steps).
+Running 9312500 steps (37.2 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 20:54:27 ===
+Loaded existing system.
+Resuming from checkpoint at 13.0 ns (3250000/12500000 steps).
+Running 9250000 steps (37.0 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 21:03:42 ===
+Loaded existing system.
+Resuming from checkpoint at 13.5 ns (3375000/12500000 steps).
+Running 9125000 steps (36.5 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 21:12:43 ===
+Loaded existing system.
+Resuming from checkpoint at 14.0 ns (3500000/12500000 steps).
+Running 9000000 steps (36.0 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 21:21:13 ===
+Loaded existing system.
+Resuming from checkpoint at 14.2 ns (3562500/12500000 steps).
+Running 8937500 steps (35.8 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 21:31:36 ===
+Loaded existing system.
+Resuming from checkpoint at 14.5 ns (3625000/12500000 steps).
+Running 8875000 steps (35.5 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 21:42:10 ===
+Loaded existing system.
+Resuming from checkpoint at 15.0 ns (3750000/12500000 steps).
+Running 8750000 steps (35.0 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 21:51:11 ===
+Loaded existing system.
+Resuming from checkpoint at 15.2 ns (3812500/12500000 steps).
+Running 8687500 steps (34.8 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 22:00:14 ===
+Loaded existing system.
+Resuming from checkpoint at 15.5 ns (3875000/12500000 steps).
+Running 8625000 steps (34.5 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 22:09:48 ===
+Loaded existing system.
+Resuming from checkpoint at 15.8 ns (3937500/12500000 steps).
+Running 8562500 steps (34.2 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 22:18:49 ===
+Loaded existing system.
+Resuming from checkpoint at 16.0 ns (4000000/12500000 steps).
+Running 8500000 steps (34.0 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 22:24:48 ===
+Loaded existing system.
+Resuming from checkpoint at 16.2 ns (4062500/12500000 steps).
+Running 8437500 steps (33.8 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 22:33:35 ===
+Loaded existing system.
+Resuming from checkpoint at 16.5 ns (4125000/12500000 steps).
+Running 8375000 steps (33.5 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 22:42:21 ===
+Loaded existing system.
+Resuming from checkpoint at 16.8 ns (4187500/12500000 steps).
+Running 8312500 steps (33.2 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 22:51:07 ===
+Loaded existing system.
+Resuming from checkpoint at 17.0 ns (4250000/12500000 steps).
+Running 8250000 steps (33.0 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 22:59:38 ===
+Loaded existing system.
+Resuming from checkpoint at 17.2 ns (4312500/12500000 steps).
+Running 8187500 steps (32.8 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 23:08:25 ===
+Loaded existing system.
+Resuming from checkpoint at 17.5 ns (4375000/12500000 steps).
+Running 8125000 steps (32.5 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 23:17:58 ===
+Loaded existing system.
+Resuming from checkpoint at 17.8 ns (4437500/12500000 steps).
+Running 8062500 steps (32.2 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 23:26:14 ===
+Loaded existing system.
+Resuming from checkpoint at 18.0 ns (4500000/12500000 steps).
+Running 8000000 steps (32.0 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 23:36:52 ===
+Loaded existing system.
+Resuming from checkpoint at 18.5 ns (4625000/12500000 steps).
+Running 7875000 steps (31.5 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 23:43:50 ===
+Loaded existing system.
+Resuming from checkpoint at 18.8 ns (4687500/12500000 steps).
+Running 7812500 steps (31.2 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-17 23:53:52 ===
+Loaded existing system.
+Resuming from checkpoint at 19.2 ns (4812500/12500000 steps).
+Running 7687500 steps (30.8 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-18 00:02:22 ===
+Loaded existing system.
+Resuming from checkpoint at 19.5 ns (4875000/12500000 steps).
+Running 7625000 steps (30.5 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-18 00:11:39 ===
+Loaded existing system.
+Resuming from checkpoint at 20.0 ns (5000000/12500000 steps).
+Running 7500000 steps (30.0 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-18 00:21:25 ===
+Loaded existing system.
+Resuming from checkpoint at 20.5 ns (5125000/12500000 steps).
+Running 7375000 steps (29.5 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-18 00:32:30 ===
+Loaded existing system.
+Resuming from checkpoint at 21.0 ns (5250000/12500000 steps).
+Running 7250000 steps (29.0 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-18 00:43:32 ===
+Loaded existing system.
+Resuming from checkpoint at 21.5 ns (5375000/12500000 steps).
+Running 7125000 steps (28.5 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-18 00:54:04 ===
+Loaded existing system.
+Resuming from checkpoint at 22.0 ns (5500000/12500000 steps).
+Running 7000000 steps (28.0 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-18 01:04:06 ===
+Loaded existing system.
+Resuming from checkpoint at 22.5 ns (5625000/12500000 steps).
+Running 6875000 steps (27.5 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-18 01:13:53 ===
+Loaded existing system.
+Resuming from checkpoint at 23.0 ns (5750000/12500000 steps).
+Running 6750000 steps (27.0 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-18 01:33:41 ===
+Loaded existing system.
+Resuming from checkpoint at 24.0 ns (6000000/12500000 steps).
+Running 6500000 steps (26.0 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-18 03:04:30 ===
+Loaded existing system.
+Resuming from checkpoint at 30.2 ns (7562500/12500000 steps).
+Running 4937500 steps (19.8 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-18 04:35:19 ===
+Loaded existing system.
+Resuming from checkpoint at 36.5 ns (9125000/12500000 steps).
+Running 3375000 steps (13.5 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-18 06:06:06 ===
+Loaded existing system.
+Resuming from checkpoint at 42.8 ns (10687500/12500000 steps).
+Running 1812500 steps (7.2 ns) ...
+
+=== launch gla_50ns_r2 seed=1002 at 2026-07-18 07:37:09 ===
+Loaded existing system.
+Resuming from checkpoint at 49.0 ns (12250000/12500000 steps).
+Running 250000 steps (1.0 ns) ...
+PRODUCTION COMPLETE: 50.0 ns. Trajectory: md\gla_50ns_r2\traj.dcd

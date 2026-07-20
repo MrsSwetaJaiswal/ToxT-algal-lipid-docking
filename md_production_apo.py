@@ -15,6 +15,7 @@ from pdbfixer import PDBFixer
 
 NAME = sys.argv[1] if len(sys.argv) > 1 else "apo_toxt_50ns"
 TOTAL_NS = float(sys.argv[2]) if len(sys.argv) > 2 else 50.0
+SEED = int(sys.argv[3]) if len(sys.argv) > 3 else 0  # 0 = random; >0 = independent replicate
 PROTEIN = "prepared_structures/3GBG_protein_only.pdb"
 OUT = os.path.join("md", NAME); os.makedirs(OUT, exist_ok=True)
 DT = 0.004
@@ -46,16 +47,20 @@ def build():
                           open(os.path.join(OUT, "system.pdb"), "w"))
     with open(SYS_XML, "w") as f: f.write(XmlSerializer.serialize(system))
     integ = LangevinMiddleIntegrator(300*unit.kelvin, 1/unit.picosecond, DT*unit.picoseconds)
+    integ.setRandomNumberSeed(SEED)
     sim = make_sim(modeller.topology, system, integ)
     sim.context.setPositions(modeller.positions)
     sim.minimizeEnergy()
-    sim.context.setVelocitiesToTemperature(300*unit.kelvin)
+    sim.context.setVelocitiesToTemperature(300*unit.kelvin, SEED)
     sim.step(int(100/DT))
     sim.saveState(EQ_STATE)
     print("Equilibration done.")
     return modeller.topology, system
 
-if os.path.exists(SYS_XML):
+# Reuse a prior build only if COMPLETE (system.xml + system.pdb + equilibrated.xml);
+# an interrupted build would otherwise skip build() and crash in loadState(EQ_STATE).
+if (os.path.exists(SYS_XML) and os.path.exists(EQ_STATE)
+        and os.path.exists(os.path.join(OUT, "system.pdb"))):
     top = app.PDBFile(os.path.join(OUT, "system.pdb")).topology
     with open(SYS_XML) as f: system = XmlSerializer.deserialize(f.read())
     print("Loaded existing apo system.")
@@ -63,6 +68,7 @@ else:
     top, system = build()
 
 integ = LangevinMiddleIntegrator(300*unit.kelvin, 1/unit.picosecond, DT*unit.picoseconds)
+integ.setRandomNumberSeed(SEED)
 sim = make_sim(top, system, integ)
 total_steps = int(TOTAL_NS * 1000 / DT)
 save_every = int(250 / DT)

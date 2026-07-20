@@ -1,0 +1,14 @@
+ligand,form,mmgbsa_kcal_mol,sd_kcal_mol
+EPA,carboxylate,-49.0,3.6
+EPA,free acid,-45.1,3.5
+palmitic,carboxylate,-41.3,14.7
+gamma-linolenic,carboxylate,-37.6,20.5
+palmitic,methyl ester,-36.6,2.6
+gamma-linolenic,free acid,-34.2,3.9
+palmitic,free acid,-33.2,2.1
+palmitoleate (native),+control,-33.1,2.5
+gamma-linolenic,methyl ester,-31.5,15.9
+pentadecanal,weak,-31.4,2.7
+EPA,methyl ester,-24.3,18.8
+glucose,decoy,-23.5,4.1
+tridecanoic,weak,-19.8,14.5

@@ -15,7 +15,7 @@ node_modules/
 md/*/traj.dcd
 md/*/system.xml
 md/*/system.pdb
-md/*/checkpoint.chk
+md/*/checkpoint*.chk
 md/*/final_state.xml
 md/*/equilibrated.xml
 # NOTE: md/*/system_pub.pdb (published-numbered topology) IS kept in git so that
@@ -23,6 +23,9 @@ md/*/equilibrated.xml
 
 # ---- Large binaries (download from source; see README) ----
 tools/*.exe
+
+# ---- Full MD data bundle -> deposit on Zenodo, NOT GitHub (see DATA_AVAILABILITY.md) ----
+ToxT_MD_data.tar.gz
 
 # ---- Office / OS temp ----
 ~$*

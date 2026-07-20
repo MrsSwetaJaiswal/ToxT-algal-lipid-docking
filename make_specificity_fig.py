@@ -14,7 +14,8 @@ RUNS = [
     ("pentadecanal_50ns",  "pentadecanal (weak)",  "#66c2a4", 1.4, "-"),
     ("tridecanoic_50ns",   "tridecanoic (weak)",   "#3690c0", 1.4, "-"),
     ("pam_50ns",           "palmitoleate (native, +ctrl)", "#e6ab02", 2.2, "-"),
-    ("glucose_decoy_50ns", "glucose (decoy, -ctrl)", "#d7191c", 2.8, "-"),
+    ("glucose_decoy_50ns", "glucose decoy (docked start)", "#d7191c", 2.6, "-"),
+    ("glucose_core_50ns",  "glucose decoy (seeded in core)", "#d7191c", 2.6, "--"),
 ]
 
 def com_series(name):
@@ -43,8 +44,8 @@ for name, label, col, lw, ls in RUNS:
     ax.plot(tn, com, color=col, lw=lw, ls=ls, label=label)
 ax.set_xlabel("Time (ns)", fontsize=11)
 ax.set_ylabel("Ligand–pocket distance (Å)", fontsize=11)
-ax.set_title("ToxT pocket is fatty-acid selective: cognate lipids stay bound, the decoy is expelled",
-             fontsize=11.5, fontweight="bold")
+ax.set_title("MD ligand retention reflects a buried pocket (traps even the decoy if seeded);\nspecificity is set by binding preference — see blind docking",
+             fontsize=10.5, fontweight="bold")
 ax.set_ylim(0, 12)
 ax.set_xlim(0, 50)
 ax.legend(fontsize=9, loc="center right", framealpha=0.9)

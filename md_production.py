@@ -22,6 +22,7 @@ from pdbfixer import PDBFixer
 LIG_SDF = sys.argv[1]
 NAME    = sys.argv[2]
 TOTAL_NS = float(sys.argv[3])
+SEED    = int(sys.argv[4]) if len(sys.argv) > 4 else 0  # 0 = OpenMM picks randomly; >0 = independent replicate
 PROTEIN = "prepared_structures/3GBG_protein_only.pdb"
 OUT = os.path.join("md", NAME); os.makedirs(OUT, exist_ok=True)
 DT = 0.004  # ps (4 fs with HMR)
@@ -54,10 +55,11 @@ def build():
     with open(SYS_XML, "w") as f: f.write(XmlSerializer.serialize(system))
     # minimize + equilibrate
     integ = LangevinMiddleIntegrator(300*unit.kelvin, 1/unit.picosecond, DT*unit.picoseconds)
+    integ.setRandomNumberSeed(SEED)
     sim = make_sim(modeller.topology, system, integ)
     sim.context.setPositions(modeller.positions)
     sim.minimizeEnergy()
-    sim.context.setVelocitiesToTemperature(300*unit.kelvin)
+    sim.context.setVelocitiesToTemperature(300*unit.kelvin, SEED)
     sim.step(int(100/DT))  # 100 ps equilibration
     sim.saveState(EQ_STATE)
     print("Equilibration done.")
@@ -69,7 +71,13 @@ def make_sim(topology, system, integrator):
     return app.Simulation(topology, system, integrator, plat, props)
 
 # --- load or build ---
-top = app.PDBFile(os.path.join(OUT, "system.pdb")).topology if os.path.exists(SYS_XML) else None
+# Only reuse a prior build if it is COMPLETE: system.xml, system.pdb AND the
+# equilibrated state must all exist. A build interrupted after system.xml was
+# written (e.g. disk full) leaves no equilibrated.xml; reusing it would skip
+# build() and then crash in loadState(EQ_STATE) on every retry. Rebuild instead.
+_built = (os.path.exists(SYS_XML) and os.path.exists(EQ_STATE)
+          and os.path.exists(os.path.join(OUT, "system.pdb")))
+top = app.PDBFile(os.path.join(OUT, "system.pdb")).topology if _built else None
 if top is not None:
     with open(SYS_XML) as f: system = XmlSerializer.deserialize(f.read())
     print("Loaded existing system.")
@@ -77,6 +85,7 @@ else:
     top, system = build()
 
 integ = LangevinMiddleIntegrator(300*unit.kelvin, 1/unit.picosecond, DT*unit.picoseconds)
+integ.setRandomNumberSeed(SEED)
 sim = make_sim(top, system, integ)
 
 total_steps = int(TOTAL_NS * 1000 / DT)
