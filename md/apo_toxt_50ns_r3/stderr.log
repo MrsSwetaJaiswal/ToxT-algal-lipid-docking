@@ -1,0 +1,35 @@
+
+=== launch apo_toxt_50ns_r3 seed=2004 at 2026-07-20 23:56:10 ===
+Building apo system (one-time) ...
+1 warning generated.
+Equilibration done.
+Starting apo production.
+
+=== launch apo_toxt_50ns_r3 seed=2004 at 2026-07-21 01:26:54 ===
+Loaded existing apo system.
+Resuming apo from 6.2 ns (1562500/12500000).
+
+=== launch apo_toxt_50ns_r3 seed=2004 at 2026-07-21 02:57:50 ===
+Loaded existing apo system.
+Resuming apo from 12.8 ns (3187500/12500000).
+
+=== launch apo_toxt_50ns_r3 seed=2004 at 2026-07-21 04:28:45 ===
+Loaded existing apo system.
+Resuming apo from 19.2 ns (4812500/12500000).
+
+=== launch apo_toxt_50ns_r3 seed=2004 at 2026-07-21 05:59:24 ===
+Loaded existing apo system.
+Resuming apo from 25.8 ns (6437500/12500000).
+
+=== launch apo_toxt_50ns_r3 seed=2004 at 2026-07-21 07:30:05 ===
+Loaded existing apo system.
+Resuming apo from 32.2 ns (8062500/12500000).
+
+=== launch apo_toxt_50ns_r3 seed=2004 at 2026-07-21 09:00:29 ===
+Loaded existing apo system.
+Resuming apo from 38.8 ns (9687500/12500000).
+
+=== launch apo_toxt_50ns_r3 seed=2004 at 2026-07-21 10:31:09 ===
+Loaded existing apo system.
+Resuming apo from 45.2 ns (11312500/12500000).
+APO PRODUCTION COMPLETE: 50.0 ns.

@@ -1,0 +1,14 @@
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-22 11:44:37 ===
+Building system (one-time) ...
+C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openff\interchange\components\interchange.py:1119: FutureWarning: `torch.distributed.reduce_op` is deprecated, please use `torch.distributed.ReduceOp` instead
+  if isinstance(obj, functools._lru_cache_wrapper) and obj.__module__.startswith("openff.interchange"):
+1 warning generated.
+Equilibration done.
+Starting production from equilibrated state.
+Running 12500000 steps (50.0 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-22 14:06:05 ===
+Loaded existing system.
+Resuming from checkpoint at 3.2 ns (812500/12500000 steps).
+Running 11687500 steps (46.8 ns) ...

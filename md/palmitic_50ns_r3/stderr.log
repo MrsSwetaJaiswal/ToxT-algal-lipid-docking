@@ -27,3 +27,24 @@ Running 7812500 steps (31.2 ns) ...
 Loaded existing system.
 Resuming from checkpoint at 20.0 ns (5000000/12500000 steps).
 Running 7500000 steps (30.0 ns) ...
+
+=== launch palmitic_50ns_r3 seed=2003 at 2026-07-20 17:53:42 ===
+Loaded existing system.
+Resuming from checkpoint at 24.5 ns (6125000/12500000 steps).
+Running 6375000 steps (25.5 ns) ...
+
+=== launch palmitic_50ns_r3 seed=2003 at 2026-07-20 19:24:31 ===
+Loaded existing system.
+Resuming from checkpoint at 30.8 ns (7687500/12500000 steps).
+Running 4812500 steps (19.2 ns) ...
+
+=== launch palmitic_50ns_r3 seed=2003 at 2026-07-20 20:55:16 ===
+Loaded existing system.
+Resuming from checkpoint at 37.2 ns (9312500/12500000 steps).
+Running 3187500 steps (12.8 ns) ...
+
+=== launch palmitic_50ns_r3 seed=2003 at 2026-07-20 22:26:00 ===
+Loaded existing system.
+Resuming from checkpoint at 43.5 ns (10875000/12500000 steps).
+Running 1625000 steps (6.5 ns) ...
+PRODUCTION COMPLETE: 50.0 ns. Trajectory: md\palmitic_50ns_r3\traj.dcd
