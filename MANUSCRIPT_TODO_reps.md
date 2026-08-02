@@ -138,6 +138,13 @@ since is local-only. Before pushing:
     patterns; only small files (`production_log.csv`, `stderr.log`) would be staged.
   - Commit, then `git push`, once the replicate campaign (or a checkpoint of it) is
     at a state worth recording. See record below for the current diff.
+  - **DONE (2026-08-02):** committed as `562b21c` (92 files: manuscript + build_docx.js
+    sync, all 5 new/modified figures, MM-GBSA n=3 scripts/results, every replicate's
+    small tracked files). Verified via `git add -n .` dry run before staging — no
+    `traj.dcd`/`system.xml`/checkpoint files, no `ToxT_MD_data.tar.gz` (already
+    gitignored); ~97 MB total, largest single file the 5.1 MB docx. Branch is now
+    2 commits ahead of `origin/main` (`9faaa1a`, `562b21c`). **`git push` intentionally
+    NOT run yet — user asked to hold off.**
 
 ---
 

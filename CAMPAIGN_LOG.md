@@ -289,3 +289,15 @@ a docx-only stale claim (Section 7 "Future work" still listing MD replicates
 as a planned extension) and fixed it. All mirrored into `build_docx.js`, docx
 regenerated. **All 5 planned MANUSCRIPT_TODO_reps.md items are now done** —
 only item 6 (GitHub push) remains.
+
+**Item 6: committed, push held back per user request.** Reviewed the staging
+set with `git add -n .` before touching anything — confirmed it matched the
+TODO's predictions exactly (no `traj.dcd`/`system.xml`/checkpoint files, no
+`ToxT_MD_data.tar.gz`, ~97 MB total, 92 files). Committed as `562b21c`
+("Complete MD replicate campaign (42/42 trajectories); n=3 MM-GBSA;
+manuscript updated") covering the whole session's work: campaign completion,
+MM-GBSA n=3, GLA carboxylate retention verification, new Figures 13/14,
+Figure 10 replicate bands, and the Methods/stats-language pass. Branch is now
+2 commits ahead of `origin/main` (`9faaa1a`, `562b21c`). **`git push` was
+intentionally not run — the user explicitly asked to hold off**; do not push
+without a fresh go-ahead.
