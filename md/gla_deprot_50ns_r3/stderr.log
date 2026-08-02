@@ -1,0 +1,45 @@
+
+=== launch gla_deprot_50ns_r3 seed=2008 at 2026-07-27 15:20:42 ===
+Building system (one-time) ...
+C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openff\interchange\components\interchange.py:1119: FutureWarning: `torch.distributed.reduce_op` is deprecated, please use `torch.distributed.ReduceOp` instead
+  if isinstance(obj, functools._lru_cache_wrapper) and obj.__module__.startswith("openff.interchange"):
+1 warning generated.
+Equilibration done.
+Starting production from equilibrated state.
+Running 12500000 steps (50.0 ns) ...
+
+=== launch gla_deprot_50ns_r3 seed=2008 at 2026-07-27 16:51:18 ===
+Loaded existing system.
+Resuming from checkpoint at 6.2 ns (1562500/12500000 steps).
+Running 10937500 steps (43.8 ns) ...
+
+=== launch gla_deprot_50ns_r3 seed=2008 at 2026-07-27 18:21:57 ===
+Loaded existing system.
+Resuming from checkpoint at 12.8 ns (3187500/12500000 steps).
+Running 9312500 steps (37.2 ns) ...
+
+=== launch gla_deprot_50ns_r3 seed=2008 at 2026-07-27 19:52:35 ===
+Loaded existing system.
+Resuming from checkpoint at 19.0 ns (4750000/12500000 steps).
+Running 7750000 steps (31.0 ns) ...
+
+=== launch gla_deprot_50ns_r3 seed=2008 at 2026-07-27 21:23:21 ===
+Loaded existing system.
+Resuming from checkpoint at 25.5 ns (6375000/12500000 steps).
+Running 6125000 steps (24.5 ns) ...
+
+=== launch gla_deprot_50ns_r3 seed=2008 at 2026-07-27 22:54:06 ===
+Loaded existing system.
+Resuming from checkpoint at 31.8 ns (7937500/12500000 steps).
+Running 4562500 steps (18.2 ns) ...
+
+=== launch gla_deprot_50ns_r3 seed=2008 at 2026-07-28 00:24:49 ===
+Loaded existing system.
+Resuming from checkpoint at 38.0 ns (9500000/12500000 steps).
+Running 3000000 steps (12.0 ns) ...
+
+=== launch gla_deprot_50ns_r3 seed=2008 at 2026-07-28 01:55:33 ===
+Loaded existing system.
+Resuming from checkpoint at 44.2 ns (11062500/12500000 steps).
+Running 1437500 steps (5.8 ns) ...
+PRODUCTION COMPLETE: 50.0 ns. Trajectory: md\gla_deprot_50ns_r3\traj.dcd

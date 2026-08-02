@@ -1,4 +1,9 @@
-"""Generate manuscript MD figures (PBC-correct) for the EPA acid & methyl-ester runs."""
+"""Generate manuscript MD figures (PBC-correct) for the EPA acid & methyl-ester runs.
+
+Run (conda analysis env -- OpenBLAS-based, avoids the "md" env's MKL crash
+on concurrent numpy/mdtraj processes):
+  C:\\Users\\ASUS\\miniforge3\\envs\\analysis\\python.exe md_figures.py
+"""
 import os, numpy as np, mdtraj as md
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt

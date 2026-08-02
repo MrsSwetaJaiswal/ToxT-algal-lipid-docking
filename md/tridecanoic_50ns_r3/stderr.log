@@ -1,0 +1,105 @@
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-30 14:59:47 ===
+Building system (one-time) ...
+C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openff\interchange\components\interchange.py:1119: FutureWarning: `torch.distributed.reduce_op` is deprecated, please use `torch.distributed.ReduceOp` instead
+  if isinstance(obj, functools._lru_cache_wrapper) and obj.__module__.startswith("openff.interchange"):
+1 warning generated.
+Equilibration done.
+Starting production from equilibrated state.
+Running 12500000 steps (50.0 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-30 16:30:50 ===
+Loaded existing system.
+Resuming from checkpoint at 6.2 ns (1562500/12500000 steps).
+Running 10937500 steps (43.8 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-30 18:01:36 ===
+Loaded existing system.
+Resuming from checkpoint at 12.8 ns (3187500/12500000 steps).
+Running 9312500 steps (37.2 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-30 19:32:23 ===
+Loaded existing system.
+Resuming from checkpoint at 19.2 ns (4812500/12500000 steps).
+Running 7687500 steps (30.8 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-30 21:03:08 ===
+Loaded existing system.
+Resuming from checkpoint at 25.8 ns (6437500/12500000 steps).
+Running 6062500 steps (24.2 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-30 22:33:55 ===
+Loaded existing system.
+Resuming from checkpoint at 32.2 ns (8062500/12500000 steps).
+Running 4437500 steps (17.8 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-31 00:04:41 ===
+Loaded existing system.
+Resuming from checkpoint at 38.8 ns (9687500/12500000 steps).
+Running 2812500 steps (11.2 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-31 14:46:09 ===
+Loaded existing system.
+Resuming from checkpoint at 41.0 ns (10250000/12500000 steps).
+Running 2250000 steps (9.0 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-31 15:09:24 ===
+Loaded existing system.
+Resuming from checkpoint at 42.2 ns (10562500/12500000 steps).
+Running 1937500 steps (7.8 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-31 15:22:15 ===
+Loaded existing system.
+Resuming from checkpoint at 43.0 ns (10750000/12500000 steps).
+Running 1750000 steps (7.0 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-31 15:35:06 ===
+Loaded existing system.
+Resuming from checkpoint at 43.5 ns (10875000/12500000 steps).
+Running 1625000 steps (6.5 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-31 15:43:24 ===
+Loaded existing system.
+Resuming from checkpoint at 43.8 ns (10937500/12500000 steps).
+Running 1562500 steps (6.2 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-31 15:50:42 ===
+Loaded existing system.
+Resuming from checkpoint at 44.0 ns (11000000/12500000 steps).
+Running 1500000 steps (6.0 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-31 16:02:17 ===
+Loaded existing system.
+Resuming from checkpoint at 44.5 ns (11125000/12500000 steps).
+Running 1375000 steps (5.5 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-31 16:13:35 ===
+Loaded existing system.
+Resuming from checkpoint at 45.0 ns (11250000/12500000 steps).
+Running 1250000 steps (5.0 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-31 16:24:55 ===
+Loaded existing system.
+Resuming from checkpoint at 45.5 ns (11375000/12500000 steps).
+Running 1125000 steps (4.5 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-31 16:37:16 ===
+Loaded existing system.
+Resuming from checkpoint at 46.0 ns (11500000/12500000 steps).
+Running 1000000 steps (4.0 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-31 16:48:51 ===
+Loaded existing system.
+Resuming from checkpoint at 46.5 ns (11625000/12500000 steps).
+Running 875000 steps (3.5 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-07-31 18:24:35 ===
+Loaded existing system.
+Resuming from checkpoint at 47.2 ns (11812500/12500000 steps).
+Running 687500 steps (2.8 ns) ...
+
+=== launch tridecanoic_50ns_r3 seed=2014 at 2026-08-01 01:28:20 ===
+Loaded existing system.
+Resuming from checkpoint at 47.2 ns (11812500/12500000 steps).
+Running 687500 steps (2.8 ns) ...
+PRODUCTION COMPLETE: 50.0 ns. Trajectory: md\tridecanoic_50ns_r3\traj.dcd

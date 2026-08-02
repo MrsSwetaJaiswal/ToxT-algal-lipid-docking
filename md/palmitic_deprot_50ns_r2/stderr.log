@@ -1,0 +1,55 @@
+
+=== launch palmitic_deprot_50ns_r2 seed=1010 at 2026-07-23 09:37:09 ===
+Building system (one-time) ...
+C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openff\interchange\components\interchange.py:1119: FutureWarning: `torch.distributed.reduce_op` is deprecated, please use `torch.distributed.ReduceOp` instead
+  if isinstance(obj, functools._lru_cache_wrapper) and obj.__module__.startswith("openff.interchange"):
+1 warning generated.
+Equilibration done.
+Starting production from equilibrated state.
+Running 12500000 steps (50.0 ns) ...
+
+=== launch palmitic_deprot_50ns_r2 seed=1010 at 2026-07-23 11:08:26 ===
+Loaded existing system.
+Resuming from checkpoint at 6.2 ns (1562500/12500000 steps).
+Running 10937500 steps (43.8 ns) ...
+
+=== launch palmitic_deprot_50ns_r2 seed=1010 at 2026-07-23 12:39:08 ===
+Loaded existing system.
+Resuming from checkpoint at 12.5 ns (3125000/12500000 steps).
+Running 9375000 steps (37.5 ns) ...
+
+=== launch palmitic_deprot_50ns_r2 seed=1010 at 2026-07-23 14:09:30 ===
+Loaded existing system.
+Resuming from checkpoint at 17.0 ns (4250000/12500000 steps).
+Running 8250000 steps (33.0 ns) ...
+
+=== launch palmitic_deprot_50ns_r2 seed=1010 at 2026-07-23 14:35:31 ===
+Loaded existing system.
+Resuming from checkpoint at 17.0 ns (4250000/12500000 steps).
+Running 8250000 steps (33.0 ns) ...
+
+=== launch palmitic_deprot_50ns_r2 seed=1010 at 2026-07-23 16:05:59 ===
+Loaded existing system.
+Resuming from checkpoint at 23.2 ns (5812500/12500000 steps).
+Running 6687500 steps (26.8 ns) ...
+
+=== launch palmitic_deprot_50ns_r2 seed=1010 at 2026-07-23 17:37:18 ===
+Loaded existing system.
+Resuming from checkpoint at 29.5 ns (7375000/12500000 steps).
+Running 5125000 steps (20.5 ns) ...
+
+=== launch palmitic_deprot_50ns_r2 seed=1010 at 2026-07-23 19:08:21 ===
+Loaded existing system.
+Resuming from checkpoint at 35.8 ns (8937500/12500000 steps).
+Running 3562500 steps (14.2 ns) ...
+
+=== launch palmitic_deprot_50ns_r2 seed=1010 at 2026-07-23 21:47:26 ===
+Loaded existing system.
+Resuming from checkpoint at 39.5 ns (9875000/12500000 steps).
+Running 2625000 steps (10.5 ns) ...
+
+=== launch palmitic_deprot_50ns_r2 seed=1010 at 2026-07-23 23:19:17 ===
+Loaded existing system.
+Resuming from checkpoint at 45.8 ns (11437500/12500000 steps).
+Running 1062500 steps (4.2 ns) ...
+PRODUCTION COMPLETE: 50.0 ns. Trajectory: md\palmitic_deprot_50ns_r2\traj.dcd

@@ -1,0 +1,50 @@
+
+=== launch pentadecanal_50ns_r3 seed=2013 at 2026-07-30 02:48:42 ===
+Building system (one-time) ...
+C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openff\interchange\components\interchange.py:1119: FutureWarning: `torch.distributed.reduce_op` is deprecated, please use `torch.distributed.ReduceOp` instead
+  if isinstance(obj, functools._lru_cache_wrapper) and obj.__module__.startswith("openff.interchange"):
+1 warning generated.
+Equilibration done.
+Starting production from equilibrated state.
+Running 12500000 steps (50.0 ns) ...
+
+=== launch pentadecanal_50ns_r3 seed=2013 at 2026-07-30 04:19:30 ===
+Loaded existing system.
+Resuming from checkpoint at 6.0 ns (1500000/12500000 steps).
+Running 11000000 steps (44.0 ns) ...
+
+=== launch pentadecanal_50ns_r3 seed=2013 at 2026-07-30 05:50:16 ===
+Loaded existing system.
+Resuming from checkpoint at 12.2 ns (3062500/12500000 steps).
+Running 9437500 steps (37.8 ns) ...
+
+=== launch pentadecanal_50ns_r3 seed=2013 at 2026-07-30 07:21:17 ===
+Loaded existing system.
+Resuming from checkpoint at 18.5 ns (4625000/12500000 steps).
+Running 7875000 steps (31.5 ns) ...
+
+=== launch pentadecanal_50ns_r3 seed=2013 at 2026-07-30 08:52:15 ===
+Loaded existing system.
+Resuming from checkpoint at 24.8 ns (6187500/12500000 steps).
+Running 6312500 steps (25.2 ns) ...
+
+=== launch pentadecanal_50ns_r3 seed=2013 at 2026-07-30 10:23:14 ===
+Loaded existing system.
+Resuming from checkpoint at 31.0 ns (7750000/12500000 steps).
+Running 4750000 steps (19.0 ns) ...
+
+=== launch pentadecanal_50ns_r3 seed=2013 at 2026-07-30 11:54:16 ===
+Loaded existing system.
+Resuming from checkpoint at 37.2 ns (9312500/12500000 steps).
+Running 3187500 steps (12.8 ns) ...
+
+=== launch pentadecanal_50ns_r3 seed=2013 at 2026-07-30 13:24:51 ===
+Loaded existing system.
+Resuming from checkpoint at 43.5 ns (10875000/12500000 steps).
+Running 1625000 steps (6.5 ns) ...
+
+=== launch pentadecanal_50ns_r3 seed=2013 at 2026-07-30 14:55:41 ===
+Loaded existing system.
+Resuming from checkpoint at 49.8 ns (12437500/12500000 steps).
+Running 62500 steps (0.2 ns) ...
+PRODUCTION COMPLETE: 50.0 ns. Trajectory: md\pentadecanal_50ns_r3\traj.dcd

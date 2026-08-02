@@ -1,0 +1,72 @@
+=== methyl_epa_50ns (rep 1) ===
+  rep1 mean = -24.3 kcal/mol
+=== methyl_epa_50ns_r2 (rep 2) ===
+  rep2 mean = -40.2 kcal/mol
+=== methyl_epa_50ns_r3 (rep 3) ===
+  rep3 mean = -35.8 kcal/mol
+  EPA                    methyl ester   n=3 mean=-33.4 +/- 8.2  (reps: -24.3, -40.2, -35.8)
+=== epa_deprot_50ns (rep 1) ===
+  rep1 mean = -49.0 kcal/mol
+=== epa_deprot_50ns_r2 (rep 2) ===
+  rep2 mean = -45.0 kcal/mol
+=== epa_deprot_50ns_r3 (rep 3) ===
+  rep3 mean = -51.5 kcal/mol
+  EPA                    carboxylate    n=3 mean=-48.5 +/- 3.3  (reps: -49.0, -45.0, -51.5)
+=== gla_ester_50ns (rep 1) ===
+  rep1 mean = -31.5 kcal/mol
+=== gla_ester_50ns_r2 (rep 2) ===
+  rep2 mean = -37.2 kcal/mol
+=== gla_ester_50ns_r3 (rep 3) ===
+  rep3 mean = -23.2 kcal/mol
+  gamma-linolenic        methyl ester   n=3 mean=-30.6 +/- 7.0  (reps: -31.5, -37.2, -23.2)
+=== gla_deprot_50ns (rep 1) ===
+  rep1 mean = -37.6 kcal/mol
+=== gla_deprot_50ns_r2 (rep 2) ===
+  rep2 mean = -48.4 kcal/mol
+=== gla_deprot_50ns_r3 (rep 3) ===
+  rep3 mean = -47.0 kcal/mol
+  gamma-linolenic        carboxylate    n=3 mean=-44.3 +/- 5.9  (reps: -37.6, -48.4, -47.0)
+=== methyl_palmitate_50ns (rep 1) ===
+  rep1 mean = -36.6 kcal/mol
+=== methyl_palmitate_50ns_r2 (rep 2) ===
+  rep2 mean = -36.3 kcal/mol
+=== methyl_palmitate_50ns_r3 (rep 3) ===
+  rep3 mean = -37.6 kcal/mol
+  palmitic               methyl ester   n=3 mean=-36.8 +/- 0.7  (reps: -36.6, -36.3, -37.6)
+=== palmitic_deprot_50ns (rep 1) ===
+  rep1 mean = -41.3 kcal/mol
+=== palmitic_deprot_50ns_r2 (rep 2) ===
+  rep2 mean = -49.2 kcal/mol
+=== palmitic_deprot_50ns_r3 (rep 3) ===
+  rep3 mean = -45.8 kcal/mol
+  palmitic               carboxylate    n=3 mean=-45.4 +/- 4.0  (reps: -41.3, -49.2, -45.8)
+=== pam_50ns (rep 1) ===
+  rep1 mean = -33.1 kcal/mol
+=== pam_50ns_r2 (rep 2) ===
+  rep2 mean = -36.7 kcal/mol
+=== pam_50ns_r3 (rep 3) ===
+  rep3 mean = -27.6 kcal/mol
+  palmitoleate (native)  +control       n=3 mean=-32.5 +/- 4.6  (reps: -33.1, -36.7, -27.6)
+=== glucose_decoy_50ns (rep 1) ===
+  rep1 mean = -23.5 kcal/mol
+=== glucose_decoy_50ns_r2 (rep 2) ===
+  rep2 mean = -28.0 kcal/mol
+=== glucose_decoy_50ns_r3 (rep 3) ===
+  rep3 mean = -24.5 kcal/mol
+  glucose                decoy          n=3 mean=-25.3 +/- 2.4  (reps: -23.5, -28.0, -24.5)
+=== pentadecanal_50ns (rep 1) ===
+  rep1 mean = -31.4 kcal/mol
+=== pentadecanal_50ns_r2 (rep 2) ===
+  rep2 mean = -34.8 kcal/mol
+=== pentadecanal_50ns_r3 (rep 3) ===
+  rep3 mean = -37.8 kcal/mol
+  pentadecanal           weak           n=3 mean=-34.7 +/- 3.2  (reps: -31.4, -34.8, -37.8)
+=== tridecanoic_50ns (rep 1) ===
+  rep1 mean = -19.8 kcal/mol
+=== tridecanoic_50ns_r2 (rep 2) ===
+  rep2 mean = -26.6 kcal/mol
+=== tridecanoic_50ns_r3 (rep 3) ===
+  rep3 mean = -27.4 kcal/mol
+  tridecanoic            weak           n=3 mean=-24.6 +/- 4.2  (reps: -19.8, -26.6, -27.4)
+
+Wrote results_mmgbsa/mmgbsa_n3_remaining.csv (10 systems)

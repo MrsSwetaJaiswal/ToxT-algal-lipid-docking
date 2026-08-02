@@ -1,0 +1,23 @@
+=== epa_50ns (rep 1) ===
+  rep1 mean = -45.1 kcal/mol
+=== epa_50ns_r2 (rep 2) ===
+  rep2 mean = -42.1 kcal/mol
+=== epa_50ns_r3 (rep 3) ===
+  rep3 mean = -40.0 kcal/mol
+  EPA                free acid  n=3 mean=-42.4 +/- 2.6  (reps: -45.1, -42.1, -40.0)
+=== gla_50ns (rep 1) ===
+  rep1 mean = -34.2 kcal/mol
+=== gla_50ns_r2 (rep 2) ===
+  rep2 mean = -39.1 kcal/mol
+=== gla_50ns_r3 (rep 3) ===
+  rep3 mean = -42.6 kcal/mol
+  gamma-linolenic    free acid  n=3 mean=-38.6 +/- 4.2  (reps: -34.2, -39.1, -42.6)
+=== palmitic_50ns (rep 1) ===
+  rep1 mean = -33.2 kcal/mol
+=== palmitic_50ns_r2 (rep 2) ===
+  rep2 mean = -33.3 kcal/mol
+=== palmitic_50ns_r3 (rep 3) ===
+  rep3 mean = -31.5 kcal/mol
+  palmitic           free acid  n=3 mean=-32.7 +/- 1.0  (reps: -33.2, -33.3, -31.5)
+
+Wrote results_mmgbsa/mmgbsa_n3_headline.csv (3 systems)

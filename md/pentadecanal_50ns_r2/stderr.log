@@ -1,0 +1,45 @@
+
+=== launch pentadecanal_50ns_r2 seed=1013 at 2026-07-25 00:30:53 ===
+Building system (one-time) ...
+C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openff\interchange\components\interchange.py:1119: FutureWarning: `torch.distributed.reduce_op` is deprecated, please use `torch.distributed.ReduceOp` instead
+  if isinstance(obj, functools._lru_cache_wrapper) and obj.__module__.startswith("openff.interchange"):
+1 warning generated.
+Equilibration done.
+Starting production from equilibrated state.
+Running 12500000 steps (50.0 ns) ...
+
+=== launch pentadecanal_50ns_r2 seed=1013 at 2026-07-25 02:01:19 ===
+Loaded existing system.
+Resuming from checkpoint at 6.2 ns (1562500/12500000 steps).
+Running 10937500 steps (43.8 ns) ...
+
+=== launch pentadecanal_50ns_r2 seed=1013 at 2026-07-25 03:31:58 ===
+Loaded existing system.
+Resuming from checkpoint at 12.8 ns (3187500/12500000 steps).
+Running 9312500 steps (37.2 ns) ...
+
+=== launch pentadecanal_50ns_r2 seed=1013 at 2026-07-25 05:02:36 ===
+Loaded existing system.
+Resuming from checkpoint at 19.0 ns (4750000/12500000 steps).
+Running 7750000 steps (31.0 ns) ...
+
+=== launch pentadecanal_50ns_r2 seed=1013 at 2026-07-25 06:33:14 ===
+Loaded existing system.
+Resuming from checkpoint at 25.2 ns (6312500/12500000 steps).
+Running 6187500 steps (24.8 ns) ...
+
+=== launch pentadecanal_50ns_r2 seed=1013 at 2026-07-25 08:04:37 ===
+Loaded existing system.
+Resuming from checkpoint at 31.8 ns (7937500/12500000 steps).
+Running 4562500 steps (18.2 ns) ...
+
+=== launch pentadecanal_50ns_r2 seed=1013 at 2026-07-25 09:35:43 ===
+Loaded existing system.
+Resuming from checkpoint at 38.0 ns (9500000/12500000 steps).
+Running 3000000 steps (12.0 ns) ...
+
+=== launch pentadecanal_50ns_r2 seed=1013 at 2026-07-25 11:07:06 ===
+Loaded existing system.
+Resuming from checkpoint at 44.2 ns (11062500/12500000 steps).
+Running 1437500 steps (5.8 ns) ...
+PRODUCTION COMPLETE: 50.0 ns. Trajectory: md\pentadecanal_50ns_r2\traj.dcd

@@ -1,0 +1,65 @@
+
+=== launch pam_50ns_r2 seed=1011 at 2026-07-24 00:23:29 ===
+Building system (one-time) ...
+C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openff\interchange\components\interchange.py:1119: FutureWarning: `torch.distributed.reduce_op` is deprecated, please use `torch.distributed.ReduceOp` instead
+  if isinstance(obj, functools._lru_cache_wrapper) and obj.__module__.startswith("openff.interchange"):
+1 warning generated.
+Equilibration done.
+Starting production from equilibrated state.
+Running 12500000 steps (50.0 ns) ...
+
+=== launch pam_50ns_r2 seed=1011 at 2026-07-24 01:55:19 ===
+Loaded existing system.
+Resuming from checkpoint at 6.2 ns (1562500/12500000 steps).
+Running 10937500 steps (43.8 ns) ...
+
+=== launch pam_50ns_r2 seed=1011 at 2026-07-24 02:49:57 ===
+Loaded existing system.
+Resuming from checkpoint at 9.8 ns (2437500/12500000 steps).
+Running 10062500 steps (40.2 ns) ...
+
+=== launch pam_50ns_r2 seed=1011 at 2026-07-24 03:03:48 ===
+Loaded existing system.
+Resuming from checkpoint at 10.5 ns (2625000/12500000 steps).
+Running 9875000 steps (39.5 ns) ...
+
+=== launch pam_50ns_r2 seed=1011 at 2026-07-24 03:17:09 ===
+Loaded existing system.
+Resuming from checkpoint at 11.0 ns (2750000/12500000 steps).
+Running 9750000 steps (39.0 ns) ...
+
+=== launch pam_50ns_r2 seed=1011 at 2026-07-24 03:27:55 ===
+Loaded existing system.
+Resuming from checkpoint at 11.5 ns (2875000/12500000 steps).
+Running 9625000 steps (38.5 ns) ...
+
+=== launch pam_50ns_r2 seed=1011 at 2026-07-24 04:58:35 ===
+Loaded existing system.
+Resuming from checkpoint at 17.8 ns (4437500/12500000 steps).
+Running 8062500 steps (32.2 ns) ...
+
+=== launch pam_50ns_r2 seed=1011 at 2026-07-24 06:29:04 ===
+Loaded existing system.
+Resuming from checkpoint at 24.2 ns (6062500/12500000 steps).
+Running 6437500 steps (25.8 ns) ...
+
+=== launch pam_50ns_r2 seed=1011 at 2026-07-24 07:59:51 ===
+Loaded existing system.
+Resuming from checkpoint at 30.8 ns (7687500/12500000 steps).
+Running 4812500 steps (19.2 ns) ...
+
+=== launch pam_50ns_r2 seed=1011 at 2026-07-24 09:30:57 ===
+Loaded existing system.
+Resuming from checkpoint at 37.0 ns (9250000/12500000 steps).
+Running 3250000 steps (13.0 ns) ...
+
+=== launch pam_50ns_r2 seed=1011 at 2026-07-24 11:02:47 ===
+Loaded existing system.
+Resuming from checkpoint at 43.2 ns (10812500/12500000 steps).
+Running 1687500 steps (6.8 ns) ...
+
+=== launch pam_50ns_r2 seed=1011 at 2026-07-24 12:34:10 ===
+Loaded existing system.
+Resuming from checkpoint at 49.5 ns (12375000/12500000 steps).
+Running 125000 steps (0.5 ns) ...
+PRODUCTION COMPLETE: 50.0 ns. Trajectory: md\pam_50ns_r2\traj.dcd

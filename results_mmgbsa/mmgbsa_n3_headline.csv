@@ -1,0 +1,4 @@
+ligand,form,r1_mean,r2_mean,r3_mean,mean_of_means,sd_across_means
+EPA,free acid,-45.1,-42.1,-40.0,-42.4,2.56320112359526
+gamma-linolenic,free acid,-34.2,-39.1,-42.6,-38.63333333333333,4.219399641339195
+palmitic,free acid,-33.2,-33.3,-31.5,-32.666666666666664,1.0115993936995678

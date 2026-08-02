@@ -1,0 +1,50 @@
+
+=== launch tridecanoic_50ns_r2 seed=1014 at 2026-07-25 12:28:30 ===
+Building system (one-time) ...
+C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openff\interchange\components\interchange.py:1119: FutureWarning: `torch.distributed.reduce_op` is deprecated, please use `torch.distributed.ReduceOp` instead
+  if isinstance(obj, functools._lru_cache_wrapper) and obj.__module__.startswith("openff.interchange"):
+1 warning generated.
+Equilibration done.
+Starting production from equilibrated state.
+Running 12500000 steps (50.0 ns) ...
+
+=== launch tridecanoic_50ns_r2 seed=1014 at 2026-07-25 14:00:40 ===
+Loaded existing system.
+Resuming from checkpoint at 6.0 ns (1500000/12500000 steps).
+Running 11000000 steps (44.0 ns) ...
+
+=== launch tridecanoic_50ns_r2 seed=1014 at 2026-07-25 15:32:07 ===
+Loaded existing system.
+Resuming from checkpoint at 12.2 ns (3062500/12500000 steps).
+Running 9437500 steps (37.8 ns) ...
+
+=== launch tridecanoic_50ns_r2 seed=1014 at 2026-07-25 17:03:30 ===
+Loaded existing system.
+Resuming from checkpoint at 18.5 ns (4625000/12500000 steps).
+Running 7875000 steps (31.5 ns) ...
+
+=== launch tridecanoic_50ns_r2 seed=1014 at 2026-07-25 18:34:38 ===
+Loaded existing system.
+Resuming from checkpoint at 24.8 ns (6187500/12500000 steps).
+Running 6312500 steps (25.2 ns) ...
+
+=== launch tridecanoic_50ns_r2 seed=1014 at 2026-07-25 20:06:01 ===
+Loaded existing system.
+Resuming from checkpoint at 31.0 ns (7750000/12500000 steps).
+Running 4750000 steps (19.0 ns) ...
+
+=== launch tridecanoic_50ns_r2 seed=1014 at 2026-07-25 21:38:15 ===
+Loaded existing system.
+Resuming from checkpoint at 37.2 ns (9312500/12500000 steps).
+Running 3187500 steps (12.8 ns) ...
+
+=== launch tridecanoic_50ns_r2 seed=1014 at 2026-07-25 23:09:56 ===
+Loaded existing system.
+Resuming from checkpoint at 43.2 ns (10812500/12500000 steps).
+Running 1687500 steps (6.8 ns) ...
+
+=== launch tridecanoic_50ns_r2 seed=1014 at 2026-07-26 00:41:06 ===
+Loaded existing system.
+Resuming from checkpoint at 49.5 ns (12375000/12500000 steps).
+Running 125000 steps (0.5 ns) ...
+PRODUCTION COMPLETE: 50.0 ns. Trajectory: md\tridecanoic_50ns_r2\traj.dcd

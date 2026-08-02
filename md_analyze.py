@@ -9,8 +9,9 @@ Produces the publication deliverables:
   - radius of gyration (compactness)
 Outputs CSVs + PNG figures in md/<name>/analysis/.
 
-Run (conda md env):
-  C:\\Users\\ASUS\\miniforge3\\envs\\md\\python.exe md_analyze.py <name> [equil_ns]
+Run (conda analysis env -- OpenBLAS-based, avoids the "md" env's MKL crash
+on concurrent numpy/mdtraj processes):
+  C:\\Users\\ASUS\\miniforge3\\envs\\analysis\\python.exe md_analyze.py <name> [equil_ns]
   e.g.  ...python.exe md_analyze.py epa_50ns 5
 (equil_ns = how many ns at the start to treat as equilibration and exclude from
  averaged metrics like RMSF and contact fractions; default 5.)

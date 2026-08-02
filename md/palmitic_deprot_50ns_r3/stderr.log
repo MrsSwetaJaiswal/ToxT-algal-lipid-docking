@@ -1,0 +1,45 @@
+
+=== launch palmitic_deprot_50ns_r3 seed=2010 at 2026-07-28 15:16:32 ===
+Building system (one-time) ...
+C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openff\interchange\components\interchange.py:1119: FutureWarning: `torch.distributed.reduce_op` is deprecated, please use `torch.distributed.ReduceOp` instead
+  if isinstance(obj, functools._lru_cache_wrapper) and obj.__module__.startswith("openff.interchange"):
+1 warning generated.
+Equilibration done.
+Starting production from equilibrated state.
+Running 12500000 steps (50.0 ns) ...
+
+=== launch palmitic_deprot_50ns_r3 seed=2010 at 2026-07-28 16:47:15 ===
+Loaded existing system.
+Resuming from checkpoint at 6.2 ns (1562500/12500000 steps).
+Running 10937500 steps (43.8 ns) ...
+
+=== launch palmitic_deprot_50ns_r3 seed=2010 at 2026-07-28 18:17:54 ===
+Loaded existing system.
+Resuming from checkpoint at 12.5 ns (3125000/12500000 steps).
+Running 9375000 steps (37.5 ns) ...
+
+=== launch palmitic_deprot_50ns_r3 seed=2010 at 2026-07-28 19:48:31 ===
+Loaded existing system.
+Resuming from checkpoint at 18.8 ns (4687500/12500000 steps).
+Running 7812500 steps (31.2 ns) ...
+
+=== launch palmitic_deprot_50ns_r3 seed=2010 at 2026-07-28 21:19:10 ===
+Loaded existing system.
+Resuming from checkpoint at 25.2 ns (6312500/12500000 steps).
+Running 6187500 steps (24.8 ns) ...
+
+=== launch palmitic_deprot_50ns_r3 seed=2010 at 2026-07-28 22:49:52 ===
+Loaded existing system.
+Resuming from checkpoint at 31.8 ns (7937500/12500000 steps).
+Running 4562500 steps (18.2 ns) ...
+
+=== launch palmitic_deprot_50ns_r3 seed=2010 at 2026-07-29 00:20:17 ===
+Loaded existing system.
+Resuming from checkpoint at 38.2 ns (9562500/12500000 steps).
+Running 2937500 steps (11.8 ns) ...
+
+=== launch palmitic_deprot_50ns_r3 seed=2010 at 2026-07-29 01:50:40 ===
+Loaded existing system.
+Resuming from checkpoint at 44.5 ns (11125000/12500000 steps).
+Running 1375000 steps (5.5 ns) ...
+PRODUCTION COMPLETE: 50.0 ns. Trajectory: md\palmitic_deprot_50ns_r3\traj.dcd

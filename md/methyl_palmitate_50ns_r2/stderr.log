@@ -12,3 +12,129 @@ Running 12500000 steps (50.0 ns) ...
 Loaded existing system.
 Resuming from checkpoint at 3.2 ns (812500/12500000 steps).
 Running 11687500 steps (46.8 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-22 17:03:20 ===
+Loaded existing system.
+Resuming from checkpoint at 3.5 ns (875000/12500000 steps).
+Running 11625000 steps (46.5 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-22 21:49:54 ===
+Loaded existing system.
+Resuming from checkpoint at 7.2 ns (1812500/12500000 steps).
+Running 10687500 steps (42.8 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-22 22:03:02 ===
+Loaded existing system.
+Resuming from checkpoint at 7.5 ns (1875000/12500000 steps).
+Running 10625000 steps (42.5 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-22 22:08:22 ===
+Loaded existing system.
+Resuming from checkpoint at 7.5 ns (1875000/12500000 steps).
+Running 10625000 steps (42.5 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-22 23:38:45 ===
+Loaded existing system.
+Resuming from checkpoint at 13.8 ns (3437500/12500000 steps).
+Running 9062500 steps (36.2 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 01:10:58 ===
+Loaded existing system.
+Resuming from checkpoint at 20.0 ns (5000000/12500000 steps).
+Running 7500000 steps (30.0 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 02:31:41 ===
+Loaded existing system.
+Resuming from checkpoint at 25.2 ns (6312500/12500000 steps).
+Running 6187500 steps (24.8 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 04:03:34 ===
+Loaded existing system.
+Resuming from checkpoint at 31.5 ns (7875000/12500000 steps).
+Running 4625000 steps (18.5 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 05:30:05 ===
+Loaded existing system.
+Resuming from checkpoint at 37.2 ns (9312500/12500000 steps).
+Running 3187500 steps (12.8 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 06:23:44 ===
+Loaded existing system.
+Resuming from checkpoint at 40.8 ns (10187500/12500000 steps).
+Running 2312500 steps (9.2 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 06:33:47 ===
+Loaded existing system.
+Resuming from checkpoint at 41.2 ns (10312500/12500000 steps).
+Running 2187500 steps (8.8 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 06:41:01 ===
+Loaded existing system.
+Resuming from checkpoint at 41.5 ns (10375000/12500000 steps).
+Running 2125000 steps (8.5 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 06:47:29 ===
+Loaded existing system.
+Resuming from checkpoint at 41.8 ns (10437500/12500000 steps).
+Running 2062500 steps (8.2 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 06:56:15 ===
+Loaded existing system.
+Resuming from checkpoint at 42.0 ns (10500000/12500000 steps).
+Running 2000000 steps (8.0 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 07:04:46 ===
+Loaded existing system.
+Resuming from checkpoint at 42.2 ns (10562500/12500000 steps).
+Running 1937500 steps (7.8 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 07:11:14 ===
+Loaded existing system.
+Resuming from checkpoint at 42.5 ns (10625000/12500000 steps).
+Running 1875000 steps (7.5 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 07:19:30 ===
+Loaded existing system.
+Resuming from checkpoint at 42.8 ns (10687500/12500000 steps).
+Running 1812500 steps (7.2 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 07:25:45 ===
+Loaded existing system.
+Resuming from checkpoint at 43.0 ns (10750000/12500000 steps).
+Running 1750000 steps (7.0 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 07:34:46 ===
+Loaded existing system.
+Resuming from checkpoint at 43.2 ns (10812500/12500000 steps).
+Running 1687500 steps (6.8 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 07:43:01 ===
+Loaded existing system.
+Resuming from checkpoint at 43.5 ns (10875000/12500000 steps).
+Running 1625000 steps (6.5 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 07:51:02 ===
+Loaded existing system.
+Resuming from checkpoint at 43.8 ns (10937500/12500000 steps).
+Running 1562500 steps (6.2 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 07:59:18 ===
+Loaded existing system.
+Resuming from checkpoint at 44.0 ns (11000000/12500000 steps).
+Running 1500000 steps (6.0 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 08:07:35 ===
+Loaded existing system.
+Resuming from checkpoint at 44.2 ns (11062500/12500000 steps).
+Running 1437500 steps (5.8 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 08:15:51 ===
+Loaded existing system.
+Resuming from checkpoint at 44.5 ns (11125000/12500000 steps).
+Running 1375000 steps (5.5 ns) ...
+
+=== launch methyl_palmitate_50ns_r2 seed=1009 at 2026-07-23 08:23:37 ===
+Loaded existing system.
+Resuming from checkpoint at 44.8 ns (11187500/12500000 steps).
+Running 1312500 steps (5.2 ns) ...
+PRODUCTION COMPLETE: 50.0 ns. Trajectory: md\methyl_palmitate_50ns_r2\traj.dcd

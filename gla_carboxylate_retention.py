@@ -7,12 +7,18 @@ Computes, over gla_deprot_50ns (rep 1):
   (c) ligand heavy-atom RMSD to frame 0 after protein superposition (internal wobble)
 PBC-correct minimum image on original coords before superpose.
 Writes figures/gla_carboxylate_retention.png and prints summary stats.
+
+Run (conda analysis env -- OpenBLAS-based, avoids the "md" env's MKL crash
+on concurrent numpy/mdtraj processes):
+  C:\\Users\\ASUS\\miniforge3\\envs\\analysis\\python.exe gla_carboxylate_retention.py [rep]
+  where [rep] is "" (rep1, default), "_r2", or "_r3"
 """
-import os, numpy as np, mdtraj as md
+import os, sys, numpy as np, mdtraj as md
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-NAME = "gla_deprot_50ns"
+REP = sys.argv[1] if len(sys.argv) > 1 else ""
+NAME = "gla_deprot_50ns" + REP
 POCKET = [12, 13, 14, 20, 22, 25, 31, 33, 71, 81, 226, 259, 261, 266]  # crystal numbering
 ppf = 250.0  # ps per frame
 
@@ -54,7 +60,7 @@ t.superpose(t, 0, atom_indices=prot)
 lig_rmsd = md.rmsd(t, t, 0, atom_indices=lig) * 10.0  # A
 
 def stats(x): return (x.mean(), x.std(), x.min(), x.max())
-print("=== GLA carboxylate (gla_deprot_50ns) retention diagnostic ===")
+print("=== GLA carboxylate (%s) retention diagnostic ===" % NAME)
 print("frames: %d (%.1f ns)" % (t.n_frames, tn[-1]))
 print("carboxylate carbon atom(s): %s" % carbox.tolist())
 print("ligand-COM  dist  mean %.2f  sd %.2f  range %.2f-%.2f A" % stats(d_lig))
@@ -68,13 +74,14 @@ ax[0].plot(tn, d_lig, color="#2c7fb8", lw=1.4, label="ligand COM -> pocket")
 ax[0].plot(tn, d_cbx, color="#d7191c", lw=1.4, label="carboxylate C -> pocket")
 ax[0].set_ylabel("distance to pocket (A)")
 ax[0].legend(fontsize=9, loc="upper left"); ax[0].grid(alpha=0.25)
-ax[0].set_title("GLA carboxylate (gla_deprot_50ns): ligand & head-group mobility\n"
-                "explains the large single-trajectory MM-GBSA variance (+/-20.5 kcal/mol)",
+ax[0].set_title("GLA carboxylate (%s): ligand binding & head-group solvent exposure\n"
+                "explains the large single-trajectory MM-GBSA variance (+/-20.5 kcal/mol)" % NAME,
                 fontsize=10.5, fontweight="bold")
 ax[1].plot(tn, lig_rmsd, color="#756bb1", lw=1.4)
 ax[1].set_ylabel("ligand RMSD to t0 (A)"); ax[1].set_xlabel("Time (ns)")
 ax[1].grid(alpha=0.25); ax[1].set_xlim(0, tn[-1])
 fig.tight_layout()
 os.makedirs("figures", exist_ok=True)
-fig.savefig("figures/gla_carboxylate_retention.png", dpi=200)
-print("wrote figures/gla_carboxylate_retention.png")
+outpng = "figures/gla_carboxylate_retention%s.png" % REP
+fig.savefig(outpng, dpi=200)
+print("wrote %s" % outpng)

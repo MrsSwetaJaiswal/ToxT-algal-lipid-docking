@@ -569,3 +569,684 @@
 [2026-07-22 17:03:18] SKIP gla_ester_50ns_r2 (already at 50 ns)
 [2026-07-22 17:03:18] SKIP gla_deprot_50ns_r2 (already at 50 ns)
 [2026-07-22 17:03:20] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 46 C, 59.0 GB free)
+[2026-07-22 21:49:52] REPLICATE supervisor started: 28 runs (r2+r3 x 14 systems). Policy: pause@78C or every 90min, resume@56C.
+[2026-07-22 21:49:52] SKIP epa_50ns_r2 (already at 50 ns)
+[2026-07-22 21:49:52] SKIP gla_50ns_r2 (already at 50 ns)
+[2026-07-22 21:49:52] SKIP palmitic_50ns_r2 (already at 50 ns)
+[2026-07-22 21:49:52] SKIP apo_toxt_50ns_r2 (already at 50 ns)
+[2026-07-22 21:49:52] SKIP epa_50ns_r3 (already at 50 ns)
+[2026-07-22 21:49:52] SKIP gla_50ns_r3 (already at 50 ns)
+[2026-07-22 21:49:52] SKIP palmitic_50ns_r3 (already at 50 ns)
+[2026-07-22 21:49:52] SKIP apo_toxt_50ns_r3 (already at 50 ns)
+[2026-07-22 21:49:52] SKIP methyl_epa_50ns_r2 (already at 50 ns)
+[2026-07-22 21:49:52] SKIP epa_deprot_50ns_r2 (already at 50 ns)
+[2026-07-22 21:49:52] SKIP gla_ester_50ns_r2 (already at 50 ns)
+[2026-07-22 21:49:52] SKIP gla_deprot_50ns_r2 (already at 50 ns)
+[2026-07-22 21:49:54] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 45 C, 61.3 GB free)
+[2026-07-22 21:55:16] EXIT methyl_palmitate_50ns_r2 rc=4294967295 (failure 1/3)
+[2026-07-22 22:03:00] REPLICATE supervisor started: 28 runs (r2+r3 x 14 systems). Policy: pause@78C or every 90min, resume@56C.
+[2026-07-22 22:03:00] SKIP epa_50ns_r2 (already at 50 ns)
+[2026-07-22 22:03:00] SKIP gla_50ns_r2 (already at 50 ns)
+[2026-07-22 22:03:00] SKIP palmitic_50ns_r2 (already at 50 ns)
+[2026-07-22 22:03:00] SKIP apo_toxt_50ns_r2 (already at 50 ns)
+[2026-07-22 22:03:00] SKIP epa_50ns_r3 (already at 50 ns)
+[2026-07-22 22:03:00] SKIP gla_50ns_r3 (already at 50 ns)
+[2026-07-22 22:03:00] SKIP palmitic_50ns_r3 (already at 50 ns)
+[2026-07-22 22:03:00] SKIP apo_toxt_50ns_r3 (already at 50 ns)
+[2026-07-22 22:03:00] SKIP methyl_epa_50ns_r2 (already at 50 ns)
+[2026-07-22 22:03:00] SKIP epa_deprot_50ns_r2 (already at 50 ns)
+[2026-07-22 22:03:00] SKIP gla_ester_50ns_r2 (already at 50 ns)
+[2026-07-22 22:03:00] SKIP gla_deprot_50ns_r2 (already at 50 ns)
+[2026-07-22 22:03:02] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 45 C, 61.3 GB free)
+[2026-07-22 22:08:20] REPLICATE supervisor started: 28 runs (r2+r3 x 14 systems). Policy: pause@78C or every 90min, resume@56C.
+[2026-07-22 22:08:20] SKIP epa_50ns_r2 (already at 50 ns)
+[2026-07-22 22:08:20] SKIP gla_50ns_r2 (already at 50 ns)
+[2026-07-22 22:08:20] SKIP palmitic_50ns_r2 (already at 50 ns)
+[2026-07-22 22:08:20] SKIP apo_toxt_50ns_r2 (already at 50 ns)
+[2026-07-22 22:08:20] SKIP epa_50ns_r3 (already at 50 ns)
+[2026-07-22 22:08:20] SKIP gla_50ns_r3 (already at 50 ns)
+[2026-07-22 22:08:20] SKIP palmitic_50ns_r3 (already at 50 ns)
+[2026-07-22 22:08:20] SKIP apo_toxt_50ns_r3 (already at 50 ns)
+[2026-07-22 22:08:20] SKIP methyl_epa_50ns_r2 (already at 50 ns)
+[2026-07-22 22:08:20] SKIP epa_deprot_50ns_r2 (already at 50 ns)
+[2026-07-22 22:08:20] SKIP gla_ester_50ns_r2 (already at 50 ns)
+[2026-07-22 22:08:20] SKIP gla_deprot_50ns_r2 (already at 50 ns)
+[2026-07-22 22:08:22] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 45 C, 61.4 GB free)
+[2026-07-22 23:38:28] PAUSE methyl_palmitate_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-22 23:38:44] COOLED to 54 C after 15 s -> resuming
+[2026-07-22 23:38:45] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 54 C, 63.4 GB free)
+[2026-07-23 01:08:49] PAUSE methyl_palmitate_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-23 01:10:58] COOLED to 56 C after 128 s -> resuming
+[2026-07-23 01:10:58] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.6 GB free)
+[2026-07-23 02:30:03] PAUSE methyl_palmitate_50ns_r2 : GPU 78 C >= 78
+[2026-07-23 02:31:41] COOLED to 56 C after 97 s -> resuming
+[2026-07-23 02:31:41] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.6 GB free)
+[2026-07-23 04:01:55] PAUSE methyl_palmitate_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-23 04:03:34] COOLED to 56 C after 98 s -> resuming
+[2026-07-23 04:03:34] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.1 GB free)
+[2026-07-23 05:28:42] PAUSE methyl_palmitate_50ns_r2 : GPU 78 C >= 78
+[2026-07-23 05:30:05] COOLED to 56 C after 82 s -> resuming
+[2026-07-23 05:30:05] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.1 GB free)
+[2026-07-23 06:22:05] PAUSE methyl_palmitate_50ns_r2 : GPU 78 C >= 78
+[2026-07-23 06:23:44] COOLED to 56 C after 98 s -> resuming
+[2026-07-23 06:23:44] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.1 GB free)
+[2026-07-23 06:31:52] PAUSE methyl_palmitate_50ns_r2 : GPU 78 C >= 78
+[2026-07-23 06:33:47] COOLED to 56 C after 114 s -> resuming
+[2026-07-23 06:33:47] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.1 GB free)
+[2026-07-23 06:39:23] PAUSE methyl_palmitate_50ns_r2 : GPU 78 C >= 78
+[2026-07-23 06:41:01] COOLED to 56 C after 97 s -> resuming
+[2026-07-23 06:41:01] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.1 GB free)
+[2026-07-23 06:46:06] PAUSE methyl_palmitate_50ns_r2 : GPU 78 C >= 78
+[2026-07-23 06:47:29] COOLED to 56 C after 82 s -> resuming
+[2026-07-23 06:47:29] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.1 GB free)
+[2026-07-23 06:54:36] PAUSE methyl_palmitate_50ns_r2 : GPU 78 C >= 78
+[2026-07-23 06:56:15] COOLED to 56 C after 98 s -> resuming
+[2026-07-23 06:56:15] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.1 GB free)
+[2026-07-23 07:03:07] PAUSE methyl_palmitate_50ns_r2 : GPU 78 C >= 78
+[2026-07-23 07:04:46] COOLED to 56 C after 98 s -> resuming
+[2026-07-23 07:04:46] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.1 GB free)
+[2026-07-23 07:09:37] PAUSE methyl_palmitate_50ns_r2 : GPU 78 C >= 78
+[2026-07-23 07:11:14] COOLED to 56 C after 97 s -> resuming
+[2026-07-23 07:11:14] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.1 GB free)
+[2026-07-23 07:17:51] PAUSE methyl_palmitate_50ns_r2 : GPU 78 C >= 78
+[2026-07-23 07:19:30] COOLED to 56 C after 98 s -> resuming
+[2026-07-23 07:19:30] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.1 GB free)
+[2026-07-23 07:23:50] PAUSE methyl_palmitate_50ns_r2 : GPU 78 C >= 78
+[2026-07-23 07:25:45] COOLED to 56 C after 114 s -> resuming
+[2026-07-23 07:25:45] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.1 GB free)
+[2026-07-23 07:32:51] PAUSE methyl_palmitate_50ns_r2 : GPU 78 C >= 78
+[2026-07-23 07:34:46] COOLED to 56 C after 114 s -> resuming
+[2026-07-23 07:34:46] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.1 GB free)
+[2026-07-23 07:41:23] PAUSE methyl_palmitate_50ns_r2 : GPU 78 C >= 78
+[2026-07-23 07:43:01] COOLED to 56 C after 98 s -> resuming
+[2026-07-23 07:43:01] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.1 GB free)
+[2026-07-23 07:49:23] PAUSE methyl_palmitate_50ns_r2 : GPU 78 C >= 78
+[2026-07-23 07:51:02] COOLED to 56 C after 98 s -> resuming
+[2026-07-23 07:51:02] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.1 GB free)
+[2026-07-23 07:57:39] PAUSE methyl_palmitate_50ns_r2 : GPU 78 C >= 78
+[2026-07-23 07:59:18] COOLED to 56 C after 98 s -> resuming
+[2026-07-23 07:59:18] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.1 GB free)
+[2026-07-23 08:05:24] PAUSE methyl_palmitate_50ns_r2 : GPU 78 C >= 78
+[2026-07-23 08:07:35] COOLED to 56 C after 131 s -> resuming
+[2026-07-23 08:07:35] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.1 GB free)
+[2026-07-23 08:14:12] PAUSE methyl_palmitate_50ns_r2 : GPU 78 C >= 78
+[2026-07-23 08:15:51] COOLED to 56 C after 98 s -> resuming
+[2026-07-23 08:15:51] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.1 GB free)
+[2026-07-23 08:21:57] PAUSE methyl_palmitate_50ns_r2 : GPU 78 C >= 78
+[2026-07-23 08:23:37] COOLED to 56 C after 99 s -> resuming
+[2026-07-23 08:23:37] START/RESUME methyl_palmitate_50ns_r2 (seed 1009)  (GPU 56 C, 63.1 GB free)
+[2026-07-23 09:37:09] COMPLETE methyl_palmitate_50ns_r2
+[2026-07-23 09:37:09] === DONE methyl_palmitate_50ns_r2 ===
+[2026-07-23 09:37:09] START/RESUME palmitic_deprot_50ns_r2 (seed 1010)  (GPU 61 C, 62.0 GB free)
+[2026-07-23 11:07:20] PAUSE palmitic_deprot_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-23 11:08:26] COOLED to 56 C after 65 s -> resuming
+[2026-07-23 11:08:26] START/RESUME palmitic_deprot_50ns_r2 (seed 1010)  (GPU 56 C, 61.6 GB free)
+[2026-07-23 12:38:35] PAUSE palmitic_deprot_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-23 12:39:08] COOLED to 54 C after 32 s -> resuming
+[2026-07-23 12:39:08] START/RESUME palmitic_deprot_50ns_r2 (seed 1010)  (GPU 54 C, 61.4 GB free)
+[2026-07-23 14:09:13] PAUSE palmitic_deprot_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-23 14:09:30] COOLED to 51 C after 16 s -> resuming
+[2026-07-23 14:09:30] START/RESUME palmitic_deprot_50ns_r2 (seed 1010)  (GPU 51 C, 60.8 GB free)
+[2026-07-23 14:35:30] REPLICATE supervisor started: 28 runs (r2+r3 x 14 systems). Policy: pause@78C or every 90min, resume@56C.
+[2026-07-23 14:35:30] SKIP epa_50ns_r2 (already at 50 ns)
+[2026-07-23 14:35:30] SKIP gla_50ns_r2 (already at 50 ns)
+[2026-07-23 14:35:30] SKIP palmitic_50ns_r2 (already at 50 ns)
+[2026-07-23 14:35:30] SKIP apo_toxt_50ns_r2 (already at 50 ns)
+[2026-07-23 14:35:30] SKIP epa_50ns_r3 (already at 50 ns)
+[2026-07-23 14:35:30] SKIP gla_50ns_r3 (already at 50 ns)
+[2026-07-23 14:35:30] SKIP palmitic_50ns_r3 (already at 50 ns)
+[2026-07-23 14:35:30] SKIP apo_toxt_50ns_r3 (already at 50 ns)
+[2026-07-23 14:35:30] SKIP methyl_epa_50ns_r2 (already at 50 ns)
+[2026-07-23 14:35:30] SKIP epa_deprot_50ns_r2 (already at 50 ns)
+[2026-07-23 14:35:30] SKIP gla_ester_50ns_r2 (already at 50 ns)
+[2026-07-23 14:35:30] SKIP gla_deprot_50ns_r2 (already at 50 ns)
+[2026-07-23 14:35:30] SKIP methyl_palmitate_50ns_r2 (already at 50 ns)
+[2026-07-23 14:35:31] START/RESUME palmitic_deprot_50ns_r2 (seed 1010)  (GPU 44 C, 60.8 GB free)
+[2026-07-23 16:05:42] PAUSE palmitic_deprot_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-23 16:05:59] COOLED to 56 C after 16 s -> resuming
+[2026-07-23 16:05:59] START/RESUME palmitic_deprot_50ns_r2 (seed 1010)  (GPU 56 C, 60.5 GB free)
+[2026-07-23 17:36:12] PAUSE palmitic_deprot_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-23 17:37:18] COOLED to 56 C after 65 s -> resuming
+[2026-07-23 17:37:18] START/RESUME palmitic_deprot_50ns_r2 (seed 1010)  (GPU 56 C, 59.3 GB free)
+[2026-07-23 19:07:32] PAUSE palmitic_deprot_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-23 19:08:21] COOLED to 56 C after 48 s -> resuming
+[2026-07-23 19:08:21] START/RESUME palmitic_deprot_50ns_r2 (seed 1010)  (GPU 56 C, 59.3 GB free)
+[2026-07-23 21:47:09] PAUSE palmitic_deprot_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-23 21:47:26] COOLED to 55 C after 16 s -> resuming
+[2026-07-23 21:47:26] START/RESUME palmitic_deprot_50ns_r2 (seed 1010)  (GPU 55 C, 58.8 GB free)
+[2026-07-23 23:17:39] PAUSE palmitic_deprot_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-23 23:19:17] COOLED to 55 C after 97 s -> resuming
+[2026-07-23 23:19:17] START/RESUME palmitic_deprot_50ns_r2 (seed 1010)  (GPU 55 C, 59.2 GB free)
+[2026-07-24 00:23:29] COMPLETE palmitic_deprot_50ns_r2
+[2026-07-24 00:23:29] === DONE palmitic_deprot_50ns_r2 ===
+[2026-07-24 00:23:29] START/RESUME pam_50ns_r2 (seed 1011)  (GPU 63 C, 59.0 GB free)
+[2026-07-24 01:53:42] PAUSE pam_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-24 01:55:19] COOLED to 56 C after 97 s -> resuming
+[2026-07-24 01:55:19] START/RESUME pam_50ns_r2 (seed 1011)  (GPU 56 C, 58.9 GB free)
+[2026-07-24 02:47:46] PAUSE pam_50ns_r2 : GPU 78 C >= 78
+[2026-07-24 02:49:57] COOLED to 55 C after 130 s -> resuming
+[2026-07-24 02:49:57] START/RESUME pam_50ns_r2 (seed 1011)  (GPU 55 C, 58.9 GB free)
+[2026-07-24 03:01:37] PAUSE pam_50ns_r2 : GPU 78 C >= 78
+[2026-07-24 03:03:48] COOLED to 56 C after 130 s -> resuming
+[2026-07-24 03:03:48] START/RESUME pam_50ns_r2 (seed 1011)  (GPU 56 C, 58.9 GB free)
+[2026-07-24 03:14:43] PAUSE pam_50ns_r2 : GPU 78 C >= 78
+[2026-07-24 03:17:09] COOLED to 56 C after 145 s -> resuming
+[2026-07-24 03:17:09] START/RESUME pam_50ns_r2 (seed 1011)  (GPU 56 C, 58.9 GB free)
+[2026-07-24 03:26:17] PAUSE pam_50ns_r2 : GPU 78 C >= 78
+[2026-07-24 03:27:55] COOLED to 56 C after 97 s -> resuming
+[2026-07-24 03:27:55] START/RESUME pam_50ns_r2 (seed 1011)  (GPU 56 C, 58.2 GB free)
+[2026-07-24 04:58:02] PAUSE pam_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-24 04:58:35] COOLED to 55 C after 32 s -> resuming
+[2026-07-24 04:58:35] START/RESUME pam_50ns_r2 (seed 1011)  (GPU 55 C, 58.3 GB free)
+[2026-07-24 06:28:47] PAUSE pam_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-24 06:29:04] COOLED to 52 C after 16 s -> resuming
+[2026-07-24 06:29:04] START/RESUME pam_50ns_r2 (seed 1011)  (GPU 52 C, 58.2 GB free)
+[2026-07-24 07:59:18] PAUSE pam_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-24 07:59:51] COOLED to 54 C after 32 s -> resuming
+[2026-07-24 07:59:51] START/RESUME pam_50ns_r2 (seed 1011)  (GPU 54 C, 59.1 GB free)
+[2026-07-24 09:29:51] PAUSE pam_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-24 09:30:57] COOLED to 55 C after 65 s -> resuming
+[2026-07-24 09:30:57] START/RESUME pam_50ns_r2 (seed 1011)  (GPU 55 C, 59.7 GB free)
+[2026-07-24 11:01:09] PAUSE pam_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-24 11:02:47] COOLED to 56 C after 97 s -> resuming
+[2026-07-24 11:02:47] START/RESUME pam_50ns_r2 (seed 1011)  (GPU 56 C, 59.7 GB free)
+[2026-07-24 12:32:47] PAUSE pam_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-24 12:34:10] COOLED to 56 C after 82 s -> resuming
+[2026-07-24 12:34:10] START/RESUME pam_50ns_r2 (seed 1011)  (GPU 56 C, 59.5 GB free)
+[2026-07-24 12:41:47] COMPLETE pam_50ns_r2
+[2026-07-24 12:41:47] === DONE pam_50ns_r2 ===
+[2026-07-24 12:41:47] START/RESUME glucose_decoy_50ns_r2 (seed 1012)  (GPU 66 C, 59.5 GB free)
+[2026-07-24 14:12:00] PAUSE glucose_decoy_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-24 14:12:33] COOLED to 55 C after 32 s -> resuming
+[2026-07-24 14:12:33] START/RESUME glucose_decoy_50ns_r2 (seed 1012)  (GPU 55 C, 59.8 GB free)
+[2026-07-24 15:42:34] PAUSE glucose_decoy_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-24 15:42:50] COOLED to 55 C after 16 s -> resuming
+[2026-07-24 15:42:50] START/RESUME glucose_decoy_50ns_r2 (seed 1012)  (GPU 55 C, 59.4 GB free)
+[2026-07-24 17:13:03] PAUSE glucose_decoy_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-24 17:13:20] COOLED to 56 C after 16 s -> resuming
+[2026-07-24 17:13:20] START/RESUME glucose_decoy_50ns_r2 (seed 1012)  (GPU 56 C, 59.0 GB free)
+[2026-07-24 18:43:24] PAUSE glucose_decoy_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-24 18:43:40] COOLED to 56 C after 16 s -> resuming
+[2026-07-24 18:43:40] START/RESUME glucose_decoy_50ns_r2 (seed 1012)  (GPU 56 C, 58.7 GB free)
+[2026-07-24 20:13:54] PAUSE glucose_decoy_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-24 20:14:11] COOLED to 56 C after 16 s -> resuming
+[2026-07-24 20:14:11] START/RESUME glucose_decoy_50ns_r2 (seed 1012)  (GPU 56 C, 58.8 GB free)
+[2026-07-24 21:44:13] PAUSE glucose_decoy_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-24 21:44:30] COOLED to 56 C after 16 s -> resuming
+[2026-07-24 21:44:30] START/RESUME glucose_decoy_50ns_r2 (seed 1012)  (GPU 56 C, 58.8 GB free)
+[2026-07-24 23:06:42] PAUSE glucose_decoy_50ns_r2 : GPU 78 C >= 78
+[2026-07-24 23:08:21] COOLED to 56 C after 99 s -> resuming
+[2026-07-24 23:08:21] START/RESUME glucose_decoy_50ns_r2 (seed 1012)  (GPU 56 C, 58.3 GB free)
+[2026-07-25 00:30:53] COMPLETE glucose_decoy_50ns_r2
+[2026-07-25 00:30:53] === DONE glucose_decoy_50ns_r2 ===
+[2026-07-25 00:30:53] START/RESUME pentadecanal_50ns_r2 (seed 1013)  (GPU 59 C, 59.7 GB free)
+[2026-07-25 02:01:02] PAUSE pentadecanal_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-25 02:01:19] COOLED to 56 C after 16 s -> resuming
+[2026-07-25 02:01:19] START/RESUME pentadecanal_50ns_r2 (seed 1013)  (GPU 56 C, 59.8 GB free)
+[2026-07-25 03:31:25] PAUSE pentadecanal_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-25 03:31:58] COOLED to 53 C after 33 s -> resuming
+[2026-07-25 03:31:58] START/RESUME pentadecanal_50ns_r2 (seed 1013)  (GPU 53 C, 59.8 GB free)
+[2026-07-25 05:02:03] PAUSE pentadecanal_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-25 05:02:36] COOLED to 54 C after 33 s -> resuming
+[2026-07-25 05:02:36] START/RESUME pentadecanal_50ns_r2 (seed 1013)  (GPU 54 C, 59.9 GB free)
+[2026-07-25 06:32:41] PAUSE pentadecanal_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-25 06:33:14] COOLED to 55 C after 32 s -> resuming
+[2026-07-25 06:33:14] START/RESUME pentadecanal_50ns_r2 (seed 1013)  (GPU 55 C, 59.0 GB free)
+[2026-07-25 08:03:15] PAUSE pentadecanal_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-25 08:04:36] COOLED to 55 C after 81 s -> resuming
+[2026-07-25 08:04:37] START/RESUME pentadecanal_50ns_r2 (seed 1013)  (GPU 55 C, 58.8 GB free)
+[2026-07-25 09:34:37] PAUSE pentadecanal_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-25 09:35:43] COOLED to 56 C after 65 s -> resuming
+[2026-07-25 09:35:43] START/RESUME pentadecanal_50ns_r2 (seed 1013)  (GPU 56 C, 58.4 GB free)
+[2026-07-25 11:05:45] PAUSE pentadecanal_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-25 11:07:06] COOLED to 56 C after 80 s -> resuming
+[2026-07-25 11:07:06] START/RESUME pentadecanal_50ns_r2 (seed 1013)  (GPU 56 C, 58.3 GB free)
+[2026-07-25 12:28:30] COMPLETE pentadecanal_50ns_r2
+[2026-07-25 12:28:30] === DONE pentadecanal_50ns_r2 ===
+[2026-07-25 12:28:30] START/RESUME tridecanoic_50ns_r2 (seed 1014)  (GPU 68 C, 58.3 GB free)
+[2026-07-25 13:58:45] PAUSE tridecanoic_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-25 14:00:40] COOLED to 56 C after 114 s -> resuming
+[2026-07-25 14:00:40] START/RESUME tridecanoic_50ns_r2 (seed 1014)  (GPU 56 C, 58.2 GB free)
+[2026-07-25 15:30:44] PAUSE tridecanoic_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-25 15:32:07] COOLED to 56 C after 82 s -> resuming
+[2026-07-25 15:32:07] START/RESUME tridecanoic_50ns_r2 (seed 1014)  (GPU 56 C, 58.5 GB free)
+[2026-07-25 17:02:08] PAUSE tridecanoic_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-25 17:03:30] COOLED to 56 C after 81 s -> resuming
+[2026-07-25 17:03:30] START/RESUME tridecanoic_50ns_r2 (seed 1014)  (GPU 56 C, 58.3 GB free)
+[2026-07-25 18:33:31] PAUSE tridecanoic_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-25 18:34:37] COOLED to 56 C after 66 s -> resuming
+[2026-07-25 18:34:38] START/RESUME tridecanoic_50ns_r2 (seed 1014)  (GPU 56 C, 57.7 GB free)
+[2026-07-25 20:04:38] PAUSE tridecanoic_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-25 20:06:01] COOLED to 56 C after 82 s -> resuming
+[2026-07-25 20:06:01] START/RESUME tridecanoic_50ns_r2 (seed 1014)  (GPU 56 C, 57.6 GB free)
+[2026-07-25 21:36:04] PAUSE tridecanoic_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-25 21:38:15] COOLED to 56 C after 130 s -> resuming
+[2026-07-25 21:38:15] START/RESUME tridecanoic_50ns_r2 (seed 1014)  (GPU 56 C, 57.6 GB free)
+[2026-07-25 23:08:18] PAUSE tridecanoic_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-25 23:09:56] COOLED to 56 C after 97 s -> resuming
+[2026-07-25 23:09:56] START/RESUME tridecanoic_50ns_r2 (seed 1014)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 00:40:00] PAUSE tridecanoic_50ns_r2 : ran 90 min (duty-cycle cooldown)
+[2026-07-26 00:41:06] COOLED to 56 C after 65 s -> resuming
+[2026-07-26 00:41:06] START/RESUME tridecanoic_50ns_r2 (seed 1014)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 00:48:45] COMPLETE tridecanoic_50ns_r2
+[2026-07-26 00:48:45] === DONE tridecanoic_50ns_r2 ===
+[2026-07-26 00:48:45] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 66 C, 58.6 GB free)
+[2026-07-26 02:18:50] PAUSE methyl_epa_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-26 02:19:56] COOLED to 56 C after 65 s -> resuming
+[2026-07-26 02:19:56] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 03:50:10] PAUSE methyl_epa_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-26 03:51:32] COOLED to 55 C after 82 s -> resuming
+[2026-07-26 03:51:33] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 55 C, 58.5 GB free)
+[2026-07-26 05:21:33] PAUSE methyl_epa_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-26 05:23:11] COOLED to 56 C after 98 s -> resuming
+[2026-07-26 05:23:11] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 05:32:35] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 05:34:29] COOLED to 56 C after 113 s -> resuming
+[2026-07-26 05:34:29] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 05:40:05] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 05:41:43] COOLED to 56 C after 97 s -> resuming
+[2026-07-26 05:41:43] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 05:47:04] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 05:48:59] COOLED to 56 C after 114 s -> resuming
+[2026-07-26 05:48:59] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 05:54:19] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 05:56:14] COOLED to 56 C after 115 s -> resuming
+[2026-07-26 05:56:14] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 06:01:36] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 06:03:15] COOLED to 56 C after 99 s -> resuming
+[2026-07-26 06:03:15] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 06:08:36] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 06:10:16] COOLED to 56 C after 99 s -> resuming
+[2026-07-26 06:10:16] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 06:15:21] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 06:17:01] COOLED to 56 C after 99 s -> resuming
+[2026-07-26 06:17:01] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 06:22:21] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 06:24:00] COOLED to 56 C after 99 s -> resuming
+[2026-07-26 06:24:00] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 06:29:36] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 06:31:46] COOLED to 56 C after 130 s -> resuming
+[2026-07-26 06:31:46] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 06:35:35] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 06:37:31] COOLED to 56 C after 115 s -> resuming
+[2026-07-26 06:37:31] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 06:42:35] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 06:44:29] COOLED to 56 C after 113 s -> resuming
+[2026-07-26 06:44:29] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 06:49:34] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 06:51:44] COOLED to 56 C after 130 s -> resuming
+[2026-07-26 06:51:45] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 06:56:50] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 06:58:45] COOLED to 56 C after 115 s -> resuming
+[2026-07-26 06:58:45] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 07:03:19] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 07:05:28] COOLED to 56 C after 128 s -> resuming
+[2026-07-26 07:05:28] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 07:10:19] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 07:12:45] COOLED to 56 C after 146 s -> resuming
+[2026-07-26 07:12:45] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 07:18:36] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 07:20:48] COOLED to 56 C after 131 s -> resuming
+[2026-07-26 07:20:48] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 07:26:23] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 07:28:18] COOLED to 56 C after 114 s -> resuming
+[2026-07-26 07:28:18] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 07:33:38] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 07:35:34] COOLED to 56 C after 115 s -> resuming
+[2026-07-26 07:35:34] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 07:40:24] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 07:42:51] COOLED to 56 C after 146 s -> resuming
+[2026-07-26 07:42:51] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 07:46:40] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 07:48:36] COOLED to 56 C after 115 s -> resuming
+[2026-07-26 07:48:36] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 07:53:41] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 07:56:09] COOLED to 56 C after 148 s -> resuming
+[2026-07-26 07:56:10] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 07:59:58] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 08:02:10] COOLED to 56 C after 130 s -> resuming
+[2026-07-26 08:02:10] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 08:07:15] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 08:09:10] COOLED to 56 C after 115 s -> resuming
+[2026-07-26 08:09:10] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 08:14:15] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 08:16:25] COOLED to 56 C after 130 s -> resuming
+[2026-07-26 08:16:26] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 08:22:01] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 08:24:13] COOLED to 56 C after 132 s -> resuming
+[2026-07-26 08:24:14] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 08:28:18] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 08:29:56] COOLED to 56 C after 97 s -> resuming
+[2026-07-26 08:29:56] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 08:34:46] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 08:36:58] COOLED to 56 C after 132 s -> resuming
+[2026-07-26 08:36:58] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 08:42:20] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 08:45:20] COOLED to 55 C after 180 s -> resuming
+[2026-07-26 08:45:20] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 55 C, 58.6 GB free)
+[2026-07-26 08:51:12] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 08:53:55] COOLED to 56 C after 163 s -> resuming
+[2026-07-26 08:53:55] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 08:59:15] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 09:00:54] COOLED to 56 C after 98 s -> resuming
+[2026-07-26 09:00:54] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 09:35:38] PAUSE methyl_epa_50ns_r3 : GPU 78 C >= 78
+[2026-07-26 09:37:50] COOLED to 56 C after 131 s -> resuming
+[2026-07-26 09:37:50] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 56 C, 58.6 GB free)
+[2026-07-26 11:08:04] PAUSE methyl_epa_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-26 11:08:21] COOLED to 55 C after 16 s -> resuming
+[2026-07-26 11:08:21] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 55 C, 58.3 GB free)
+[2026-07-26 12:38:23] PAUSE methyl_epa_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-26 12:38:56] COOLED to 54 C after 33 s -> resuming
+[2026-07-26 12:38:56] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 54 C, 58.3 GB free)
+[2026-07-26 14:08:57] PAUSE methyl_epa_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-26 14:09:30] COOLED to 54 C after 33 s -> resuming
+[2026-07-26 14:09:30] START/RESUME methyl_epa_50ns_r3 (seed 2005)  (GPU 54 C, 58.3 GB free)
+[2026-07-26 14:44:15] COMPLETE methyl_epa_50ns_r3
+[2026-07-26 14:44:15] === DONE methyl_epa_50ns_r3 ===
+[2026-07-26 14:44:15] START/RESUME epa_deprot_50ns_r3 (seed 2006)  (GPU 58 C, 58.3 GB free)
+[2026-07-26 16:14:17] PAUSE epa_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-26 16:14:34] COOLED to 53 C after 16 s -> resuming
+[2026-07-26 16:14:34] START/RESUME epa_deprot_50ns_r3 (seed 2006)  (GPU 53 C, 58.3 GB free)
+[2026-07-26 17:44:41] PAUSE epa_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-26 17:45:15] COOLED to 55 C after 33 s -> resuming
+[2026-07-26 17:45:15] START/RESUME epa_deprot_50ns_r3 (seed 2006)  (GPU 55 C, 58.0 GB free)
+[2026-07-26 19:15:18] PAUSE epa_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-26 19:15:51] COOLED to 55 C after 32 s -> resuming
+[2026-07-26 19:15:51] START/RESUME epa_deprot_50ns_r3 (seed 2006)  (GPU 55 C, 58.3 GB free)
+[2026-07-26 20:45:57] PAUSE epa_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-26 20:47:20] COOLED to 55 C after 82 s -> resuming
+[2026-07-26 20:47:20] START/RESUME epa_deprot_50ns_r3 (seed 2006)  (GPU 55 C, 58.3 GB free)
+[2026-07-26 22:17:24] PAUSE epa_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-26 22:18:30] COOLED to 55 C after 66 s -> resuming
+[2026-07-26 22:18:30] START/RESUME epa_deprot_50ns_r3 (seed 2006)  (GPU 55 C, 58.4 GB free)
+[2026-07-26 23:43:39] REPLICATE supervisor started: 28 runs (r2+r3 x 14 systems). Policy: pause@78C or every 90min, resume@56C.
+[2026-07-26 23:43:39] SKIP epa_50ns_r2 (already at 50 ns)
+[2026-07-26 23:43:39] SKIP gla_50ns_r2 (already at 50 ns)
+[2026-07-26 23:43:39] SKIP palmitic_50ns_r2 (already at 50 ns)
+[2026-07-26 23:43:39] SKIP apo_toxt_50ns_r2 (already at 50 ns)
+[2026-07-26 23:43:39] SKIP epa_50ns_r3 (already at 50 ns)
+[2026-07-26 23:43:39] SKIP gla_50ns_r3 (already at 50 ns)
+[2026-07-26 23:43:39] SKIP palmitic_50ns_r3 (already at 50 ns)
+[2026-07-26 23:43:39] SKIP apo_toxt_50ns_r3 (already at 50 ns)
+[2026-07-26 23:43:39] SKIP methyl_epa_50ns_r2 (already at 50 ns)
+[2026-07-26 23:43:39] SKIP epa_deprot_50ns_r2 (already at 50 ns)
+[2026-07-26 23:43:39] SKIP gla_ester_50ns_r2 (already at 50 ns)
+[2026-07-26 23:43:39] SKIP gla_deprot_50ns_r2 (already at 50 ns)
+[2026-07-26 23:43:39] SKIP methyl_palmitate_50ns_r2 (already at 50 ns)
+[2026-07-26 23:43:39] SKIP palmitic_deprot_50ns_r2 (already at 50 ns)
+[2026-07-26 23:43:39] SKIP pam_50ns_r2 (already at 50 ns)
+[2026-07-26 23:43:39] SKIP glucose_decoy_50ns_r2 (already at 50 ns)
+[2026-07-26 23:43:39] SKIP pentadecanal_50ns_r2 (already at 50 ns)
+[2026-07-26 23:43:39] SKIP tridecanoic_50ns_r2 (already at 50 ns)
+[2026-07-26 23:43:39] SKIP methyl_epa_50ns_r3 (already at 50 ns)
+[2026-07-26 23:43:41] START/RESUME epa_deprot_50ns_r3 (seed 2006)  (GPU 44 C, 57.7 GB free)
+[2026-07-27 01:13:54] PAUSE epa_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-27 01:14:27] COOLED to 56 C after 32 s -> resuming
+[2026-07-27 01:14:27] START/RESUME epa_deprot_50ns_r3 (seed 2006)  (GPU 56 C, 57.9 GB free)
+[2026-07-27 02:44:30] PAUSE epa_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-27 02:45:35] COOLED to 56 C after 64 s -> resuming
+[2026-07-27 02:45:35] START/RESUME epa_deprot_50ns_r3 (seed 2006)  (GPU 56 C, 57.8 GB free)
+[2026-07-27 03:17:20] COMPLETE epa_deprot_50ns_r3
+[2026-07-27 03:17:20] === DONE epa_deprot_50ns_r3 ===
+[2026-07-27 03:17:20] START/RESUME gla_ester_50ns_r3 (seed 2007)  (GPU 60 C, 57.8 GB free)
+[2026-07-27 04:47:23] PAUSE gla_ester_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-27 04:48:28] COOLED to 55 C after 64 s -> resuming
+[2026-07-27 04:48:28] START/RESUME gla_ester_50ns_r3 (seed 2007)  (GPU 55 C, 57.9 GB free)
+[2026-07-27 06:18:32] PAUSE gla_ester_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-27 06:19:21] COOLED to 56 C after 49 s -> resuming
+[2026-07-27 06:19:22] START/RESUME gla_ester_50ns_r3 (seed 2007)  (GPU 56 C, 57.8 GB free)
+[2026-07-27 07:49:22] PAUSE gla_ester_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-27 07:50:27] COOLED to 55 C after 64 s -> resuming
+[2026-07-27 07:50:27] START/RESUME gla_ester_50ns_r3 (seed 2007)  (GPU 55 C, 57.9 GB free)
+[2026-07-27 09:20:29] PAUSE gla_ester_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-27 09:21:17] COOLED to 56 C after 48 s -> resuming
+[2026-07-27 09:21:17] START/RESUME gla_ester_50ns_r3 (seed 2007)  (GPU 56 C, 57.9 GB free)
+[2026-07-27 10:51:21] PAUSE gla_ester_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-27 10:52:25] COOLED to 56 C after 64 s -> resuming
+[2026-07-27 10:52:25] START/RESUME gla_ester_50ns_r3 (seed 2007)  (GPU 56 C, 57.9 GB free)
+[2026-07-27 12:22:26] PAUSE gla_ester_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-27 12:23:30] COOLED to 55 C after 63 s -> resuming
+[2026-07-27 12:23:30] START/RESUME gla_ester_50ns_r3 (seed 2007)  (GPU 55 C, 57.8 GB free)
+[2026-07-27 13:53:38] PAUSE gla_ester_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-27 13:53:54] COOLED to 56 C after 16 s -> resuming
+[2026-07-27 13:53:55] START/RESUME gla_ester_50ns_r3 (seed 2007)  (GPU 56 C, 59.1 GB free)
+[2026-07-27 15:20:42] COMPLETE gla_ester_50ns_r3
+[2026-07-27 15:20:42] === DONE gla_ester_50ns_r3 ===
+[2026-07-27 15:20:42] START/RESUME gla_deprot_50ns_r3 (seed 2008)  (GPU 59 C, 59.0 GB free)
+[2026-07-27 16:50:45] PAUSE gla_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-27 16:51:18] COOLED to 56 C after 32 s -> resuming
+[2026-07-27 16:51:18] START/RESUME gla_deprot_50ns_r3 (seed 2008)  (GPU 56 C, 59.0 GB free)
+[2026-07-27 18:21:24] PAUSE gla_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-27 18:21:57] COOLED to 55 C after 32 s -> resuming
+[2026-07-27 18:21:57] START/RESUME gla_deprot_50ns_r3 (seed 2008)  (GPU 55 C, 58.9 GB free)
+[2026-07-27 19:52:01] PAUSE gla_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-27 19:52:35] COOLED to 54 C after 33 s -> resuming
+[2026-07-27 19:52:35] START/RESUME gla_deprot_50ns_r3 (seed 2008)  (GPU 54 C, 58.7 GB free)
+[2026-07-27 21:22:48] PAUSE gla_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-27 21:23:21] COOLED to 55 C after 33 s -> resuming
+[2026-07-27 21:23:21] START/RESUME gla_deprot_50ns_r3 (seed 2008)  (GPU 55 C, 58.6 GB free)
+[2026-07-27 22:53:33] PAUSE gla_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-27 22:54:06] COOLED to 56 C after 33 s -> resuming
+[2026-07-27 22:54:06] START/RESUME gla_deprot_50ns_r3 (seed 2008)  (GPU 56 C, 59.2 GB free)
+[2026-07-28 00:24:16] PAUSE gla_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-28 00:24:49] COOLED to 56 C after 33 s -> resuming
+[2026-07-28 00:24:49] START/RESUME gla_deprot_50ns_r3 (seed 2008)  (GPU 56 C, 59.0 GB free)
+[2026-07-28 01:55:00] PAUSE gla_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-28 01:55:33] COOLED to 56 C after 33 s -> resuming
+[2026-07-28 01:55:33] START/RESUME gla_deprot_50ns_r3 (seed 2008)  (GPU 56 C, 59.0 GB free)
+[2026-07-28 03:16:08] COMPLETE gla_deprot_50ns_r3
+[2026-07-28 03:16:08] === DONE gla_deprot_50ns_r3 ===
+[2026-07-28 03:16:08] START/RESUME methyl_palmitate_50ns_r3 (seed 2009)  (GPU 66 C, 58.3 GB free)
+[2026-07-28 04:46:19] PAUSE methyl_palmitate_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-28 04:47:09] COOLED to 55 C after 49 s -> resuming
+[2026-07-28 04:47:09] START/RESUME methyl_palmitate_50ns_r3 (seed 2009)  (GPU 55 C, 58.1 GB free)
+[2026-07-28 06:17:20] PAUSE methyl_palmitate_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-28 06:18:10] COOLED to 55 C after 49 s -> resuming
+[2026-07-28 06:18:10] START/RESUME methyl_palmitate_50ns_r3 (seed 2009)  (GPU 55 C, 58.1 GB free)
+[2026-07-28 07:48:11] PAUSE methyl_palmitate_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-28 07:49:00] COOLED to 55 C after 48 s -> resuming
+[2026-07-28 07:49:00] START/RESUME methyl_palmitate_50ns_r3 (seed 2009)  (GPU 55 C, 58.1 GB free)
+[2026-07-28 09:19:07] PAUSE methyl_palmitate_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-28 09:19:57] COOLED to 56 C after 48 s -> resuming
+[2026-07-28 09:19:57] START/RESUME methyl_palmitate_50ns_r3 (seed 2009)  (GPU 56 C, 58.1 GB free)
+[2026-07-28 10:50:06] PAUSE methyl_palmitate_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-28 10:51:11] COOLED to 56 C after 64 s -> resuming
+[2026-07-28 10:51:11] START/RESUME methyl_palmitate_50ns_r3 (seed 2009)  (GPU 56 C, 58.0 GB free)
+[2026-07-28 12:21:11] PAUSE methyl_palmitate_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-28 12:21:45] COOLED to 56 C after 33 s -> resuming
+[2026-07-28 12:21:45] START/RESUME methyl_palmitate_50ns_r3 (seed 2009)  (GPU 56 C, 57.8 GB free)
+[2026-07-28 13:52:00] PAUSE methyl_palmitate_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-28 13:52:49] COOLED to 55 C after 49 s -> resuming
+[2026-07-28 13:52:49] START/RESUME methyl_palmitate_50ns_r3 (seed 2009)  (GPU 55 C, 57.7 GB free)
+[2026-07-28 15:16:32] COMPLETE methyl_palmitate_50ns_r3
+[2026-07-28 15:16:32] === DONE methyl_palmitate_50ns_r3 ===
+[2026-07-28 15:16:32] START/RESUME palmitic_deprot_50ns_r3 (seed 2010)  (GPU 63 C, 57.5 GB free)
+[2026-07-28 16:46:41] PAUSE palmitic_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-28 16:47:15] COOLED to 56 C after 33 s -> resuming
+[2026-07-28 16:47:15] START/RESUME palmitic_deprot_50ns_r3 (seed 2010)  (GPU 56 C, 57.3 GB free)
+[2026-07-28 18:17:21] PAUSE palmitic_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-28 18:17:54] COOLED to 56 C after 33 s -> resuming
+[2026-07-28 18:17:54] START/RESUME palmitic_deprot_50ns_r3 (seed 2010)  (GPU 56 C, 58.5 GB free)
+[2026-07-28 19:47:59] PAUSE palmitic_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-28 19:48:31] COOLED to 56 C after 31 s -> resuming
+[2026-07-28 19:48:31] START/RESUME palmitic_deprot_50ns_r3 (seed 2010)  (GPU 56 C, 58.4 GB free)
+[2026-07-28 21:18:36] PAUSE palmitic_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-28 21:19:10] COOLED to 54 C after 33 s -> resuming
+[2026-07-28 21:19:10] START/RESUME palmitic_deprot_50ns_r3 (seed 2010)  (GPU 54 C, 58.5 GB free)
+[2026-07-28 22:49:19] PAUSE palmitic_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-28 22:49:52] COOLED to 52 C after 33 s -> resuming
+[2026-07-28 22:49:52] START/RESUME palmitic_deprot_50ns_r3 (seed 2010)  (GPU 52 C, 57.3 GB free)
+[2026-07-29 00:20:00] PAUSE palmitic_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-29 00:20:17] COOLED to 56 C after 16 s -> resuming
+[2026-07-29 00:20:17] START/RESUME palmitic_deprot_50ns_r3 (seed 2010)  (GPU 56 C, 57.1 GB free)
+[2026-07-29 01:50:23] PAUSE palmitic_deprot_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-29 01:50:40] COOLED to 52 C after 16 s -> resuming
+[2026-07-29 01:50:40] START/RESUME palmitic_deprot_50ns_r3 (seed 2010)  (GPU 52 C, 56.9 GB free)
+[2026-07-29 03:06:34] COMPLETE palmitic_deprot_50ns_r3
+[2026-07-29 03:06:34] === DONE palmitic_deprot_50ns_r3 ===
+[2026-07-29 03:06:34] START/RESUME pam_50ns_r3 (seed 2011)  (GPU 56 C, 56.9 GB free)
+[2026-07-29 04:36:42] PAUSE pam_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-29 04:36:57] COOLED to 54 C after 15 s -> resuming
+[2026-07-29 04:36:57] START/RESUME pam_50ns_r3 (seed 2011)  (GPU 54 C, 56.9 GB free)
+[2026-07-29 06:07:04] PAUSE pam_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-29 06:07:21] COOLED to 53 C after 16 s -> resuming
+[2026-07-29 06:07:21] START/RESUME pam_50ns_r3 (seed 2011)  (GPU 53 C, 56.9 GB free)
+[2026-07-29 07:37:29] PAUSE pam_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-29 07:37:46] COOLED to 55 C after 16 s -> resuming
+[2026-07-29 07:37:46] START/RESUME pam_50ns_r3 (seed 2011)  (GPU 55 C, 56.9 GB free)
+[2026-07-29 09:07:52] PAUSE pam_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-29 09:08:09] COOLED to 56 C after 16 s -> resuming
+[2026-07-29 09:08:09] START/RESUME pam_50ns_r3 (seed 2011)  (GPU 56 C, 56.8 GB free)
+[2026-07-29 10:38:17] PAUSE pam_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-29 10:38:34] COOLED to 56 C after 16 s -> resuming
+[2026-07-29 10:38:34] START/RESUME pam_50ns_r3 (seed 2011)  (GPU 56 C, 56.8 GB free)
+[2026-07-29 12:08:43] PAUSE pam_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-29 12:08:59] COOLED to 55 C after 16 s -> resuming
+[2026-07-29 12:08:59] START/RESUME pam_50ns_r3 (seed 2011)  (GPU 55 C, 56.1 GB free)
+[2026-07-29 13:39:11] PAUSE pam_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-29 13:39:45] COOLED to 54 C after 33 s -> resuming
+[2026-07-29 13:39:45] START/RESUME pam_50ns_r3 (seed 2011)  (GPU 54 C, 56.1 GB free)
+[2026-07-29 14:49:23] COMPLETE pam_50ns_r3
+[2026-07-29 14:49:23] === DONE pam_50ns_r3 ===
+[2026-07-29 14:49:23] START/RESUME glucose_decoy_50ns_r3 (seed 2012)  (GPU 62 C, 56.2 GB free)
+[2026-07-29 16:19:31] PAUSE glucose_decoy_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-29 16:20:04] COOLED to 54 C after 32 s -> resuming
+[2026-07-29 16:20:04] START/RESUME glucose_decoy_50ns_r3 (seed 2012)  (GPU 54 C, 56.0 GB free)
+[2026-07-29 17:50:08] PAUSE glucose_decoy_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-29 17:50:41] COOLED to 55 C after 33 s -> resuming
+[2026-07-29 17:50:41] START/RESUME glucose_decoy_50ns_r3 (seed 2012)  (GPU 55 C, 56.0 GB free)
+[2026-07-29 19:20:44] PAUSE glucose_decoy_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-29 19:21:17] COOLED to 55 C after 33 s -> resuming
+[2026-07-29 19:21:17] START/RESUME glucose_decoy_50ns_r3 (seed 2012)  (GPU 55 C, 57.2 GB free)
+[2026-07-29 20:51:17] PAUSE glucose_decoy_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-29 20:51:51] COOLED to 54 C after 33 s -> resuming
+[2026-07-29 20:51:51] START/RESUME glucose_decoy_50ns_r3 (seed 2012)  (GPU 54 C, 58.0 GB free)
+[2026-07-29 22:21:52] PAUSE glucose_decoy_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-29 22:22:27] COOLED to 56 C after 33 s -> resuming
+[2026-07-29 22:22:27] START/RESUME glucose_decoy_50ns_r3 (seed 2012)  (GPU 56 C, 51.7 GB free)
+[2026-07-29 22:56:13] PAUSE glucose_decoy_50ns_r3 : GPU 78 C >= 78
+[2026-07-29 22:57:36] COOLED to 56 C after 82 s -> resuming
+[2026-07-29 22:57:36] START/RESUME glucose_decoy_50ns_r3 (seed 2012)  (GPU 56 C, 51.7 GB free)
+[2026-07-30 00:27:39] PAUSE glucose_decoy_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-30 00:28:12] COOLED to 56 C after 32 s -> resuming
+[2026-07-30 00:28:12] START/RESUME glucose_decoy_50ns_r3 (seed 2012)  (GPU 56 C, 48.4 GB free)
+[2026-07-30 01:58:20] PAUSE glucose_decoy_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-30 01:58:53] COOLED to 55 C after 33 s -> resuming
+[2026-07-30 01:58:53] START/RESUME glucose_decoy_50ns_r3 (seed 2012)  (GPU 55 C, 48.4 GB free)
+[2026-07-30 02:48:42] COMPLETE glucose_decoy_50ns_r3
+[2026-07-30 02:48:42] === DONE glucose_decoy_50ns_r3 ===
+[2026-07-30 02:48:42] START/RESUME pentadecanal_50ns_r3 (seed 2013)  (GPU 64 C, 48.1 GB free)
+[2026-07-30 04:18:57] PAUSE pentadecanal_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-30 04:19:30] COOLED to 55 C after 32 s -> resuming
+[2026-07-30 04:19:30] START/RESUME pentadecanal_50ns_r3 (seed 2013)  (GPU 55 C, 48.2 GB free)
+[2026-07-30 05:49:42] PAUSE pentadecanal_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-30 05:50:16] COOLED to 55 C after 33 s -> resuming
+[2026-07-30 05:50:16] START/RESUME pentadecanal_50ns_r3 (seed 2013)  (GPU 55 C, 48.2 GB free)
+[2026-07-30 07:20:29] PAUSE pentadecanal_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-30 07:21:17] COOLED to 55 C after 48 s -> resuming
+[2026-07-30 07:21:17] START/RESUME pentadecanal_50ns_r3 (seed 2013)  (GPU 55 C, 48.1 GB free)
+[2026-07-30 08:51:25] PAUSE pentadecanal_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-30 08:52:15] COOLED to 55 C after 49 s -> resuming
+[2026-07-30 08:52:15] START/RESUME pentadecanal_50ns_r3 (seed 2013)  (GPU 55 C, 48.1 GB free)
+[2026-07-30 10:22:25] PAUSE pentadecanal_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-30 10:23:14] COOLED to 55 C after 48 s -> resuming
+[2026-07-30 10:23:14] START/RESUME pentadecanal_50ns_r3 (seed 2013)  (GPU 55 C, 48.1 GB free)
+[2026-07-30 11:53:27] PAUSE pentadecanal_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-30 11:54:16] COOLED to 56 C after 48 s -> resuming
+[2026-07-30 11:54:16] START/RESUME pentadecanal_50ns_r3 (seed 2013)  (GPU 56 C, 48.5 GB free)
+[2026-07-30 13:24:17] PAUSE pentadecanal_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-30 13:24:51] COOLED to 56 C after 33 s -> resuming
+[2026-07-30 13:24:51] START/RESUME pentadecanal_50ns_r3 (seed 2013)  (GPU 56 C, 48.1 GB free)
+[2026-07-30 14:54:52] PAUSE pentadecanal_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-30 14:55:41] COOLED to 56 C after 49 s -> resuming
+[2026-07-30 14:55:41] START/RESUME pentadecanal_50ns_r3 (seed 2013)  (GPU 56 C, 48.3 GB free)
+[2026-07-30 14:59:47] COMPLETE pentadecanal_50ns_r3
+[2026-07-30 14:59:47] === DONE pentadecanal_50ns_r3 ===
+[2026-07-30 14:59:47] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 64 C, 48.1 GB free)
+[2026-07-30 16:30:00] PAUSE tridecanoic_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-30 16:30:50] COOLED to 56 C after 49 s -> resuming
+[2026-07-30 16:30:50] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 56 C, 51.5 GB free)
+[2026-07-30 18:01:03] PAUSE tridecanoic_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-30 18:01:36] COOLED to 55 C after 32 s -> resuming
+[2026-07-30 18:01:36] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 55 C, 51.1 GB free)
+[2026-07-30 19:31:49] PAUSE tridecanoic_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-30 19:32:23] COOLED to 54 C after 33 s -> resuming
+[2026-07-30 19:32:23] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 54 C, 51.0 GB free)
+[2026-07-30 21:02:35] PAUSE tridecanoic_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-30 21:03:08] COOLED to 55 C after 33 s -> resuming
+[2026-07-30 21:03:08] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 55 C, 50.9 GB free)
+[2026-07-30 22:33:22] PAUSE tridecanoic_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-30 22:33:55] COOLED to 55 C after 32 s -> resuming
+[2026-07-30 22:33:55] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 55 C, 50.6 GB free)
+[2026-07-31 00:04:08] PAUSE tridecanoic_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-31 00:04:41] COOLED to 53 C after 33 s -> resuming
+[2026-07-31 00:04:41] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 53 C, 50.7 GB free)
+[2026-07-31 14:46:07] REPLICATE supervisor started: 28 runs (r2+r3 x 14 systems). Policy: pause@78C or every 90min, resume@56C.
+[2026-07-31 14:46:07] SKIP epa_50ns_r2 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP gla_50ns_r2 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP palmitic_50ns_r2 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP apo_toxt_50ns_r2 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP epa_50ns_r3 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP gla_50ns_r3 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP palmitic_50ns_r3 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP apo_toxt_50ns_r3 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP methyl_epa_50ns_r2 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP epa_deprot_50ns_r2 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP gla_ester_50ns_r2 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP gla_deprot_50ns_r2 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP methyl_palmitate_50ns_r2 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP palmitic_deprot_50ns_r2 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP pam_50ns_r2 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP glucose_decoy_50ns_r2 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP pentadecanal_50ns_r2 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP tridecanoic_50ns_r2 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP methyl_epa_50ns_r3 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP epa_deprot_50ns_r3 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP gla_ester_50ns_r3 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP gla_deprot_50ns_r3 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP methyl_palmitate_50ns_r3 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP palmitic_deprot_50ns_r3 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP pam_50ns_r3 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP glucose_decoy_50ns_r3 (already at 50 ns)
+[2026-07-31 14:46:07] SKIP pentadecanal_50ns_r3 (already at 50 ns)
+[2026-07-31 14:46:09] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 46 C, 47.8 GB free)
+[2026-07-31 15:07:45] PAUSE tridecanoic_50ns_r3 : GPU 78 C >= 78
+[2026-07-31 15:09:24] COOLED to 56 C after 99 s -> resuming
+[2026-07-31 15:09:24] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 56 C, 47.6 GB free)
+[2026-07-31 15:20:20] PAUSE tridecanoic_50ns_r3 : GPU 78 C >= 78
+[2026-07-31 15:22:15] COOLED to 56 C after 114 s -> resuming
+[2026-07-31 15:22:15] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 56 C, 47.6 GB free)
+[2026-07-31 15:32:55] PAUSE tridecanoic_50ns_r3 : GPU 78 C >= 78
+[2026-07-31 15:35:06] COOLED to 55 C after 130 s -> resuming
+[2026-07-31 15:35:06] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 55 C, 47.6 GB free)
+[2026-07-31 15:41:28] PAUSE tridecanoic_50ns_r3 : GPU 78 C >= 78
+[2026-07-31 15:43:24] COOLED to 56 C after 115 s -> resuming
+[2026-07-31 15:43:24] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 56 C, 47.5 GB free)
+[2026-07-31 15:48:30] PAUSE tridecanoic_50ns_r3 : GPU 78 C >= 78
+[2026-07-31 15:50:42] COOLED to 55 C after 132 s -> resuming
+[2026-07-31 15:50:42] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 55 C, 47.5 GB free)
+[2026-07-31 16:00:21] PAUSE tridecanoic_50ns_r3 : GPU 78 C >= 78
+[2026-07-31 16:02:17] COOLED to 56 C after 115 s -> resuming
+[2026-07-31 16:02:17] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 56 C, 47.5 GB free)
+[2026-07-31 16:11:56] PAUSE tridecanoic_50ns_r3 : GPU 78 C >= 78
+[2026-07-31 16:13:35] COOLED to 56 C after 98 s -> resuming
+[2026-07-31 16:13:35] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 56 C, 47.5 GB free)
+[2026-07-31 16:22:45] PAUSE tridecanoic_50ns_r3 : GPU 78 C >= 78
+[2026-07-31 16:24:55] COOLED to 56 C after 130 s -> resuming
+[2026-07-31 16:24:55] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 56 C, 47.5 GB free)
+[2026-07-31 16:35:36] PAUSE tridecanoic_50ns_r3 : GPU 78 C >= 78
+[2026-07-31 16:37:16] COOLED to 55 C after 99 s -> resuming
+[2026-07-31 16:37:16] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 55 C, 47.5 GB free)
+[2026-07-31 16:47:11] PAUSE tridecanoic_50ns_r3 : GPU 78 C >= 78
+[2026-07-31 16:48:51] COOLED to 56 C after 99 s -> resuming
+[2026-07-31 16:48:51] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 56 C, 47.5 GB free)
+[2026-07-31 18:24:14] PAUSE tridecanoic_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-07-31 18:24:35] COOLED to 44 C after 20 s -> resuming
+[2026-07-31 18:24:35] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 44 C, 46.7 GB free)
+[2026-08-01 01:28:03] PAUSE tridecanoic_50ns_r3 : ran 90 min (duty-cycle cooldown)
+[2026-08-01 01:28:20] COOLED to 40 C after 16 s -> resuming
+[2026-08-01 01:28:20] START/RESUME tridecanoic_50ns_r3 (seed 2014)  (GPU 40 C, 47.1 GB free)
+[2026-08-01 02:07:05] COMPLETE tridecanoic_50ns_r3
+[2026-08-01 02:07:05] === DONE tridecanoic_50ns_r3 ===
+[2026-08-01 02:07:05] ALL 28 REPLICATES COMPLETE.

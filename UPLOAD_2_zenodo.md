@@ -2,16 +2,40 @@
 
 **Goes here:** the large molecular-dynamics trajectories and system files that are
 too big for GitHub.
-**Size:** ~1.2 GB.
+**Size:** **~4.4 GB, final** — the full n=3 replicate campaign is complete.
 **You get:** a permanent **DOI** to cite in the paper.
+
+**Ready to upload now.** The replicate campaign finished 2026-08-01 (all 28
+replicates, 42/42 trajectories) — this is the complete, final dataset. No need
+to wait any further; proceed with the steps below whenever convenient.
+
+---
+
+## Progress (updated as the campaign runs — see `CAMPAIGN_LOG.md` for details)
+_Last updated: 2026-08-01 — **CAMPAIGN COMPLETE**, 28/28 replicates, 42/42 total trajectories._
+
+All 14 systems (EPA, methyl-EPA, EPA-carboxylate, GLA, GLA-ester,
+GLA-carboxylate, palmitic, methyl-palmitate, palmitic-carboxylate,
+palmitoleate/PAM, glucose decoy, pentadecanal, tridecanoic, apo-ToxT) now have
+independent r1+r2+r3 replicates (distinct seeds) at 50 ns each.
+
+Current on-disk data size (all `md/*/` run directories, excluding the empty
+`epa_smoketest` dev/test run): **~4.4 GB**. `glucose_core_50ns` (a supplementary
+decoy-seeded-in-core control used in `make_specificity_fig.py`) is real data and
+included.
 
 ---
 
 ## What goes to Zenodo (for reference)
-- `md/*/traj.dcd` — the trajectories (the bulk, ~1.1 GB)
-- `md/*/system.xml` — the serialized OpenMM systems (~133 MB)
+- `md/*/traj.dcd` — the trajectories (the bulk)
+- `md/*/system.xml` — the serialized OpenMM systems
 - `md/*/system.pdb` and `md/*/system_pub.pdb` — topologies (both numberings)
 - `md/*/production_log.csv` — thermodynamic logs
+
+The wildcard `md/*/...` glob in the bundle command below automatically covers
+every replicate directory (`_r2`, `_r3`, etc.) as they're produced, and
+naturally skips `epa_smoketest` since its files use different names
+(`final_state.xml` / `md_log.csv`, not `system.xml` / `production_log.csv`).
 
 Everything else already went to GitHub (Upload #1).
 

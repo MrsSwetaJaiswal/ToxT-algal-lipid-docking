@@ -1,0 +1,45 @@
+
+=== launch methyl_palmitate_50ns_r3 seed=2009 at 2026-07-28 03:16:08 ===
+Building system (one-time) ...
+C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openff\interchange\components\interchange.py:1119: FutureWarning: `torch.distributed.reduce_op` is deprecated, please use `torch.distributed.ReduceOp` instead
+  if isinstance(obj, functools._lru_cache_wrapper) and obj.__module__.startswith("openff.interchange"):
+1 warning generated.
+Equilibration done.
+Starting production from equilibrated state.
+Running 12500000 steps (50.0 ns) ...
+
+=== launch methyl_palmitate_50ns_r3 seed=2009 at 2026-07-28 04:47:09 ===
+Loaded existing system.
+Resuming from checkpoint at 6.2 ns (1562500/12500000 steps).
+Running 10937500 steps (43.8 ns) ...
+
+=== launch methyl_palmitate_50ns_r3 seed=2009 at 2026-07-28 06:18:10 ===
+Loaded existing system.
+Resuming from checkpoint at 12.5 ns (3125000/12500000 steps).
+Running 9375000 steps (37.5 ns) ...
+
+=== launch methyl_palmitate_50ns_r3 seed=2009 at 2026-07-28 07:49:00 ===
+Loaded existing system.
+Resuming from checkpoint at 18.8 ns (4687500/12500000 steps).
+Running 7812500 steps (31.2 ns) ...
+
+=== launch methyl_palmitate_50ns_r3 seed=2009 at 2026-07-28 09:19:57 ===
+Loaded existing system.
+Resuming from checkpoint at 25.0 ns (6250000/12500000 steps).
+Running 6250000 steps (25.0 ns) ...
+
+=== launch methyl_palmitate_50ns_r3 seed=2009 at 2026-07-28 10:51:11 ===
+Loaded existing system.
+Resuming from checkpoint at 31.2 ns (7812500/12500000 steps).
+Running 4687500 steps (18.8 ns) ...
+
+=== launch methyl_palmitate_50ns_r3 seed=2009 at 2026-07-28 12:21:45 ===
+Loaded existing system.
+Resuming from checkpoint at 37.8 ns (9437500/12500000 steps).
+Running 3062500 steps (12.2 ns) ...
+
+=== launch methyl_palmitate_50ns_r3 seed=2009 at 2026-07-28 13:52:49 ===
+Loaded existing system.
+Resuming from checkpoint at 44.0 ns (11000000/12500000 steps).
+Running 1500000 steps (6.0 ns) ...
+PRODUCTION COMPLETE: 50.0 ns. Trajectory: md\methyl_palmitate_50ns_r3\traj.dcd

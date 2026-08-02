@@ -1,0 +1,153 @@
+=== methyl_epa_50ns (rep 1) ===
+  rep1 mean = -24.3 kcal/mol
+=== methyl_epa_50ns_r2 (rep 2) ===
+  rep2 mean = -40.2 kcal/mol
+=== methyl_epa_50ns_r3 (rep 3) ===
+  FAILED methyl_epa_50ns_r3:  
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openmm\app\pdbfile.py", line 91, in __init__
+    inputfile = open(file)
+                ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'md/methyl_epa_50ns_r3/system_pub.pdb'
+
+  INCOMPLETE for methyl_epa_50ns -- only 2/3 replicates succeeded
+=== epa_deprot_50ns (rep 1) ===
+  rep1 mean = -49.0 kcal/mol
+=== epa_deprot_50ns_r2 (rep 2) ===
+  rep2 mean = -45.0 kcal/mol
+=== epa_deprot_50ns_r3 (rep 3) ===
+  FAILED epa_deprot_50ns_r3:  
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openmm\app\pdbfile.py", line 91, in __init__
+    inputfile = open(file)
+                ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'md/epa_deprot_50ns_r3/system_pub.pdb'
+
+  INCOMPLETE for epa_deprot_50ns -- only 2/3 replicates succeeded
+=== gla_ester_50ns (rep 1) ===
+  rep1 mean = -31.5 kcal/mol
+=== gla_ester_50ns_r2 (rep 2) ===
+  rep2 mean = -37.2 kcal/mol
+=== gla_ester_50ns_r3 (rep 3) ===
+  FAILED gla_ester_50ns_r3:  )
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openmm\app\pdbfile.py", line 91, in __init__
+    inputfile = open(file)
+                ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'md/gla_ester_50ns_r3/system_pub.pdb'
+
+  INCOMPLETE for gla_ester_50ns -- only 2/3 replicates succeeded
+=== gla_deprot_50ns (rep 1) ===
+  rep1 mean = -37.6 kcal/mol
+=== gla_deprot_50ns_r2 (rep 2) ===
+  rep2 mean = -48.4 kcal/mol
+=== gla_deprot_50ns_r3 (rep 3) ===
+  FAILED gla_deprot_50ns_r3:  
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openmm\app\pdbfile.py", line 91, in __init__
+    inputfile = open(file)
+                ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'md/gla_deprot_50ns_r3/system_pub.pdb'
+
+  INCOMPLETE for gla_deprot_50ns -- only 2/3 replicates succeeded
+=== methyl_palmitate_50ns (rep 1) ===
+  rep1 mean = -36.6 kcal/mol
+=== methyl_palmitate_50ns_r2 (rep 2) ===
+  rep2 mean = -36.3 kcal/mol
+=== methyl_palmitate_50ns_r3 (rep 3) ===
+  FAILED methyl_palmitate_50ns_r3:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openmm\app\pdbfile.py", line 91, in __init__
+    inputfile = open(file)
+                ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'md/methyl_palmitate_50ns_r3/system_pub.pdb'
+
+  INCOMPLETE for methyl_palmitate_50ns -- only 2/3 replicates succeeded
+=== palmitic_deprot_50ns (rep 1) ===
+  rep1 mean = -41.3 kcal/mol
+=== palmitic_deprot_50ns_r2 (rep 2) ===
+  FAILED palmitic_deprot_50ns_r2:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openmm\app\pdbfile.py", line 91, in __init__
+    inputfile = open(file)
+                ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'md/palmitic_deprot_50ns_r2/system_pub.pdb'
+
+=== palmitic_deprot_50ns_r3 (rep 3) ===
+  FAILED palmitic_deprot_50ns_r3:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openmm\app\pdbfile.py", line 91, in __init__
+    inputfile = open(file)
+                ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'md/palmitic_deprot_50ns_r3/system_pub.pdb'
+
+  INCOMPLETE for palmitic_deprot_50ns -- only 1/3 replicates succeeded
+=== pam_50ns (rep 1) ===
+  rep1 mean = -33.1 kcal/mol
+=== pam_50ns_r2 (rep 2) ===
+  FAILED pam_50ns_r2:  b.pdb")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openmm\app\pdbfile.py", line 91, in __init__
+    inputfile = open(file)
+                ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'md/pam_50ns_r2/system_pub.pdb'
+
+=== pam_50ns_r3 (rep 3) ===
+  FAILED pam_50ns_r3:  b.pdb")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openmm\app\pdbfile.py", line 91, in __init__
+    inputfile = open(file)
+                ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'md/pam_50ns_r3/system_pub.pdb'
+
+  INCOMPLETE for pam_50ns -- only 1/3 replicates succeeded
+=== glucose_decoy_50ns (rep 1) ===
+  rep1 mean = -23.5 kcal/mol
+=== glucose_decoy_50ns_r2 (rep 2) ===
+  FAILED glucose_decoy_50ns_r2:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openmm\app\pdbfile.py", line 91, in __init__
+    inputfile = open(file)
+                ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'md/glucose_decoy_50ns_r2/system_pub.pdb'
+
+=== glucose_decoy_50ns_r3 (rep 3) ===
+  FAILED glucose_decoy_50ns_r3:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openmm\app\pdbfile.py", line 91, in __init__
+    inputfile = open(file)
+                ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'md/glucose_decoy_50ns_r3/system_pub.pdb'
+
+  INCOMPLETE for glucose_decoy_50ns -- only 1/3 replicates succeeded
+=== pentadecanal_50ns (rep 1) ===
+  rep1 mean = -31.4 kcal/mol
+=== pentadecanal_50ns_r2 (rep 2) ===
+  FAILED pentadecanal_50ns_r2:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openmm\app\pdbfile.py", line 91, in __init__
+    inputfile = open(file)
+                ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'md/pentadecanal_50ns_r2/system_pub.pdb'
+
+=== pentadecanal_50ns_r3 (rep 3) ===
+  FAILED pentadecanal_50ns_r3:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openmm\app\pdbfile.py", line 91, in __init__
+    inputfile = open(file)
+                ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'md/pentadecanal_50ns_r3/system_pub.pdb'
+
+  INCOMPLETE for pentadecanal_50ns -- only 1/3 replicates succeeded
+=== tridecanoic_50ns (rep 1) ===
+  rep1 mean = -19.8 kcal/mol
+=== tridecanoic_50ns_r2 (rep 2) ===
+  FAILED tridecanoic_50ns_r2:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openmm\app\pdbfile.py", line 91, in __init__
+    inputfile = open(file)
+                ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'md/tridecanoic_50ns_r2/system_pub.pdb'
+
+=== tridecanoic_50ns_r3 (rep 3) ===
+  FAILED tridecanoic_50ns_r3:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\miniforge3\envs\md\Lib\site-packages\openmm\app\pdbfile.py", line 91, in __init__
+    inputfile = open(file)
+                ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'md/tridecanoic_50ns_r3/system_pub.pdb'
+
+  INCOMPLETE for tridecanoic_50ns -- only 1/3 replicates succeeded
+
+Wrote results_mmgbsa/mmgbsa_n3_remaining.csv (0 systems)
