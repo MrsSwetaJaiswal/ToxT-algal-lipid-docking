@@ -347,3 +347,14 @@ Separately: 4 of the 5 bracketed reference placeholders in
 — web search was declined each time it was attempted this session, so these
 remain open. Item 16 (OpenFF-NAGL) was resolved from memory as a
 software-only citation (no journal paper found), not verified by search.
+
+**Code-archive DOI live too — both Zenodo DOIs now complete.** Created GitHub
+release `v1.0.0` (tag on `8a522f9`) via `gh release create`; user then linked
+the repo to Zenodo and confirmed it picked up the release. Verified via
+WebFetch: DOI `10.5281/zenodo.21778158`, resource type Software, references
+`v1.0.0` and the correct repo, CC-BY-4.0, published 2026-08-03. Filled into
+`DATA_AVAILABILITY.md`'s paste-ready statement (no placeholders left in it now
+— both the code DOI and the MD-data DOI `10.5281/zenodo.21767402` are real)
+and into `MANUSCRIPT_DRAFT.md` Section 6 + `build_docx.js` (docx
+regenerated). All of Upload #1 (GitHub) and Upload #2 (Zenodo data) plus the
+optional code-archive DOI are now done.

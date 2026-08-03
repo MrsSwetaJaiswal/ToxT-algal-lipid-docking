@@ -12,21 +12,20 @@ This file has three parts:
 > **Data and code availability.** All code (docking, molecular-dynamics and
 > analysis scripts), input structures, configuration files and small outputs are
 > available at https://github.com/MrsSwetaJaiswal/ToxT-algal-lipid-docking
-> (archive DOI: **still pending** — see note below). Full molecular-dynamics
-> trajectories, serialized systems and simulation topologies (~3.7 GB
-> compressed) are archived at Zenodo (DOI:
+> (v1.0.0, archived at Zenodo, DOI:
+> [10.5281/zenodo.21778158](https://doi.org/10.5281/zenodo.21778158)). Full
+> molecular-dynamics trajectories, serialized systems and simulation topologies
+> (~3.7 GB compressed) are archived separately at Zenodo (DOI:
 > [10.5281/zenodo.21767402](https://doi.org/10.5281/zenodo.21767402)). Docking
 > is deterministic (random seed = 42). Residue numbering follows PDB 3GBG;
 > shared topology files were renumbered to the same scheme. The ToxT structure
 > (PDB 3GBG) is available from the RCSB PDB; ligand structures are from PubChem
 > (CIDs listed in the Methods).
 
-*(Status 2026-08-03: GitHub repo is live and pushed; MD trajectory DOI above is
-real and confirmed. The **code-archive DOI is still a placeholder** — that
-requires the optional "link GitHub to Zenodo" step in Section 3 below so a
-GitHub release gets its own citable DOI. Either do that step, or drop the
-"archived at Zenodo" code clause entirely and just cite the GitHub URL directly
-if you don't need a separate code DOI.)*
+*(Status 2026-08-03: both DOIs above are real and confirmed — code archive
+(v1.0.0 release, Software resource type, CC-BY-4.0) and MD trajectory data
+(Dataset resource type). No placeholders remain in this statement; the "link
+GitHub to Zenodo" step in Section 3 below is done.)*
 
 ---
 
