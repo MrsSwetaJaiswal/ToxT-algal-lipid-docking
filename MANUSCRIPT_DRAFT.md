@@ -342,7 +342,7 @@ This study is entirely computational and is intended to provide a mechanistic ra
 
 ## 6. Reproducibility and data availability
 
-All steps are deterministic (fixed seed = 42). Residue numbering follows PDB 3GBG; shared MD topologies were renumbered to match. Code, inputs and small outputs are on GitHub; full trajectories are archived on Zenodo (see `DATA_AVAILABILITY.md`). Key scripts:
+All steps are deterministic (fixed seed = 42). Residue numbering follows PDB 3GBG; shared MD topologies were renumbered to match. Code, inputs and small outputs are on GitHub (https://github.com/MrsSwetaJaiswal/ToxT-algal-lipid-docking); full molecular-dynamics trajectories, serialized systems and simulation topologies are archived on Zenodo, DOI: [10.5281/zenodo.21767402](https://doi.org/10.5281/zenodo.21767402) (see `DATA_AVAILABILITY.md`). Key scripts:
 - **Receptor/box:** Meeko `mk_prepare_receptor` (box enveloping the crystal PAM, 5 Å padding).
 - **Ligand generation:** `generate_missing_3d.py` (RDKit ETKDG/MMFF from SMILES).
 - **Docking:** `dock_by_organism.py`; **validation:** `pam_control.py`; **blind:** `blind_dock.py`.
@@ -357,10 +357,10 @@ All steps are deterministic (fixed seed = 42). Residue numbering follows PDB 3GB
 3. Hung DT, et al. Small-molecule inhibitor of *Vibrio cholerae* virulence and intestinal colonization (virstatin). *Science* 2005;310:670–674.
 4. Woodbrey AK, et al. A modified ToxT inhibitor reduces *Vibrio cholerae* virulence in vivo. *Biochemistry* 2018;57:5609–5615.
 5. Anthouard R, DiRita VJ. Small-molecule inhibitors of toxT expression in *Vibrio cholerae* (toxtazins). *mBio* 2013;4:e00403-13.
-6. [Structure-based fatty-acid-mimetic ToxT inhibitors] *Sci Rep* 2017;7:45011.
-7. [ToxR–toxT promoter DNA complex] PDB 8B4D (2023).
-8. [Herbal in-silico screen against ToxT: luteolin, catechin] 2016.
-9. [Sodium butyrate targeting ToxT] *mSphere* 2024.
+6. Woodbrey AK, Onyango EO, Pellegrini M, Kovacikova G, Taylor RK, Gribble GW, Kull FJ. A new class of inhibitors of the AraC family virulence regulator *Vibrio cholerae* ToxT. *Sci Rep* 2017;7:45011. doi:10.1038/srep45011.
+7. Canals A, Pieretti S, Muriel-Masanes M, El Yaman N, Plecha SC, Thomson JJ, Fàbrega-Ferrer M, Pérez-Luque R, Krukonis ES, Coll M. ToxR activates the *Vibrio cholerae* virulence genes by tethering DNA to the membrane through versatile binding to multiple sites. *Proc Natl Acad Sci USA* 2023;120:e2304378120. PDB 8B4D. doi:10.1073/pnas.2304378120.
+8. Perveen S, Chaudhary HS. In silico screening of antibacterial compounds from herbal sources against *Vibrio cholerae*. *Pharmacogn Mag* 2015;11(Suppl 4):S550–S555. doi:10.4103/0973-1296.172960.
+9. Kundu S, Das S, Maitra P, Halder P, Koley H, Mukhopadhyay AK, Miyoshi S, Dutta S, Chatterjee NS, Bhattacharya S. Sodium butyrate inhibits the expression of virulence factors in *Vibrio cholerae* by targeting ToxT protein. *mSphere* 2025;10(5):e00824-24. doi:10.1128/msphere.00824-24.
 10. Jaiswal S, Vadadoriya N, Nasir A, Dineshkumar R, Khatri N, Raut S, Ray Chaudhuri S, Chatterjee S, Haldar S. Exploring microalgal lipids as anti-virulent agents targeting MDR *Vibrio cholerae* infection: a step toward developing herbal oral rehydration salt (ORS) formulations. *J Nat Prod Discov* 2025;4(2):3244. doi:10.24377/jnpd.article3244. *(our prior experimental study; GC-MS profiles = its Table 2)*
 
 *Computational methods and tools*
@@ -369,10 +369,10 @@ All steps are deterministic (fixed seed = 42). Residue numbering follows PDB 3GB
 13. Quiroga R, Villarreal MA. Vinardo scoring function. *PLoS ONE* 2016;11:e0155183.
 14. Eastman P, et al. OpenMM 8: Molecular dynamics simulation with machine-learning potentials. *J Phys Chem B* 2024;128:109–116.
 15. Boothroyd S, et al. Development and benchmarking of Open Force Field 2.0.0 (Sage). *J Chem Theory Comput* 2023;19:3251–3275.
-16. [OpenFF-NAGL: graph-neural-network partial charges]. 
+16. Open Force Field Initiative. OpenFF NAGL: graph neural network partial charge assignment. https://github.com/openforcefield/openff-nagl *(software; no dedicated peer-reviewed publication identified as of this draft — verify before submission and cite the specific pinned version/release used, per Methods 2.9.)*
 17. Abramson J, et al. Accurate structure prediction of biomolecular interactions with AlphaFold3. *Nature* 2024;630:493–500.
 18. McGibbon RT, et al. MDTraj: A modern open library for the analysis of molecular dynamics trajectories. *Biophys J* 2015;109:1528–1532.
 19. Kim S, et al. PubChem 2023 update. *Nucleic Acids Res* 2023;51:D1373–D1380.
 20. Landrum G, et al. RDKit: Open-source cheminformatics. https://www.rdkit.org.
 
-*(Bracketed entries are placeholders — complete author lists/volumes to be filled from the cited sources during formatting.)*
+*(2026-08-03: all previously-bracketed placeholder references (6–9, 16) have been resolved via web search and filled in with full citations. Two needed a year correction from the original placeholder guess: ref 8 is 2015, not 2016 (Pharmacogn Mag, Suppl 4); ref 9 is 2025, not 2024 (mSphere; received Oct 2024, published May 2025) — cite by actual publication year. Ref 16 (OpenFF-NAGL) is a software-only citation; no peer-reviewed paper was found, so verify this is still accurate before submission.)*

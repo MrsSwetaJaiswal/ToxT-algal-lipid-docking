@@ -11,15 +11,22 @@ This file has three parts:
 
 > **Data and code availability.** All code (docking, molecular-dynamics and
 > analysis scripts), input structures, configuration files and small outputs are
-> available at https://github.com/<user>/<repo> (archived at Zenodo,
-> DOI 10.5281/zenodo.XXXXXXX). Full molecular-dynamics trajectories, serialized
-> systems and simulation topologies (~2 GB) are archived at Zenodo
-> (DOI 10.5281/zenodo.YYYYYYY). Docking is deterministic (random seed = 42).
-> Residue numbering follows PDB 3GBG; shared topology files were renumbered to
-> the same scheme. The ToxT structure (PDB 3GBG) is available from the RCSB PDB;
-> ligand structures are from PubChem (CIDs listed in the Methods).
+> available at https://github.com/MrsSwetaJaiswal/ToxT-algal-lipid-docking
+> (archive DOI: **still pending** — see note below). Full molecular-dynamics
+> trajectories, serialized systems and simulation topologies (~3.7 GB
+> compressed) are archived at Zenodo (DOI:
+> [10.5281/zenodo.21767402](https://doi.org/10.5281/zenodo.21767402)). Docking
+> is deterministic (random seed = 42). Residue numbering follows PDB 3GBG;
+> shared topology files were renumbered to the same scheme. The ToxT structure
+> (PDB 3GBG) is available from the RCSB PDB; ligand structures are from PubChem
+> (CIDs listed in the Methods).
 
-*(Replace `<user>/<repo>` and both DOIs after creating the repo and Zenodo deposits.)*
+*(Status 2026-08-03: GitHub repo is live and pushed; MD trajectory DOI above is
+real and confirmed. The **code-archive DOI is still a placeholder** — that
+requires the optional "link GitHub to Zenodo" step in Section 3 below so a
+GitHub release gets its own citable DOI. Either do that step, or drop the
+"archived at Zenodo" code clause entirely and just cite the GitHub URL directly
+if you don't need a separate code DOI.)*
 
 ---
 
@@ -70,8 +77,15 @@ Zenodo (free, gives a citable DOI, integrates with GitHub).
 Suggested command to build the bundle:
 ```bash
 # from the project folder
-tar -czf ToxT_MD_trajectories.tar.gz md/*/traj.dcd md/*/system*.pdb md/*/system.xml md/*/production_log.csv
+tar -czf ToxT_MD_data.tar.gz --exclude='md/epa_smoketest/*' md/*/traj.dcd md/*/system*.pdb md/*/system.xml md/*/production_log.csv
 ```
+Use the filename `ToxT_MD_data.tar.gz` exactly — that's the name `.gitignore`
+excludes; a different name (e.g. the `ToxT_MD_trajectories.tar.gz` this doc used
+to suggest) would NOT be gitignored and risks `git add .` staging a multi-GB file.
+The `--exclude` is needed because `epa_smoketest` (a throwaway dev/test run) has
+its own `traj.dcd` / `system*.pdb` that would otherwise match. This bundle has
+already been built once (2026-08-02/03, 3.68 GB, 215 files, verified) — see
+`UPLOAD_2_zenodo.md` for current status; only rebuild it if the MD data changes.
 
 **Steps:**
 1. Create a free account at https://zenodo.org.

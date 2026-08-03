@@ -2,17 +2,25 @@
 
 **Goes here:** the large molecular-dynamics trajectories and system files that are
 too big for GitHub.
-**Size:** **~4.4 GB, final** — the full n=3 replicate campaign is complete.
+**Size:** on-disk `md/*/` data ~5.0 GB; the compressed upload bundle was **3.68 GB**
+(`ToxT_MD_data.tar.gz`) — the full n=3 replicate campaign is complete.
 **You get:** a permanent **DOI** to cite in the paper.
 
-**Ready to upload now.** The replicate campaign finished 2026-08-01 (all 28
-replicates, 42/42 trajectories) — this is the complete, final dataset. No need
-to wait any further; proceed with the steps below whenever convenient.
+## DONE — published 2026-08-03
+
+**DOI: [10.5281/zenodo.21767402](https://doi.org/10.5281/zenodo.21767402)**
+
+This DOI is now filled into `DATA_AVAILABILITY.md`'s paste-ready statement and
+directly into `MANUSCRIPT_DRAFT.md` Section 6 / `build_docx.js` (docx
+regenerated). The only related item still outstanding is the separate
+*code*-archive DOI (linking the GitHub repo itself to Zenodo, "Optional" section
+below) — not required, but nice to have if you want a citable DOI for the code
+independent of the data.
 
 ---
 
 ## Progress (updated as the campaign runs — see `CAMPAIGN_LOG.md` for details)
-_Last updated: 2026-08-01 — **CAMPAIGN COMPLETE**, 28/28 replicates, 42/42 total trajectories._
+_Last updated: 2026-08-03 — **UPLOADED, DOI live**: 10.5281/zenodo.21767402._
 
 All 14 systems (EPA, methyl-EPA, EPA-carboxylate, GLA, GLA-ester,
 GLA-carboxylate, palmitic, methyl-palmitate, palmitic-carboxylate,
@@ -20,9 +28,12 @@ palmitoleate/PAM, glucose decoy, pentadecanal, tridecanoic, apo-ToxT) now have
 independent r1+r2+r3 replicates (distinct seeds) at 50 ns each.
 
 Current on-disk data size (all `md/*/` run directories, excluding the empty
-`epa_smoketest` dev/test run): **~4.4 GB**. `glucose_core_50ns` (a supplementary
+`epa_smoketest` dev/test run): **~5.0 GB**. `glucose_core_50ns` (a supplementary
 decoy-seeded-in-core control used in `make_specificity_fig.py`) is real data and
-included.
+included. The compressed, ready-to-upload bundle (`ToxT_MD_data.tar.gz`) is
+**3.68 GB**, 215 files — rebuilt from scratch on 2026-08-02/03 against the
+now-complete campaign (the previous tarball, from Jul 14, predated the triplicate
+replicates and was only ~1.2 GB).
 
 ---
 
@@ -33,9 +44,14 @@ included.
 - `md/*/production_log.csv` — thermodynamic logs
 
 The wildcard `md/*/...` glob in the bundle command below automatically covers
-every replicate directory (`_r2`, `_r3`, etc.) as they're produced, and
-naturally skips `epa_smoketest` since its files use different names
-(`final_state.xml` / `md_log.csv`, not `system.xml` / `production_log.csv`).
+every replicate directory (`_r2`, `_r3`, etc.) as they're produced. `epa_smoketest`
+is naturally skipped by the `system.xml` / `production_log.csv` patterns (it uses
+different filenames there — `final_state.xml` / `md_log.csv`) but **not** by the
+`traj.dcd` / `system*.pdb` patterns, since it does have files with those exact
+names (it's a real, if throwaway, run). The `--exclude` flag in the command below
+is required to keep it out — confirmed by rebuilding the bundle on 2026-08-02/03
+(215 files, 0 smoketest entries; the pre-triplicate Jul 14 tarball predates this
+fix and was never checked for it).
 
 Everything else already went to GitHub (Upload #1).
 
@@ -46,7 +62,7 @@ Everything else already went to GitHub (Upload #1).
 1. **Make one bundle file.** From the project folder, run:
 ```bash
 cd "C:/Users/ASUS/Claude/Projects/AutoDock"
-tar -czf ToxT_MD_data.tar.gz md/*/traj.dcd md/*/system*.pdb md/*/system.xml md/*/production_log.csv
+tar -czf ToxT_MD_data.tar.gz --exclude='md/epa_smoketest/*' md/*/traj.dcd md/*/system*.pdb md/*/system.xml md/*/production_log.csv
 ```
 This creates a single file, `ToxT_MD_data.tar.gz`, containing all the big data.
 *(Or just ask me — I can build this bundle for you.)*

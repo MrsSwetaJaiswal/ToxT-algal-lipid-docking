@@ -301,3 +301,49 @@ Figure 10 replicate bands, and the Methods/stats-language pass. Branch is now
 2 commits ahead of `origin/main` (`9faaa1a`, `562b21c`). **`git push` was
 intentionally not run — the user explicitly asked to hold off**; do not push
 without a fresh go-ahead.
+
+## 2026-08-03
+
+**Pushed (`14592be`), then rebuilt the Zenodo upload bundle.** User confirmed
+the push (after asking about a PR — clarified none exists here, we push
+straight to `main`). Then rebuilt `ToxT_MD_data.tar.gz` since the old one
+(Jul 14, 1.2 GB) predated the full triplicate campaign.
+
+Caught and fixed a real bug while doing this: the tar command documented in
+both `UPLOAD_2_zenodo.md` and `DATA_AVAILABILITY.md` claimed the `md/*/...`
+glob "naturally skips `epa_smoketest`" — true for the `system.xml`/
+`production_log.csv` patterns (different filenames there) but **false** for
+`traj.dcd`/`system*.pdb` (epa_smoketest has those exact files too, since it's
+a real if throwaway run). Running the documented command as-is would have
+silently bundled 3 stray dev/test files into the Zenodo deposit. Fixed by
+building the file list explicitly (`ls ... | grep -v epa_smoketest`) and
+adding `--exclude='md/epa_smoketest/*'` to both docs' commands.
+
+Also found `DATA_AVAILABILITY.md` suggested a *different* bundle filename
+(`ToxT_MD_trajectories.tar.gz`) than the one `.gitignore` actually excludes
+(`ToxT_MD_data.tar.gz`) — following that doc literally would have produced a
+multi-GB file `git add .` wouldn't catch. Fixed to use the correct name.
+
+Rebuilt bundle: `ToxT_MD_data.tar.gz`, **3.68 GB, 215 files**, verified 0
+`epa_smoketest` entries. On-disk `md/*/` data is ~5.0 GB uncompressed. Bundle
+is ready to drag into Zenodo — see `UPLOAD_2_zenodo.md` for the remaining
+manual steps (Zenodo account, metadata, publish, DOI). Not yet uploaded —
+that's a manual step for the user.
+
+**Zenodo upload complete — DOI live: 10.5281/zenodo.21767402.** User
+published the MD trajectory bundle to Zenodo (resource type Dataset; related
+identifier "Continues" -> the JNPD paper DOI 10.24377/jnpd.article3244;
+software list = OpenMM/OpenFF-Toolkit+Sage/OpenFF-NAGL/PDBFixer/MDTraj/Python,
+matching Methods 2.9). Filled the real DOI into `DATA_AVAILABILITY.md`'s
+paste-ready statement (replacing the `YYYYYYY` placeholder) and directly into
+`MANUSCRIPT_DRAFT.md` Section 6 + `build_docx.js` (docx regenerated). Also
+filled in the GitHub repo URL, which was still a `<user>/<repo>` placeholder.
+Only remaining placeholder: the separate code-archive DOI (`XXXXXXX`,
+GitHub-repo-to-Zenodo linking) — optional, not blocking.
+
+Separately: 4 of the 5 bracketed reference placeholders in
+`MANUSCRIPT_DRAFT.md` (items 6-9: fatty-acid-mimetic ToxT inhibitors, PDB
+8B4D, herbal luteolin/catechin screen, sodium butyrate) are still unresolved
+— web search was declined each time it was attempted this session, so these
+remain open. Item 16 (OpenFF-NAGL) was resolved from memory as a
+software-only citation (no journal paper found), not verified by search.
