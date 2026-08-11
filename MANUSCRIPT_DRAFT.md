@@ -1,4 +1,4 @@
-# Molecular docking and dynamics reveal microalgal lipids from *Chlorella variabilis* and *Chlorococcum* sp. as allosteric ligands of the *Vibrio cholerae* virulence regulator ToxT
+# Locking Down ToxT: Microalgal Lipids as Allosteric Antivirulence Agents Against *Vibrio cholerae* — A Docking and Molecular Dynamics Study
 
 *Author strain designations for* Chlorella variabilis *(CV) and* Chlorococcum *sp. (CCM), and full experimental/GC-MS details, to be inserted by the authors.*
 

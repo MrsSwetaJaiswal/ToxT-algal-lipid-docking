@@ -109,7 +109,7 @@ const kids = [];
 // Title
 kids.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 120 },
   children: [new TextRun({ bold: true, size: 30,
-    text: "Molecular docking and dynamics reveal microalgal lipids from Chlorella variabilis and Chlorococcum sp. as allosteric ligands of the Vibrio cholerae virulence regulator ToxT" })] }));
+    text: "Locking Down ToxT: Microalgal Lipids as Allosteric Antivirulence Agents Against Vibrio cholerae — A Docking and Molecular Dynamics Study" })] }));
 kids.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 240 },
   children: [new TextRun({ italics: true, size: 18,
     text: "Working manuscript draft - computational (docking) component. Species names and experimental/GC-MS details are placeholders to be completed by the authors." })] }));
