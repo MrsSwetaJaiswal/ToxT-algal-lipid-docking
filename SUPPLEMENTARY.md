@@ -4,24 +4,62 @@
 *Vibrio cholerae* — A Docking and Molecular Dynamics Study**
 
 *Draft — supplementary figures and tables supporting the main manuscript
-(`MANUSCRIPT_DRAFT.md`). Figure/table numbers here are provisional ("Sx") and
-should be finalised against the main-text numbering (Figures 1–14, Tables 1–9)
-once both documents are frozen for submission.*
+(`MANUSCRIPT_DRAFT.md`). Figures are numbered S1–S19 and tables S1–S9, in the
+order they appear below; the single in-text SI citation in the main manuscript
+(Section 3.11, MM-GBSA) now points to Figure S18 by number.*
 
 ---
 
 ## Contents
 
-- [S1. Individual docking poses — CV panel](#s1-individual-docking-poses--cv-panel-15-lipids)
-- [S2. Individual docking poses — CCM panel](#s2-individual-docking-poses--ccm-panel-13-lipids)
-- [S3. Individual MD trajectory diagnostics, all 3 replicates + mean ± SD](#s3-individual-md-trajectory-diagnostics-per-system-all-3-replicates--mean)
-- [S4. GLA carboxylate GB-variance diagnostic (all 3 replicates)](#s4-gla-carboxylate-gb-variance-diagnostic-all-3-replicates)
-- [S5. Supplementary data tables](#s5-supplementary-data-tables)
-- [S6. Still to be added / open items](#s6-still-to-be-added--open-items)
+**Figures:**
+[S1](#figure-s1-individual-docking-poses--cv-panel-15-lipids) (CV docking poses) ·
+[S2](#figure-s2-individual-docking-poses--ccm-panel-13-lipids) (CCM docking poses) ·
+[S3–S17](#figures-s3s17--table-s1-individual-md-trajectory-diagnostics-per-system-all-3-replicates) (per-system MD diagnostics, r1–r3) ·
+[S18–S19](#figures-s18s19-gla-carboxylate-gb-variance-diagnostic) (GLA carboxylate GB-variance diagnostic)
+
+**Tables:**
+[S1](#table-s1-summary-mean--sd-across-n3-replicates-this-si-pipeline) (replicate MD summary, mean ± SD) ·
+[S2–S9](#tables-s2s9-supplementary-data-tables) (full docking/MM-GBSA result CSVs)
+
+**Other:** [Remaining open items](#remaining-open-items)
+
+## SI figure/table index
+
+| # | Item | Cited in main text as... |
+|---|---|---|
+| Figure S1 | CV panel individual docking poses (15) | supports Table 1, Figure 9A |
+| Figure S2 | CCM panel individual docking poses (13) | supports Table 2, Figure 9B |
+| Figure S3 | EPA free acid — MD diagnostics, r1–r3 | supports Table 5, Figures 5–7 |
+| Figure S4 | EPA deprotonated carboxylate — MD diagnostics, r1–r3 | supports Table 5, Figures 5–7 |
+| Figure S5 | EPA methyl ester — MD diagnostics, r1–r3 | supports Table 5, Figures 5–7 |
+| Figure S6 | GLA free acid — MD diagnostics, r1–r3 | supports Table 5, Figures 5–7 |
+| Figure S7 | GLA deprotonated carboxylate — MD diagnostics, r1–r3 | supports Table 5, Figures 5–7 |
+| Figure S8 | GLA methyl ester — MD diagnostics, r1–r3 | supports Table 5, Figures 5–7 |
+| Figure S9 | Palmitic free acid — MD diagnostics, r1–r3 | supports Table 5, Figures 5–7 |
+| Figure S10 | Palmitic deprotonated carboxylate — MD diagnostics, r1–r3 | supports Table 5, Figures 5–7 |
+| Figure S11 | Palmitic methyl ester — MD diagnostics, r1–r3 | supports Table 5, Figures 5–7 |
+| Figure S12 | Palmitoleate (native ligand) — MD diagnostics, r1–r3 | supports Table 7 |
+| Figure S13 | Glucose decoy (docked start) — MD diagnostics, r1–r3 | supports Table 7, Figure 10 |
+| Figure S14 | Pentadecanal — MD diagnostics, r1–r3 | supports Table 7 |
+| Figure S15 | Tridecanoic acid — MD diagnostics, r1–r3 | supports Table 7 |
+| Figure S16 | Apo ToxT — MD diagnostics, r1–r3 | supports Figures 13, 14 |
+| Figure S17 | Glucose decoy, core-seeded (single trajectory) — MD diagnostics | supports Table 7, Figure 10 |
+| Figure S18 | GLA carboxylate GB-variance diagnostic, r1–r3 | **cited in-text**, Section 3.11 ("(Figure S18)") |
+| Figure S19 | GLA free-acid replicate check | related to Figure S18, not separately cited |
+| Table S1 | Per-system MD replicate summary, mean ± SD (this SI pipeline) | independent cross-check on Figure 13 |
+| Table S2 | Full CV panel docking affinities (15) | source for Table 1 |
+| Table S3 | Full CCM panel docking affinities (13) | source for Table 2 |
+| Table S4 | Blind-docking summary, all poses per ligand | source for Table 6 |
+| Table S5 | Vina vs. Vinardo affinity, all 22 ligands | source for Figure 3, Section 3.6 |
+| Table S6 | Reference ligand docking (virstatin/butyrate/oleic acid) | source for Table 8 |
+| Table S7 | Acid vs. methyl-ester paired affinities, both organisms | source for Table 4 |
+| Table S8 | Full descriptor set, all 22 ligands | source for Table 3 |
+| Table S9 | Per-replicate MM-GBSA raw values, all 13 systems | source for Table 9 |
 
 ---
 
-## S1. Individual docking poses — CV panel (15 lipids)
+## Figure S1. Individual docking poses — CV panel (15 lipids)
 
 Each panel shows the individual top-ranked AutoDock Vina pose (cyan) superposed
 on the ToxT fatty-acid pocket, with the co-crystallized native ligand
@@ -48,17 +86,73 @@ overlay in main-text Figure 9A, at per-ligand resolution. Ranked by affinity
 | 14 | methyl pentadecanoate | −7.18 | `figures/si_docking/CV_methyl_pentadecanoate.png` |
 | 15 | pentadecanal | −6.90 | `figures/si_docking/CV_pentadecanal.png` |
 
-![EPA (CV, rank 1)](figures/si_docking/CV_cis_5_8_11_14_17_eicosapentaenoic_acid.png)
+**Rank 1: EPA (eicosapentaenoic acid) (−8.78 kcal/mol)**
 
-*Representative example (rank 1, EPA). See table above for the full set of 15
-individual images.*
+![EPA (eicosapentaenoic acid)](figures/si_docking/CV_cis_5_8_11_14_17_eicosapentaenoic_acid.png)
+
+**Rank 2: methyl eicosapentaenoate (−8.48 kcal/mol)**
+
+![methyl eicosapentaenoate](figures/si_docking/CV_methyl_cis_5_8_11_14_17_eicosapntaenoate.png)
+
+**Rank 3: methyl 4,7,10,13-hexadecatetraenoate (−8.46 kcal/mol)**
+
+![methyl 4,7,10,13-hexadecatetraenoate](figures/si_docking/CV_methyl_4_7_10_13_hexadecatetraenoate.png)
+
+**Rank 4: γ-linolenic acid (−8.13 kcal/mol)**
+
+![γ-linolenic acid](figures/si_docking/CV_gamma_linolenic_acid.png)
+
+**Rank 5: 9,12,15-octadecatrienoic acid (ALA) (−7.91 kcal/mol)**
+
+![9,12,15-octadecatrienoic acid (ALA)](figures/si_docking/CV_9_12_15_octadecatrienoic_acid.png)
+
+**Rank 6: *cis*-10-heptadecenoic acid (−7.81 kcal/mol)**
+
+![*cis*-10-heptadecenoic acid](figures/si_docking/CV_cis_10_heptadecenoic_acid.png)
+
+**Rank 7: methyl palmitoleate (−7.72 kcal/mol)**
+
+![methyl palmitoleate](figures/si_docking/CV_methyl_palmitoleate.png)
+
+**Rank 8: heptadecanoic acid (−7.68 kcal/mol)**
+
+![heptadecanoic acid](figures/si_docking/CV_heptadecanoic_acid.png)
+
+**Rank 9: stearic acid (−7.63 kcal/mol)**
+
+![stearic acid](figures/si_docking/CV_stearic_acid.png)
+
+**Rank 10: methyl heptadecanoate (−7.57 kcal/mol)**
+
+![methyl heptadecanoate](figures/si_docking/CV_methyl_heptadecanoate.png)
+
+**Rank 11: methyl stearate (−7.57 kcal/mol)**
+
+![methyl stearate](figures/si_docking/CV_methyl_stearate.png)
+
+**Rank 12: methyl palmitate (−7.48 kcal/mol)**
+
+![methyl palmitate](figures/si_docking/CV_methyl_palmitate.png)
+
+**Rank 13: methyl myristate (−7.31 kcal/mol)**
+
+![methyl myristate](figures/si_docking/CV_methyl_myristate.png)
+
+**Rank 14: methyl pentadecanoate (−7.18 kcal/mol)**
+
+![methyl pentadecanoate](figures/si_docking/CV_methyl_pentadecanoate.png)
+
+**Rank 15: pentadecanal (−6.90 kcal/mol)**
+
+![pentadecanal](figures/si_docking/CV_pentadecanal.png)
+
 
 ---
 
-## S2. Individual docking poses — CCM panel (13 lipids)
+## Figure S2. Individual docking poses — CCM panel (13 lipids)
 
-Same rendering convention as S1. Complements main-text Figure 9B (matches
-Table 2).
+Same rendering convention as Figure S1. Complements main-text Figure 9B
+(matches Table 2).
 
 | Rank | Lipid | ΔG (kcal/mol) | Image |
 |---|---|---|---|
@@ -76,10 +170,58 @@ Table 2).
 | 12 | methyl myristate | −7.31 | `figures/si_docking/CCM_methyl_myristate.png` |
 | 13 | tridecanoic acid | −6.84 | `figures/si_docking/CCM_tridecanoic_acid.png` |
 
-![γ-linolenic acid (CCM, rank 1)](figures/si_docking/CCM_gamma_linolenic_acid.png)
+**Rank 1: γ-linolenic acid (−8.13 kcal/mol)**
 
-*Representative example (rank 1, γ-linolenic acid). See table above for the
-full set of 13 individual images.*
+![γ-linolenic acid](figures/si_docking/CCM_gamma_linolenic_acid.png)
+
+**Rank 2: neophytadiene (−8.12 kcal/mol)**
+
+![neophytadiene](figures/si_docking/CCM_neophytadiene.png)
+
+**Rank 3: methyl 3,9,12-octadecatrienoate (−7.97 kcal/mol)**
+
+![methyl 3,9,12-octadecatrienoate](figures/si_docking/CCM_methyl_3_cis_9_cis_12_cis_octadecatrienoate.png)
+
+**Rank 4: methyl heneicosanoate (−7.84 kcal/mol)**
+
+![methyl heneicosanoate](figures/si_docking/CCM_methyl_heneicosanoate.png)
+
+**Rank 5: *cis*-10-heptadecenoic acid (−7.81 kcal/mol)**
+
+![*cis*-10-heptadecenoic acid](figures/si_docking/CCM_cis_10_heptadecenoic_acid.png)
+
+**Rank 6: 9,11-octadecadienoic acid (−7.80 kcal/mol)**
+
+![9,11-octadecadienoic acid](figures/si_docking/CCM_9_11_ooctadecadienoic_acid.png)
+
+**Rank 7: methyl palmitoleate (−7.72 kcal/mol)**
+
+![methyl palmitoleate](figures/si_docking/CCM_methyl_palmitoleate.png)
+
+**Rank 8: methyl stearate (−7.57 kcal/mol)**
+
+![methyl stearate](figures/si_docking/CCM_methyl_stearate.png)
+
+**Rank 9: methyl palmitate (−7.48 kcal/mol)**
+
+![methyl palmitate](figures/si_docking/CCM_methyl_palmitate.png)
+
+**Rank 10: methyl 18-fluorostearate (−7.38 kcal/mol)**
+
+![methyl 18-fluorostearate](figures/si_docking/CCM_methyl_18_fluorostearate.png)
+
+**Rank 11: palmitic acid (−7.32 kcal/mol)**
+
+![palmitic acid](figures/si_docking/CCM_palmitic_acid.png)
+
+**Rank 12: methyl myristate (−7.31 kcal/mol)**
+
+![methyl myristate](figures/si_docking/CCM_methyl_myristate.png)
+
+**Rank 13: tridecanoic acid (−6.84 kcal/mol)**
+
+![tridecanoic acid](figures/si_docking/CCM_tridecanoic_acid.png)
+
 
 *(Note: 6 lipids are shared between the CV and CCM panels — γ-linolenic acid,
 *cis*-10-heptadecenoic acid, methyl palmitoleate, methyl stearate, methyl
@@ -89,7 +231,7 @@ pocket"], so both individual poses/images are shown above, one per organism.)*
 
 ---
 
-## S3. Individual MD trajectory diagnostics, per system (all 3 replicates + mean)
+## Figures S3–S17 & Table S1. Individual MD Trajectory Diagnostics, Per System (All 3 Replicates)
 
 For every one of the 14 simulated systems, three per-run diagnostic panels are
 available per replicate (produced by `md_analyze.py`, analysis conda env):
@@ -110,7 +252,7 @@ These are the per-replicate diagnostics underlying the main-text summary figures
 > unbinding when it wasn't (confirmed on `gla_deprot_50ns`: apparent ligand
 > RMSD 20.2 ± 29.5 Å and a false "drifted" flag before the fix, vs. 3.7 ± 0.6 Å
 > and "bound" after — consistent with the independently-diagnosed COM-distance
-> result in S4). Both are fixed in the current `md_analyze.py`; all 43
+> result in Figure S18). Both are fixed in the current `md_analyze.py`; all 43
 > per-run figure sets (14 systems × 3 replicates, minus apo's contacts panel)
 > were regenerated with the fix. This does **not** change any main-text
 > number — the headline RMSD/MM-GBSA/contact values reported in the manuscript
@@ -120,7 +262,7 @@ These are the per-replicate diagnostics underlying the main-text summary figures
 > both corrections from the start); it only affects the per-run SI diagnostic
 > plots generated here.
 
-### S3a. Summary: mean +/- SD across n=3 replicates (this SI pipeline)
+### Table S1. Summary: mean +/- SD across n=3 replicates (this SI pipeline)
 
 Protein backbone RMSD and ligand RMSD (PBC-corrected, production window >5 ns),
 computed independently by `md_analyze.py` per replicate, then averaged as
@@ -156,7 +298,7 @@ design -- no r2/r3 replicates exist for that variant; see main-text Figure 10 ca
 
 ---
 
-### EPA (free acid)
+### Figure S3. EPA (free acid)
 
 **Replicate 1 (`epa_50ns`)**
 
@@ -178,7 +320,7 @@ design -- no r2/r3 replicates exist for that variant; see main-text Figure 10 ca
 
 ---
 
-### EPA (deprotonated carboxylate)
+### Figure S4. EPA (deprotonated carboxylate)
 
 **Replicate 1 (`epa_deprot_50ns`)**
 
@@ -200,7 +342,7 @@ design -- no r2/r3 replicates exist for that variant; see main-text Figure 10 ca
 
 ---
 
-### EPA (methyl ester)
+### Figure S5. EPA (methyl ester)
 
 **Replicate 1 (`methyl_epa_50ns`)**
 
@@ -222,7 +364,7 @@ design -- no r2/r3 replicates exist for that variant; see main-text Figure 10 ca
 
 ---
 
-### GLA / gamma-linolenic acid (free acid)
+### Figure S6. GLA / gamma-linolenic acid (free acid)
 
 **Replicate 1 (`gla_50ns`)**
 
@@ -244,7 +386,7 @@ design -- no r2/r3 replicates exist for that variant; see main-text Figure 10 ca
 
 ---
 
-### GLA (deprotonated carboxylate)
+### Figure S7. GLA (deprotonated carboxylate)
 
 **Replicate 1 (`gla_deprot_50ns`)**
 
@@ -266,7 +408,7 @@ design -- no r2/r3 replicates exist for that variant; see main-text Figure 10 ca
 
 ---
 
-### GLA (methyl ester)
+### Figure S8. GLA (methyl ester)
 
 **Replicate 1 (`gla_ester_50ns`)**
 
@@ -288,7 +430,7 @@ design -- no r2/r3 replicates exist for that variant; see main-text Figure 10 ca
 
 ---
 
-### Palmitic acid (free acid)
+### Figure S9. Palmitic acid (free acid)
 
 **Replicate 1 (`palmitic_50ns`)**
 
@@ -310,7 +452,7 @@ design -- no r2/r3 replicates exist for that variant; see main-text Figure 10 ca
 
 ---
 
-### Palmitic acid (deprotonated carboxylate)
+### Figure S10. Palmitic acid (deprotonated carboxylate)
 
 **Replicate 1 (`palmitic_deprot_50ns`)**
 
@@ -332,7 +474,7 @@ design -- no r2/r3 replicates exist for that variant; see main-text Figure 10 ca
 
 ---
 
-### Palmitic acid (methyl ester)
+### Figure S11. Palmitic acid (methyl ester)
 
 **Replicate 1 (`methyl_palmitate_50ns`)**
 
@@ -354,7 +496,7 @@ design -- no r2/r3 replicates exist for that variant; see main-text Figure 10 ca
 
 ---
 
-### Palmitoleate -- native ligand, positive control
+### Figure S12. Palmitoleate — native ligand, positive control
 
 **Replicate 1 (`pam_50ns`)**
 
@@ -376,7 +518,7 @@ design -- no r2/r3 replicates exist for that variant; see main-text Figure 10 ca
 
 ---
 
-### Glucose decoy -- docked (peripheral) start, negative control
+### Figure S13. Glucose decoy — docked (peripheral) start, negative control
 
 **Replicate 1 (`glucose_decoy_50ns`)**
 
@@ -398,7 +540,7 @@ design -- no r2/r3 replicates exist for that variant; see main-text Figure 10 ca
 
 ---
 
-### Pentadecanal -- weak binder
+### Figure S14. Pentadecanal — weak binder
 
 **Replicate 1 (`pentadecanal_50ns`)**
 
@@ -420,7 +562,7 @@ design -- no r2/r3 replicates exist for that variant; see main-text Figure 10 ca
 
 ---
 
-### Tridecanoic acid -- weak binder
+### Figure S15. Tridecanoic acid — weak binder
 
 **Replicate 1 (`tridecanoic_50ns`)**
 
@@ -442,7 +584,7 @@ design -- no r2/r3 replicates exist for that variant; see main-text Figure 10 ca
 
 ---
 
-### Apo ToxT -- ligand-free baseline
+### Figure S16. Apo ToxT — ligand-free baseline
 
 **Replicate 1 (`apo_toxt_50ns`)**
 
@@ -461,7 +603,7 @@ design -- no r2/r3 replicates exist for that variant; see main-text Figure 10 ca
 
 ---
 
-### Glucose decoy -- seeded in pocket core, kinetic-trapping control (single trajectory)
+### Figure S17. Glucose decoy — seeded in pocket core, kinetic-trapping control (single trajectory)
 
 ![](md/glucose_core_50ns/analysis/rmsd.png)
 ![](md/glucose_core_50ns/analysis/rmsf.png)
@@ -469,80 +611,75 @@ design -- no r2/r3 replicates exist for that variant; see main-text Figure 10 ca
 
 *(No r2/r3 -- single trajectory by design, see note above.)*
 
-## S4. GLA carboxylate GB-variance diagnostic (all 3 replicates)
+## Figures S18–S19. GLA Carboxylate GB-Variance Diagnostic
 
-Referenced from main-text Section 3.11 ("A dedicated diagnostic ... all three
-replicates; SI"). Shows ligand-COM → pocket-centroid and carboxylate-C →
-pocket-centroid distance over the trajectory, for all three independent-seed
-replicates of `gla_deprot_50ns`. Demonstrates the pose stays bound
-(COM 1.7–1.9 Å mean) in every replicate while the carboxylate head group is
-consistently solvent-exposed (~7.2–7.4 Å) — the structural basis for the large
+Referenced from main-text Section 3.11 as **"(Figure S18)"**. Shows
+ligand-COM → pocket-centroid and carboxylate-C → pocket-centroid distance over
+the trajectory, for all three independent-seed replicates of
+`gla_deprot_50ns`. Demonstrates the pose stays bound (COM 1.7–1.9 Å mean) in
+every replicate while the carboxylate head group is consistently
+solvent-exposed (~7.2–7.4 Å) — the structural basis for the large
 single-trajectory MM-GBSA variance (±20.5 kcal/mol on rep 1 alone) resolving to
 ±5.9 kcal/mol once averaged across replicates (Table 9).
+
+**Figure S18.** GLA carboxylate ligand/head-group retention diagnostic, all 3 replicates.
 
 ![GLA carboxylate retention, r1](figures/gla_carboxylate_retention.png)
 ![GLA carboxylate retention, r2](figures/gla_carboxylate_retention_r2.png)
 ![GLA carboxylate retention, r3](figures/gla_carboxylate_retention_r3.png)
 
-Also relevant: the earlier replicate-noise-vs-drift check across all three GLA
-free-acid replicates (motivated the same diagnostic before it was extended to
-the carboxylate form):
+**Figure S19.** GLA free-acid replicate check — the earlier replicate-noise-vs-drift
+diagnostic that motivated Figure S18 before it was extended to the carboxylate form.
 
 ![GLA free-acid replicate check](figures/gla_freeacid_replicate_check.png)
 
 ---
 
-## S5. Supplementary data tables
+## Tables S2–S9. Supplementary Data Tables
 
 Full machine-readable versions of every results table (main-text tables show
 selected/ranked subsets); provided as CSV alongside this document.
 
 | Table | File | Rows | Content |
 |---|---|---|---|
-| S-T1 | `results_CV/affinities_CV.csv` | 15 | Full CV panel docking affinities (source for Table 1) |
-| S-T2 | `results_CCM/affinities_CCM.csv` | 13 | Full CCM panel docking affinities (source for Table 2) |
-| S-T3 | `results_blind/blind_dock_summary.csv` | 4 | Blind-docking summary, all poses per ligand (source for Table 6) |
-| S-T4 | `results_vinardo/consensus.csv` | 22 | Vina vs. Vinardo affinity per ligand, all 22 (source for Fig. 3 / Section 3.6) |
-| S-T5 | `results_benchmark/benchmark.csv` | 3 | Virstatin / butyrate / oleic acid reference docking (source for Table 8) |
-| S-T6 | `results_pairs/pairs_CV.csv`, `pairs_CCM.csv` | 11 + 10 | Acid vs. methyl-ester paired affinities, per organism (source for Table 4) |
-| S-T7 | `results_batch/structure_property.csv` | 22 | Full descriptor set (C count, C=C, MW, logP, TPSA, rotatable bonds) per ligand (source for Table 3) |
-| S-T8 | `results_mmgbsa/mmgbsa_n3_headline.csv`, `mmgbsa_n3_remaining.csv` | 3 + 10 | Per-replicate MM-GBSA raw values, all 13 systems (source for Table 9) |
+| Table S2 | `results_CV/affinities_CV.csv` | 15 | Full CV panel docking affinities (source for Table 1) |
+| Table S3 | `results_CCM/affinities_CCM.csv` | 13 | Full CCM panel docking affinities (source for Table 2) |
+| Table S4 | `results_blind/blind_dock_summary.csv` | 4 | Blind-docking summary, all poses per ligand (source for Table 6) |
+| Table S5 | `results_vinardo/consensus.csv` | 22 | Vina vs. Vinardo affinity per ligand, all 22 (source for Fig. 3 / Section 3.6) |
+| Table S6 | `results_benchmark/benchmark.csv` | 3 | Virstatin / butyrate / oleic acid reference docking (source for Table 8) |
+| Table S7 | `results_pairs/pairs_CV.csv`, `pairs_CCM.csv` | 11 + 10 | Acid vs. methyl-ester paired affinities, per organism (source for Table 4) |
+| Table S8 | `results_batch/structure_property.csv` | 22 | Full descriptor set (C count, C=C, MW, logP, TPSA, rotatable bonds) per ligand (source for Table 3) |
+| Table S9 | `results_mmgbsa/mmgbsa_n3_headline.csv`, `mmgbsa_n3_remaining.csv` | 3 + 10 | Per-replicate MM-GBSA raw values, all 13 systems (source for Table 9) |
 
 ---
 
-## S6. Still to be added / open items
+## Remaining Open Items
 
 Honest accounting of what this SI draft does **not** yet contain:
 
-1. **SI figure/table numbering not finalised** — this draft uses placeholder
-   "Sx" labels; needs real S1/S2/... numbers cross-referenced against the
-   main manuscript's in-text SI callouts (currently just "(SI)" / "Fig. Sx"
-   in `MANUSCRIPT_DRAFT.md` Section 3.11) once both documents are frozen.
-2. **No `.docx`/PDF version yet** — this exists only as `SUPPLEMENTARY.md`;
-   `build_docx.js` only builds the main manuscript, not this file. Needs its
-   own conversion step (or a Pandoc pass) before submission if the target
-   journal wants a single SI PDF rather than a folder of images + CSVs.
-3. **Full blind-docking pose-by-pose detail** — Table 6 in the main text
+1. **Full blind-docking pose-by-pose detail** — Table 6 in the main text
    reports summary statistics (mode counts, top-pose distance); the SI could
    additionally show each of the individual poses (up to 20 per ligand) for
    the 5 blind-docked compounds, which isn't generated yet.
-4. **No consensus-scoring (Vinardo) individual pose images** — S1/S2 render
-   the default-Vina top pose only; a parallel gallery from
+2. **No consensus-scoring (Vinardo) individual pose images** — Figures S1/S2
+   render the default-Vina top pose only; a parallel gallery from
    `results_vinardo/*.pdbqt` doesn't exist yet (likely low priority — the
    pose itself rarely differs meaningfully between scoring functions, only
    the ranking).
-5. **AlphaFold3 ToxT–DNA model — no dedicated SI figure beyond main-text
+3. **AlphaFold3 ToxT–DNA model — no dedicated SI figure beyond main-text
    Figure 11.** Could add the raw AF3 confidence plots (PAE/pLDDT) as SI if
    the journal wants the modelling evidence shown explicitly rather than
    just cited by pTM/ipTM numbers.
-6. **Author-supplied content still outstanding independent of this SI**
+4. **Author-supplied content still outstanding independent of this SI**
    (carried over from `MANUSCRIPT_TODO_reps.md` item 7): the CV/CCM strain
    culture-collection accession numbers and GC-MS methodological details are
    still placeholders in the main manuscript — once filled in there, check
    whether anything here in the SI needs the same detail (e.g., a
    methods-recap sentence).
 
-*(Previously listed here: "r2/r3 MD figures not embedded inline" — now done;
-all three replicates plus the mean ± SD summary table are embedded in S3
-above. All figures, the bug-fixed `md_analyze.py`, and this document are
-committed to git as of this revision.)*
+*(Resolved since the previous revision: figure/table numbers are now
+finalised — Figures S1–S19, Tables S1–S9, cross-referenced in the index above
+— and the main manuscript's in-text SI citation now reads "(Figure S18)"
+instead of the generic "(SI)". A `.docx` export of this document
+(`SUPPLEMENTARY.docx`) is now also generated by `build_supplementary_docx.js`.
+All content and scripts are committed to git.)*
