@@ -16,7 +16,10 @@ order they appear below; the single in-text SI citation in the main manuscript
 [S1](#figure-s1-individual-docking-poses--cv-panel-15-lipids) (CV docking poses) ·
 [S2](#figure-s2-individual-docking-poses--ccm-panel-13-lipids) (CCM docking poses) ·
 [S3–S17](#figures-s3s17--table-s1-individual-md-trajectory-diagnostics-per-system-all-3-replicates) (per-system MD diagnostics, r1–r3) ·
-[S18–S19](#figures-s18s19-gla-carboxylate-gb-variance-diagnostic) (GLA carboxylate GB-variance diagnostic)
+[S18–S19](#figures-s18s19-gla-carboxylate-gb-variance-diagnostic) (GLA carboxylate GB-variance diagnostic) ·
+[S20](#figure-s20-blind-docking-pose-galleries-whole-protein-search) (blind-docking pose galleries) ·
+[S21](#figure-s21-individual-vinardo-scored-docking-poses-22-lipids) (Vinardo pose gallery) ·
+[S22](#figure-s22-alphafold3-toxt-dna-complex-confidence-metrics) (AlphaFold3 PAE/pLDDT)
 
 **Tables:**
 [S1](#table-s1-summary-mean--sd-across-n3-replicates-this-si-pipeline) (replicate MD summary, mean ± SD) ·
@@ -47,6 +50,9 @@ order they appear below; the single in-text SI citation in the main manuscript
 | Figure S17 | Glucose decoy, core-seeded (single trajectory) — MD diagnostics | supports Table 7, Figure 10 |
 | Figure S18 | GLA carboxylate GB-variance diagnostic, r1–r3 | **cited in-text**, Section 3.11 ("(Figure S18)") |
 | Figure S19 | GLA free-acid replicate check | related to Figure S18, not separately cited |
+| Figure S20 | Blind-docking pose galleries, all modes, 5 ligands | supports Table 6, Section 3.9 |
+| Figure S21 | Individual Vinardo-scored docking poses (22 lipids) | supports Figure 3, Section 3.6 |
+| Figure S22 | AlphaFold3 PAE/pLDDT confidence metrics | supports Figure 11, Section 3.13 |
 | Table S1 | Per-system MD replicate summary, mean ± SD (this SI pipeline) | independent cross-check on Figure 13 |
 | Table S2 | Full CV panel docking affinities (15) | source for Table 1 |
 | Table S3 | Full CCM panel docking affinities (13) | source for Table 2 |
@@ -635,6 +641,156 @@ diagnostic that motivated Figure S18 before it was extended to the carboxylate f
 
 ---
 
+## Figure S20. Blind-docking pose galleries (whole-protein search)
+
+Referenced from main-text Section 3.9 / Table 6. Every Vina binding mode
+(model) for each of the 5 whole-protein blind-docked ligands, rendered on
+the full ToxT structure. Blue = pose centre of mass within 8 A of the
+crystallographic pocket centroid (PAM reference, Methods 2.10, "in
+pocket"); red = outside that threshold. Pose counts match Table 6 exactly.
+
+**EPA -- 15/15 in pocket**
+
+![EPA blind docking poses](figures/si_blind/cis_5_8_11_14_17_eicosapentaenoic_acid_blind_poses.png)
+
+**gamma-linolenic acid -- 8/8 in pocket**
+
+![gamma-linolenic acid blind docking poses](figures/si_blind/gamma_linolenic_acid_blind_poses.png)
+
+**palmitic acid -- 1/20 in pocket**
+
+![palmitic acid blind docking poses](figures/si_blind/palmitic_acid_blind_poses.png)
+
+**palmitoleate (native) -- 10/13 in pocket**
+
+![palmitoleate (native) blind docking poses](figures/si_blind/palmitoleic_acid_blind_poses.png)
+
+**glucose (decoy) -- 0/20 in pocket**
+
+![glucose (decoy) blind docking poses](figures/si_blind/glucose_blind_poses.png)
+
+---
+
+## Figure S21. Individual Vinardo-scored docking poses (22 lipids)
+
+Referenced from main-text Section 3.6 / Figure 3 (consensus scoring).
+Same rendering convention as Figures S1/S2 (cyan/green pose vs. yellow
+native ligand, pocket residues coloured by chemistry) but for the
+re-docked Vinardo top pose of each of the 22 panel lipids, rather than
+the default-Vina pose. Ranked by Vina affinity for consistency with
+Figures S1/S2 (organism-agnostic panel, matches Table 3 ranking).
+
+**cis 5 8 11 14 17 eicosapentaenoic acid -- Vina -8.78 / Vinardo -8.41 kcal/mol**
+
+![cis 5 8 11 14 17 eicosapentaenoic acid Vinardo pose](figures/si_vinardo/cis_5_8_11_14_17_eicosapentaenoic_acid.png)
+
+**methyl cis 5 8 11 14 17 eicosapntaenoate -- Vina -8.48 / Vinardo -8.37 kcal/mol**
+
+![methyl cis 5 8 11 14 17 eicosapntaenoate Vinardo pose](figures/si_vinardo/methyl_cis_5_8_11_14_17_eicosapntaenoate.png)
+
+**methyl 4 7 10 13 hexadecatetraenoate -- Vina -8.46 / Vinardo -8.19 kcal/mol**
+
+![methyl 4 7 10 13 hexadecatetraenoate Vinardo pose](figures/si_vinardo/methyl_4_7_10_13_hexadecatetraenoate.png)
+
+**gamma linolenic acid -- Vina -8.12 / Vinardo -8.25 kcal/mol**
+
+![gamma linolenic acid Vinardo pose](figures/si_vinardo/gamma_linolenic_acid.png)
+
+**neophytadiene -- Vina -8.12 / Vinardo -8.16 kcal/mol**
+
+![neophytadiene Vinardo pose](figures/si_vinardo/neophytadiene.png)
+
+**methyl 3 cis 9 cis 12 cis octadecatrienoate -- Vina -7.97 / Vinardo -8.02 kcal/mol**
+
+![methyl 3 cis 9 cis 12 cis octadecatrienoate Vinardo pose](figures/si_vinardo/methyl_3_cis_9_cis_12_cis_octadecatrienoate.png)
+
+**9 12 15 octadecatrienoic acid -- Vina -7.91 / Vinardo -8.21 kcal/mol**
+
+![9 12 15 octadecatrienoic acid Vinardo pose](figures/si_vinardo/9_12_15_octadecatrienoic_acid.png)
+
+**methyl heneicosanoate -- Vina -7.84 / Vinardo -7.19 kcal/mol**
+
+![methyl heneicosanoate Vinardo pose](figures/si_vinardo/methyl_heneicosanoate.png)
+
+**cis 10 heptadecenoic acid -- Vina -7.81 / Vinardo -7.75 kcal/mol**
+
+![cis 10 heptadecenoic acid Vinardo pose](figures/si_vinardo/cis_10_heptadecenoic_acid.png)
+
+**9 11 ooctadecadienoic acid -- Vina -7.80 / Vinardo -7.92 kcal/mol**
+
+![9 11 ooctadecadienoic acid Vinardo pose](figures/si_vinardo/9_11_ooctadecadienoic_acid.png)
+
+**methyl palmitoleate -- Vina -7.72 / Vinardo -7.46 kcal/mol**
+
+![methyl palmitoleate Vinardo pose](figures/si_vinardo/methyl_palmitoleate.png)
+
+**heptadecanoic acid -- Vina -7.68 / Vinardo -7.84 kcal/mol**
+
+![heptadecanoic acid Vinardo pose](figures/si_vinardo/heptadecanoic_acid.png)
+
+**stearic acid -- Vina -7.63 / Vinardo -7.79 kcal/mol**
+
+![stearic acid Vinardo pose](figures/si_vinardo/stearic_acid.png)
+
+**methyl heptadecanoate -- Vina -7.57 / Vinardo -7.28 kcal/mol**
+
+![methyl heptadecanoate Vinardo pose](figures/si_vinardo/methyl_heptadecanoate.png)
+
+**methyl stearate -- Vina -7.57 / Vinardo -7.21 kcal/mol**
+
+![methyl stearate Vinardo pose](figures/si_vinardo/methyl_stearate.png)
+
+**methyl palmitate -- Vina -7.48 / Vinardo -7.33 kcal/mol**
+
+![methyl palmitate Vinardo pose](figures/si_vinardo/methyl_palmitate.png)
+
+**methyl 18 fluorostearate -- Vina -7.38 / Vinardo -7.12 kcal/mol**
+
+![methyl 18 fluorostearate Vinardo pose](figures/si_vinardo/methyl_18_fluorostearate.png)
+
+**palmitic acid -- Vina -7.32 / Vinardo -7.69 kcal/mol**
+
+![palmitic acid Vinardo pose](figures/si_vinardo/palmitic_acid.png)
+
+**methyl myristate -- Vina -7.31 / Vinardo -7.11 kcal/mol**
+
+![methyl myristate Vinardo pose](figures/si_vinardo/methyl_myristate.png)
+
+**methyl pentadecanoate -- Vina -7.18 / Vinardo -7.40 kcal/mol**
+
+![methyl pentadecanoate Vinardo pose](figures/si_vinardo/methyl_pentadecanoate.png)
+
+**pentadecanal -- Vina -6.90 / Vinardo -7.30 kcal/mol**
+
+![pentadecanal Vinardo pose](figures/si_vinardo/pentadecanal.png)
+
+**tridecanoic acid -- Vina -6.84 / Vinardo -6.93 kcal/mol**
+
+![tridecanoic acid Vinardo pose](figures/si_vinardo/tridecanoic_acid.png)
+
+---
+
+## Figure S22. AlphaFold3 ToxT-DNA complex confidence metrics
+
+Referenced from main-text Section 3.13 / Figure 11. Raw AlphaFold3
+confidence data for the top-ranked model (of 5) used in the manuscript --
+verified against `af3_toxt_dna/fold_2026_07_13_19_21_summary_confidences_0.json`:
+chain-A (protein) pTM = 0.85 and complex ipTM = 0.31 match the main-text
+values exactly. **(A)** Predicted aligned error (PAE) heatmap: the
+intra-protein block (chain A) and intra-DNA block (chains B/C, the two
+34-nt strands) are both low-error (confident relative positioning within
+each chain), while the protein-DNA cross terms are high-error (dark),
+i.e. the *relative* placement of the DNA on the protein is the
+low-confidence part of the model -- consistent with the ipTM/pTM gap.
+**(B)** Per-residue pLDDT: the protein chain is mostly confident-to-very-high
+(cyan/blue), while both DNA strands sit mostly in the low/very-low bands
+(yellow/orange) throughout, reflecting AlphaFold3's general lower
+reliability for nucleic-acid geometry versus protein folds.
+
+![AlphaFold3 PAE and pLDDT confidence metrics](figures/af3_pae_plddt.png)
+
+---
+
 ## Tables S2–S9. Supplementary Data Tables
 
 Full machine-readable versions of every results table (main-text tables show
@@ -657,29 +813,22 @@ selected/ranked subsets); provided as CSV alongside this document.
 
 Honest accounting of what this SI draft does **not** yet contain:
 
-1. **Full blind-docking pose-by-pose detail** — Table 6 in the main text
-   reports summary statistics (mode counts, top-pose distance); the SI could
-   additionally show each of the individual poses (up to 20 per ligand) for
-   the 5 blind-docked compounds, which isn't generated yet.
-2. **No consensus-scoring (Vinardo) individual pose images** — Figures S1/S2
-   render the default-Vina top pose only; a parallel gallery from
-   `results_vinardo/*.pdbqt` doesn't exist yet (likely low priority — the
-   pose itself rarely differs meaningfully between scoring functions, only
-   the ranking).
-3. **AlphaFold3 ToxT–DNA model — no dedicated SI figure beyond main-text
-   Figure 11.** Could add the raw AF3 confidence plots (PAE/pLDDT) as SI if
-   the journal wants the modelling evidence shown explicitly rather than
-   just cited by pTM/ipTM numbers.
-4. **Author-supplied content still outstanding independent of this SI**
+1. **Author-supplied content still outstanding independent of this SI**
    (carried over from `MANUSCRIPT_TODO_reps.md` item 7): the CV/CCM strain
    culture-collection accession numbers and GC-MS methodological details are
-   still placeholders in the main manuscript — once filled in there, check
-   whether anything here in the SI needs the same detail (e.g., a
-   methods-recap sentence).
+   still placeholders in the main manuscript — this needs the actual
+   identifiers/details from the authors, not something derivable from
+   project files. Once filled in there, check whether anything here in the
+   SI needs the same detail (e.g., a methods-recap sentence).
 
-*(Resolved since the previous revision: figure/table numbers are now
-finalised — Figures S1–S19, Tables S1–S9, cross-referenced in the index above
-— and the main manuscript's in-text SI citation now reads "(Figure S18)"
-instead of the generic "(SI)". A `.docx` export of this document
-(`SUPPLEMENTARY.docx`) is now also generated by `build_supplementary_docx.js`.
-All content and scripts are committed to git.)*
+*(Resolved since the previous revision: figure/table numbers are finalised —
+Figures S1–S22, Tables S1–S9, cross-referenced in the index above — and the
+main manuscript's in-text SI citation reads "(Figure S18)" instead of the
+generic "(SI)". A `.docx` export of this document (`SUPPLEMENTARY.docx`) is
+generated by `build_supplementary_docx.js`. Full blind-docking pose galleries
+(Figure S20, `render_si_blind_docking_gallery.py`), the Vinardo individual
+pose gallery (Figure S21, `render_si_vinardo_gallery.py`), and the AlphaFold3
+PAE/pLDDT confidence plot (Figure S22, `make_af3_confidence_fig.py`,
+cross-validated against the raw AF3 JSON output — chain-A pTM 0.85 and
+complex ipTM 0.31 match the main text exactly) are now all included. All
+content and scripts are committed to git.)*
