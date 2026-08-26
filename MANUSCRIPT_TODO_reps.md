@@ -145,6 +145,45 @@ since is local-only. Before pushing:
     gitignored); ~97 MB total, largest single file the 5.1 MB docx. Branch is now
     2 commits ahead of `origin/main` (`9faaa1a`, `562b21c`). **`git push` intentionally
     NOT run yet — user asked to hold off.**
+  - **DONE (2026-08-03):** pushed as `14592be`, per CAMPAIGN_LOG.md. Two further
+    commits since (`8a522f9`, `ee1a705` — Zenodo DOIs, reference fixes), also pushed.
+    Working tree clean, nothing outstanding.
+
+## 7. Author strain designations + GC-MS details — PARTIALLY RESOLVED (2026-08-25)
+Author supplied: CV strain accession (ATCC PTA-12198) and the full GC-MS
+protocol/instrument details (Kumaran et al., 2023 methodology, Shimadzu
+HS-20/GC-MS-TQ8040, ZB-5 MSi column, oven programme, Supelco 37 FAME
+standard). Filled into `MANUSCRIPT_DRAFT.md` as new Section 2.1 ("Lipid
+source, strains and GC-MS identification"), which required renumbering
+Sections 2.1–2.12 to 2.2–2.13 and the two in-text "Section 2.9"/"Methods
+2.9" MD cross-references to 2.10; title footnote (line 3) updated to match.
+Mirrored into `build_docx.js` (its own, already-more-condensed 2.1–2.8
+Methods numbering shifted to 2.2–2.9) and `ToxT_docking_manuscript.docx`
+regenerated (had to close a Word process that was holding the file open,
+with the user's explicit go-ahead, before the write would succeed).
+
+Follow-up (2026-08-26), author-confirmed:
+- **CCM has no culture-collection accession number** — genuinely none
+  available for this isolate, not a missing placeholder. Updated in both
+  `MANUSCRIPT_DRAFT.md` and `build_docx.js`/docx accordingly (title
+  footnote + Section 2.1 body), phrased as "no culture-collection accession
+  number is available for this isolate" rather than "to be inserted."
+- ***cis*-10-heptadecenoic acid organism assignment** — confirmed by the
+  author to be shared between CV and CCM; the flagged inconsistency was an
+  error in the original Jaiswal et al. (2025) report, now noted as
+  corrected in Section 2.1 of this manuscript. Tables 1/2 already had this
+  right (listed under both organisms) — no change needed there, confirms
+  the earlier caution not to touch them was correct.
+
+Follow-up (2026-08-26): full citation supplied — Kumaran M, Palanisamy KM,
+Bhuyar P, Maniam GP, Rahim MHA, Govindan N. Agriculture of microalgae
+*Chlorella vulgaris* for polyunsaturated fatty acids (PUFAs) production
+employing palm oil mill effluents (POME) for future food, wastewater, and
+energy nexus. *Energy Nexus* 2023;9:100169. doi:10.1016/j.nexus.2022.100169.
+Filled into ref 11 in both `MANUSCRIPT_DRAFT.md` and `build_docx.js`;
+`ToxT_docking_manuscript.docx` regenerated. **Item 7 is now fully closed —
+no author-supplied content or reference placeholders remain open in this
+manuscript.**
 
 ---
 

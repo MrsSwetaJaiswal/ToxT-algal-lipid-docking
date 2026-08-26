@@ -358,3 +358,150 @@ WebFetch: DOI `10.5281/zenodo.21778158`, resource type Software, references
 and into `MANUSCRIPT_DRAFT.md` Section 6 + `build_docx.js` (docx
 regenerated). All of Upload #1 (GitHub) and Upload #2 (Zenodo data) plus the
 optional code-archive DOI are now done.
+
+**ToxT–DNA section (formerly main-text 3.13 / Figure 11) moved to
+Supplementary.** Separately from the docking/MD campaign, an exploratory
+AF3-monomer-vs-Chai / dimer-vs-DNA comparison this session (new
+`fold_toxt_toxbox_1mer/2mer` and Chai runs, distinct from the July
+`af3_toxt_dna` run already in the manuscript) turned up real problems with
+AI-predicted ToxT quaternary structure: AF3's dimer model has no
+protein-protein contact at all (chains 70 Å apart), Chai's dimer has a
+genuine backbone clash (K204/M200, unfixable by rotamer repack) and its
+contact region doesn't match the literature's actual dimer interface
+(helix α3, Lys158–Asp143; Comms Biol 2019). That newer analysis was not
+folded into the manuscript — it's chat-only for now. But it did prompt
+revisiting whether the *existing*, already-more-conservative July AF3
+monomer ToxT–DNA model (pTM 0.85 / ipTM 0.31, Section 3.13/Figure 11) should
+be a main-text claim. Decided no: moved it in full to
+`SUPPLEMENTARY.md` as new **Section S.13 / Figure S23** (right after the
+existing Figure S22 PAE/pLDDT panel it was already paired with). Updated
+`MANUSCRIPT_DRAFT.md` in six places to point to it as an exploratory
+supplementary check instead of a finding — Abstract, Introduction aims,
+Methods 2.11, the Section 3.8 RMSF cross-reference (twice), Discussion, and
+Limitations — while keeping the allosteric-mechanism argument itself
+grounded in the independent literature (Lowden et al. 2010 domain
+architecture), not dependent on our own low-confidence model. Mirrored the
+same six edits into `build_docx.js` (hardcoded paragraph builder for the
+main manuscript); `build_supplementary_docx.js` needed no manual edit since
+it parses `SUPPLEMENTARY.md` generically. Both docx files regenerated
+(`ToxT_docking_manuscript.docx`, `SUPPLEMENTARY.docx`). No figure files
+moved or renamed on disk — only section/figure numbering changed. Not yet
+committed to git.
+
+**Added a direct, purpose-built test of the allosteric-restraint hypothesis
+— null result, added to Supplementary as another caveat.** RMSF (Section
+3.8) only measures local jitter amplitude, not whether the two domains move
+together in a restrained way — a weak proxy for what the allosteric claim
+actually predicts. Wrote `make_interdomain_hinge_analysis.py` (analysis
+conda env, MDTraj): superposes each of the existing apo + EPA/GLA/palmitic
+free-acid trajectories (12 total, n=3 replicates each) onto its own frame 0
+using only the N-terminal domain, then measures the N-domain–residue188–HTH-domain
+hinge angle and COM-COM distance per frame. Ran it: no ligand-dependent
+shift in mean angle for any system, and no narrowing of the angular spread
+(the direct "restraint" signal) for either strong binder (EPA p=0.87, GLA
+p=0.37); only the weak binder palmitic showed a nominal p=0.041, which runs
+backwards from what an affinity-dependent mechanism predicts and reads as a
+false positive among three comparisons at n=3. Added in full as new
+Section S.14 / Figure S24 / Table S10 in `SUPPLEMENTARY.md` (after Section
+S.13), with TOC/index/closing-notes updated and `SUPPLEMENTARY.docx`
+regenerated. Not referenced in the main manuscript at all — supplementary-only,
+per the user's explicit request. Outputs: `interdomain_hinge_summary.csv`,
+`figures/fig_interdomain_hinge.png`.
+
+**Open question raised by the user, not yet resolved: does the manuscript
+title still hold up?** The title ("...Microalgal Lipids as *Allosteric*
+Antivirulence Agents...") asserts the allosteric mechanism as a
+characterization, but every piece of *our own* evidence for it is now
+either low-confidence (the AF3 model, already caveated) or a null result
+(RMSF domain-specificity; this new hinge-angle test) — the only thing
+actually supporting "allosteric" at this point is the literature's
+domain-separation argument (Lowden et al. 2010), which establishes
+"probably not steric" but doesn't positively establish restraint. User
+paused this decision to run the PLIP investigation below instead; still
+unresolved.
+
+**Ran PLIP (Protein-Ligand Interaction Profiler) on the AF3/Chai
+monomer+dimer ToxT-DNA models — cross-validates the DNA-contact interface,
+unrelated to the allosteric/title question above.** Installed `plip` (pip,
+analysis env) + bundled `openbabel`. Two gotchas hit and fixed: (1) `--chains`
+is peptide/protein-protein mode only and silently excludes nucleotide
+residues — default automatic ligand detection (no `--chains`) is what
+correctly picks up DNA as a ligand; (2) the pip `openbabel` wheel lacks the
+InChI format plugin, crashing PLIP's ligand characterization step — patched
+with a try/except around the `self.inchikey = ...` line in the installed
+package (cosmetic fix, not a project file). Ran default-mode PLIP on all
+four top-ranked models (af3_monomer, af3_dimer, chai_monomer, chai_dimer;
+PDBs converted from the earlier-extracted CIFs via PyMOL). Result:
+independently confirms (via real H-bond/salt-bridge geometry, not just
+proximity) the same ~185–276 DNA-contact residues found earlier by hand
+(K212, R214, E215, N218, I236/K237, S249/Y250, S252, K256, S264) across all
+four models; also shows Chai's interface is quantitatively denser than
+AF3's (14 H-bonds/6 salt bridges vs. 9/3, monomer), consistent with Chai's
+higher self-reported ipTM. Chat-only — not written into the manuscript, per
+the earlier decision to keep the whole AF3-vs-Chai dimer investigation out
+of scope for this paper. Outputs in
+`plip_out/{af3_monomer_default,af3_dimer,chai_monomer,chai_dimer}/`.
+
+**User asked for a full strategic "council" analysis of the paper's
+direction.** Delivered directly (not via subagents — full session context
+made that the better call) rather than spawned. Verdict: the docking/MD/
+specificity spine is strong and untouched by anything this session found;
+the allosteric mechanism claim in the title is the one live risk, now
+undercut by three independent findings this session (dimer/Chai structure
+failure, RMSF null, hinge-angle null). Recommended dropping or reframing
+"Allosteric" in the title; user has not yet decided (see above).
+
+**Author supplied CV strain accession + full GC-MS methodology — see
+`MANUSCRIPT_TODO_reps.md` item 7 for full detail.** Added as new Section
+2.1 in `MANUSCRIPT_DRAFT.md` (Methods renumbered 2.1–2.12 → 2.2–2.13;
+`build_docx.js`'s own condensed Methods numbering 2.1–2.8 → 2.2–2.9 to
+match), title footnote updated, new reference (Kumaran et al., 2023, author
+still needs to supply the full citation) added to both files' reference
+lists. Both docx regenerated — `ToxT_docking_manuscript.docx` was open in
+Word and locked the write; closed the Word process with the user's explicit
+go-ahead before regenerating. Still open: CCM's culture-collection
+accession, the full Kumaran et al. citation, and a flagged (not resolved)
+inconsistency in the supplied peak list where *cis*-10-heptadecenoic acid
+appears as organism-specific to both CV and CCM — none of this touched the
+existing Tables 1/2 lipid panels, which are unchanged.
+
+**Follow-up same topic, next day: both flagged items resolved by the
+author.** CCM genuinely has no culture-collection accession number (not a
+missing placeholder) — updated the phrasing in the title footnote and
+Section 2.1 of `MANUSCRIPT_DRAFT.md`/`build_docx.js` accordingly. The
+*cis*-10-heptadecenoic acid inconsistency was confirmed to be an error in
+the original Jaiswal et al. (2025) report, not this manuscript — the
+compound is genuinely shared between CV and CCM, which is what Tables 1/2
+already had, so no change was needed there (validates the earlier call not
+to touch them speculatively). Section 2.1 text and the closing dated
+reference-list note updated in both `MANUSCRIPT_DRAFT.md` and
+`build_docx.js`; `ToxT_docking_manuscript.docx` regenerated (no Word lock
+this time).
+
+**Same thread, final piece: full Kumaran et al. citation supplied.**
+Kumaran M, Palanisamy KM, Bhuyar P, Maniam GP, Rahim MHA, Govindan N.,
+*Energy Nexus* 2023;9:100169, doi:10.1016/j.nexus.2022.100169 — filled into
+ref 11 in `MANUSCRIPT_DRAFT.md` and `build_docx.js`, closing dated notes
+updated in both, docx regenerated. **`MANUSCRIPT_TODO_reps.md` item 7 is
+now fully closed — no author-supplied content or reference placeholders
+remain open anywhere in the manuscript.**
+
+**Title decision resolved.** Talked through the options (pocket-binding
+framing, drop-the-word, hedge-with-"candidate", leave-as-is, plus a few
+more variants on request); user picked a merge of two — lead with the
+actual quantitative finding (unsaturation) rather than a generic
+descriptor, name the specific well-supported target site (fatty-acid
+pocket) rather than an unproven mechanism — and asked to drop the original
+"Locking Down ToxT" hook too, since it echoes the same conformational-lock
+claim "Allosteric" did (flagged this myself before the user confirmed).
+Final title: **"Unsaturation Drives ToxT Fatty-Acid-Pocket Engagement:
+Microalgal Lipids as Antivirulence Agents Against *Vibrio cholerae* — A
+Docking and Molecular Dynamics Study."** Updated in `MANUSCRIPT_DRAFT.md`
+(H1), `SUPPLEMENTARY.md` (title block), and `build_docx.js`; both docx
+regenerated cleanly (no Word lock this time). Confirmed via grep that no
+other project markdown file quotes the old title, and that the two
+already-published Zenodo records use their own independent, descriptive
+dataset titles (not a copy of the manuscript title), so no metadata
+mismatch there. Could not check the GitHub repo's own description field
+(`gh` not authenticated in this session) — worth a manual look if it
+duplicates the old title anywhere.
