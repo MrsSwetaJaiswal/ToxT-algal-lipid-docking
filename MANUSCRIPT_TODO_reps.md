@@ -33,7 +33,7 @@ seeds (rep1 = original, r2 = seed 100x, r3 = seed 200x).
 - Expectation to re-check at n=3: EPA remains the strongest binder; both EPA and GLA
   beat the native palmitoleate. Confirm this ranking survives the replicate averaging.
 
-## 2. GLA carboxylate ±20.5 — report free-acid as primary + add caveat + SI figure
+## 2. GLA carboxylate ±20.5 — report free-acid as primary + add caveat + SI figure — DONE (2026-08-02)
 DIAGNOSTIC ALREADY DONE (rep1, `gla_deprot_50ns`), script:
 `gla_carboxylate_retention.py`, figure: `figures/gla_carboxylate_retention.png`.
 Result (49.8 ns, 200 frames):

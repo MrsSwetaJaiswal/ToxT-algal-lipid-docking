@@ -865,13 +865,10 @@ selected/ranked subsets); provided as CSV alongside this document.
 
 Honest accounting of what this SI draft does **not** yet contain:
 
-1. **Author-supplied content still outstanding independent of this SI**
-   (carried over from `MANUSCRIPT_TODO_reps.md` item 7): the CV/CCM strain
-   culture-collection accession numbers and GC-MS methodological details are
-   still placeholders in the main manuscript — this needs the actual
-   identifiers/details from the authors, not something derivable from
-   project files. Once filled in there, check whether anything here in the
-   SI needs the same detail (e.g., a methods-recap sentence).
+*(As of 2026-08-26: none. The previously-listed item — author-supplied CV/CCM
+strain designations and GC-MS methodological details — was resolved on
+2026-08-25/26 (`MANUSCRIPT_TODO_reps.md` item 7, now fully closed) and does
+not require any mirrored detail here; the SI's own content was unaffected.)*
 
 *(Resolved since the previous revision: figure/table numbers are finalised —
 Figures S1–S23, Tables S1–S9, cross-referenced in the index above — and the
