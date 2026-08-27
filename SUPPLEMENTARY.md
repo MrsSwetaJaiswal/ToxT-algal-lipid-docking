@@ -943,9 +943,10 @@ DNA-contacting residues (and all 15 PLIP-detected bonding residues) falling
 within the C-terminal HTH domain, none in the fatty-acid pocket. Figure S22
 is now a single panel (`figures/fig_eltor_dna_competition.png`) and Table
 S11 reports confidence metrics for all five ranked models. Raw AlphaFold3
-output for this run is archived in `af3_toxt_dna_eltor/`. Superseded assets
-from the discarded placeholder runs (`figures/fig11_dna_competition.png`,
-`figures/af3_pae_plddt.png`, `figures/fig_af3_rerun_dna_competition.png`,
-`figures/fig_chai_dna_competition.png`) remain on disk but are no longer
-referenced by any current section. Figure and table numbering is unchanged
+output for this run is archived in `af3_toxt_dna_eltor/`. Superseded assets from the discarded
+placeholder runs were removed: `figures/fig_af3_rerun_dna_competition.png`
+and `figures/fig_chai_dna_competition.png` were deleted (never committed),
+while `figures/fig11_dna_competition.png` and `figures/af3_pae_plddt.png`
+remain in git history from earlier commits but are no longer referenced by
+any current section. Figure and table numbering is unchanged
 from the second pass (Figures S1–S23, Tables S1–S11).)*
