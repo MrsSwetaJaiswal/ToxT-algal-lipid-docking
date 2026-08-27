@@ -1,0 +1,30 @@
+[{
+ "name": "Final model",
+ "modelSeeds": [
+  "1303184506"
+ ],
+ "sequences": [
+  {
+   "proteinChain": {
+    "sequence": "MIGKKSFQTNVYRMSKFDTYIFNNLYINDYKMFWIDSGIAKLIDKNCLVSYEINSSSIILLKKNSIQRFSLTSLSDENINVSVITISDSFIRSLKSYILGDLMIRNLYSENKDLLLWNCEHNDIAVLSEVVNGFREINYSDEFLKVFFSGFFSKVEKKYNSIFITDDLDAMEKISCLVKSDITRNWRWADICGELRTNRMILKKELESRGVKFRELINSIRISYSISLMKTGEFKIKQIAYQSGFASVSYFSTVFKSTMNVAPSEYLFMLTGVAEK",
+    "count": 1,
+    "useStructureTemplate": true
+   }
+  },
+  {
+   "dnaSequence": {
+    "sequence": "TTTTGATTTTTGATTTTTGATTTCAAATAATACAAA",
+    "count": 1
+   }
+  },
+  {
+   "dnaSequence": {
+    "sequence": "TTTGTATTATTTGAAATCAAAAATCAAAAATCAAAA",
+    "count": 1
+   }
+  }
+ ],
+ "dialect": "alphafoldserver",
+ "version": 3
+}
+]

@@ -5,12 +5,12 @@ Antivirulence Agents Against *Vibrio cholerae* — A Docking and Molecular
 Dynamics Study**
 
 *Draft — supplementary figures and tables supporting the main manuscript
-(`MANUSCRIPT_DRAFT.md`). Figures are numbered S1–S24 and tables S1–S10, in the
+(`MANUSCRIPT_DRAFT.md`). Figures are numbered S1–S23 and tables S1–S11, in the
 order they appear below; the single in-text SI citation in the main manuscript
 (Section 3.11, MM-GBSA) now points to Figure S18 by number. Section S.13
-(Figure S23) is a full section moved here from the main manuscript's former
-Section 3.13 — see its note for why. Section S.14 (Figure S24, Table S10) is
-a new supplementary-only analysis (not in the main manuscript at all) run to
+(Figure S22, Table S11) presents an AlphaFold3 model of ToxT bound to the
+native El Tor *ctxAB* promoter. Section S.14 (Figure S23, Table S10) is a
+supplementary-only analysis (not in the main manuscript at all) run to
 directly test the allosteric-restraint hypothesis on the existing MD
 trajectories; it is a null result — see its note for interpretation.*
 
@@ -25,14 +25,14 @@ trajectories; it is a null result — see its note for interpretation.*
 [S18–S19](#figures-s18s19-gla-carboxylate-gb-variance-diagnostic) (GLA carboxylate GB-variance diagnostic) ·
 [S20](#figure-s20-blind-docking-pose-galleries-whole-protein-search) (blind-docking pose galleries) ·
 [S21](#figure-s21-individual-vinardo-scored-docking-poses-22-lipids) (Vinardo pose gallery) ·
-[S22](#figure-s22-alphafold3-toxt-dna-complex-confidence-metrics) (AlphaFold3 PAE/pLDDT) ·
-[S23](#section-s13--figure-s23-a-modelled-toxtdna-complex-presented-as-an-exploratory-structural-check) (ToxT–DNA model, moved from main text) ·
-[S24](#section-s14--figure-s24--table-s10-inter-domain-hinge-angle-analysis-a-direct-null-test-of-the-allosteric-restraint-hypothesis) (inter-domain hinge angle, null result)
+[S22](#section-s13--figure-s22--table-s11-a-toxtctxab-promoter-model-on-the-native-el-tor-sequence) (ToxT–*ctxAB* promoter model, native El Tor) ·
+[S23](#section-s14--figure-s23--table-s10-inter-domain-hinge-angle-analysis-a-direct-null-test-of-the-allosteric-restraint-hypothesis) (inter-domain hinge angle, null result)
 
 **Tables:**
 [S1](#table-s1-summary-mean--sd-across-n3-replicates-this-si-pipeline) (replicate MD summary, mean ± SD) ·
 [S2–S9](#tables-s2s9-supplementary-data-tables) (full docking/MM-GBSA result CSVs) ·
-[S10](#section-s14--figure-s24--table-s10-inter-domain-hinge-angle-analysis-a-direct-null-test-of-the-allosteric-restraint-hypothesis) (inter-domain hinge-angle summary)
+[S10](#section-s14--figure-s23--table-s10-inter-domain-hinge-angle-analysis-a-direct-null-test-of-the-allosteric-restraint-hypothesis) (inter-domain hinge-angle summary) ·
+[S11](#section-s13--figure-s22--table-s11-a-toxtctxab-promoter-model-on-the-native-el-tor-sequence) (AlphaFold3 confidence metrics, all 5 models)
 
 **Other:** [Remaining open items](#remaining-open-items)
 
@@ -61,9 +61,8 @@ trajectories; it is a null result — see its note for interpretation.*
 | Figure S19 | GLA free-acid replicate check | related to Figure S18, not separately cited |
 | Figure S20 | Blind-docking pose galleries, all modes, 5 ligands | supports Table 6, Section 3.9 |
 | Figure S21 | Individual Vinardo-scored docking poses (22 lipids) | supports Figure 3, Section 3.6 |
-| Figure S22 | AlphaFold3 PAE/pLDDT confidence metrics | supports Figure S23, Section S.13 |
-| Figure S23 | AlphaFold3 model of the ToxT–DNA complex (moved from main text) | formerly main-text Figure 11 / Section 3.13; cited from main-text Sections 3.8, 4, 5 |
-| Figure S24 | Inter-domain hinge-angle distributions, apo vs. holo (null result) | supplementary-only analysis, not cited in main text |
+| Figure S22 | AlphaFold3 ToxT–*ctxAB* promoter model (native El Tor sequence) | Section 3.8 (RMSF) and Discussion/Limitations reference Section S.13 generally |
+| Figure S23 | Inter-domain hinge-angle distributions, apo vs. holo (null result) | supplementary-only analysis, not cited in main text |
 | Table S1 | Per-system MD replicate summary, mean ± SD (this SI pipeline) | independent cross-check on Figure 13 |
 | Table S2 | Full CV panel docking affinities (15) | source for Table 1 |
 | Table S3 | Full CCM panel docking affinities (13) | source for Table 2 |
@@ -73,7 +72,8 @@ trajectories; it is a null result — see its note for interpretation.*
 | Table S7 | Acid vs. methyl-ester paired affinities, both organisms | source for Table 4 |
 | Table S8 | Full descriptor set, all 22 ligands | source for Table 3 |
 | Table S9 | Per-replicate MM-GBSA raw values, all 13 systems | source for Table 9 |
-| Table S10 | Inter-domain hinge-angle summary, apo vs. 3 holo systems (n=3 replicates each) | source for Figure S24 / Section S.14 |
+| Table S10 | Inter-domain hinge-angle summary, apo vs. 3 holo systems (n=3 replicates each) | source for Figure S23 / Section S.14 |
+| Table S11 | AlphaFold3 confidence metrics, native El Tor promoter (all 5 models) | source for Figure S22 / Section S.13 |
 
 ---
 
@@ -782,55 +782,54 @@ Figures S1/S2 (organism-agnostic panel, matches Table 3 ranking).
 
 ---
 
-## Figure S22. AlphaFold3 ToxT-DNA complex confidence metrics
+## Section S.13 / Figure S22 / Table S11. A ToxT–*ctxAB* promoter model on the native El Tor sequence
 
-Referenced from Section S.13 / Figure S23 (moved from the main text's
-former Section 3.13 / Figure 11 -- see that section's note). Raw AlphaFold3
-confidence data for the top-ranked model (of 5) used in the manuscript --
-verified against `af3_toxt_dna/fold_2026_07_13_19_21_summary_confidences_0.json`:
-chain-A (protein) pTM = 0.85 and complex ipTM = 0.31 match the values in
-Figure S23 exactly. **(A)** Predicted aligned error (PAE) heatmap: the
-intra-protein block (chain A) and intra-DNA block (chains B/C, the two
-34-nt strands) are both low-error (confident relative positioning within
-each chain), while the protein-DNA cross terms are high-error (dark),
-i.e. the *relative* placement of the DNA on the protein is the
-low-confidence part of the model -- consistent with the ipTM/pTM gap.
-**(B)** Per-residue pLDDT: the protein chain is mostly confident-to-very-high
-(cyan/blue), while both DNA strands sit mostly in the low/very-low bands
-(yellow/orange) throughout, reflecting AlphaFold3's general lower
-reliability for nucleic-acid geometry versus protein folds.
+To probe how fatty-acid binding relates to virulence-gene activation, a ToxT–DNA complex was modelled with **AlphaFold3** using the full-length ToxT sequence and the **native El Tor *ctxAB* promoter duplex** (Methods 2.12). Protein–DNA interactions were profiled with **PLIP 3.0.1** (default automatic ligand detection, which identifies hydrogen bonds, salt bridges and hydrophobic contacts from bond geometry rather than a distance cutoff).
 
-![AlphaFold3 PAE and pLDDT confidence metrics](figures/af3_pae_plddt.png)
+**DNA sequence and its provenance.** The duplex used is the 36-bp region spanning positions −76 to −41 of the *ctxAB* promoter:
+
+```
+top:    TTTTGATTTTTGATTTTTGATTTCAAATAATACAAA
+bottom: TTTGTATTATTTGAAATCAAAAATCAAAAATCAAAA
+```
+
+This was transcribed from Dittmer & Withey (2012, *J Bacteriol* 194:5255–5263, Figure 1) and verified three independent ways before use: the `GATTTTT` heptad-repeat count of the parent classical O395 footprint region (6, matching the paper's stated count), the total span length of that region (69 bp, matching the stated −109..−41 span), and the presence of the literal substring `ATTTCAAAT` which the paper gives independently for positions −58..−49. The 36-bp El Tor-relevant subset above was extracted from that verified region: El Tor strains carry only the three promoter-proximal heptad repeats but otherwise share O395's *PctxAB* sequence, and this fragment matches the paper's `pJW211` construct, shown there to be fully ToxT-activated. It spans both experimentally mapped functional toxboxes (toxbox 1, −72..−60, strong copper-phenanthroline footprint; toxbox 2, −58..−46, weaker footprint). The two strands were confirmed to be exact reverse complements, and the submitted job's own recorded input was checked byte-for-byte against these sequences before any analysis.
+
+**Confidence metrics (Table S11).** The ToxT fold was predicted with high confidence (chain-A pTM 0.86; overall pTM 0.79). The protein–DNA interface reached ipTM 0.48 — modest, still short of a confident threshold (~0.7–0.8), so the model is interpreted at the domain level rather than as a precise binding geometry. The top two of five ranked models returned identical scores (ranking 0.540, ipTM 0.480, pTM 0.790), indicating convergence rather than a single lucky pose. No model reported a clash, and only one protein–DNA atom pair falls below 2.0 Å in the top model.
+
+**Table S11. AlphaFold3 confidence metrics, native El Tor *ctxAB* promoter (all five ranked models).**
+
+| Model | Ranking score | Interface ipTM | pTM | Clash |
+|---|---|---|---|---|
+| model_0 (analysed) | 0.540 | 0.480 | 0.790 | none |
+| model_1 | 0.540 | 0.480 | 0.790 | none |
+| model_2 | 0.500 | 0.430 | 0.770 | none |
+| model_3 | 0.410 | 0.330 | 0.760 | none |
+| model_4 | 0.270 | 0.150 | 0.710 | none |
+
+**Where DNA contacts the protein.** The DNA is contacted **exclusively by the C-terminal AraC-family helix–turn–helix domain**: all 26 residues within 5 Å of DNA fall in the range 188–276, with **none** outside it and **none** belonging to the N-terminal fatty-acid pocket (Figure S22). PLIP's bond-level profiling agrees — 21 interactions total (12 hydrogen bonds, 7 salt bridges, 2 hydrophobic contacts) distributed over 15 residues (Arg199, Lys203, Lys212, Arg214, Glu215, Asn218, Lys235, Ile236, Lys237, Ser249, Tyr250, Lys256, Ser264, Glu275, Lys276), again all within the HTH domain. This places the regulatory pocket and the DNA-reading head on structurally distinct domains, consistent with the domain-separated architecture described by Lowden et al. (2010) — the structural basis cited in the main-text Discussion for why fatty-acid occupancy is unlikely to block DNA binding sterically — and is independently corroborated by the main-text apo/holo RMSF analysis (Section 3.8), which probed this same C-terminal region.
+
+We present this as an exploratory structural check, not an established result: the interface confidence (ipTM 0.48) remains below a confident threshold, and the model should not be read as a validated ToxT–DNA binding geometry. Additional caveats apply regardless of sequence accuracy: the duplex is a 36-bp fragment modelled in isolation, without flanking genomic context, RNA polymerase, or H-NS (which also binds this A/T-rich region and represses *ctxAB*), and the fatty acid is not co-modelled — the native ligand shown in Figure S22 is placed by superposition of the 3GBG crystal structure, not predicted in complex with the DNA. The domain-level observation is in any case independently grounded in the known ToxT domain architecture (Lowden et al., 2010; main-text Discussion), which does not depend on this model.
+
+![Figure S22](figures/fig_eltor_dna_competition.png)
+
+**Figure S22.** AlphaFold3 model of ToxT bound to the native El Tor *ctxAB* promoter duplex (−76 to −41): DNA (teal), the C-terminal HTH DNA-binding domain (blue, residues 188–276), and the N-terminal domain (orange) carrying the fatty-acid pocket, with the native ligand (yellow, positioned by 3GBG superposition). The red dashes mark the separation between the fatty-acid pocket and the nearest DNA phosphate. All 26 DNA-contacting residues lie in the C-terminal domain; none are pocket residues. Fold confidence is high (chain-A pTM 0.86); the interface is of modest confidence (ipTM 0.48) and is interpreted only at the domain level.
 
 ---
 
-## Section S.13 / Figure S23. A modelled ToxT–DNA complex, presented as an exploratory structural check
-
-*Moved here from the main manuscript (formerly Section 3.13 / Figure 11), because the protein–DNA interface confidence is low (ipTM 0.31) and this result is better presented as a supplementary, exploratory check than a main-text finding.*
-
-To probe how fatty-acid binding translates into loss of virulence-gene activation, a ToxT–DNA complex was modelled with AlphaFold3 (full-length ToxT plus a 34-bp duplex bearing two direct-repeat toxbox elements; Methods 2.11). The ToxT fold was predicted with high confidence (pTM 0.85), whereas the protein–DNA interface was of modest confidence (ipTM 0.31); the model is therefore interpreted only at the domain level, not as a precise binding geometry. The DNA was contacted **exclusively by the C-terminal AraC-family helix–turn–helix domain** (residues 188–276; e.g. Arg214, Lys235/237, Tyr250, Lys256), while the fatty-acid pocket lies in the **separate N-terminal domain**, making no direct contact with the DNA in the model (Figure S23). Because the regulatory pocket and the DNA-reading head are on distinct domains, fatty-acid occupancy is unlikely to sterically block DNA binding; the architecture is consistent with an **allosteric** mechanism in which pocket occupancy restrains the inter-domain conformation required for productive DNA engagement — the closed-state model proposed by Lowden et al. (2010). The algal lipids are thus predicted to switch off ToxT-dependent transcription not by competing with DNA directly, but by locking ToxT in a DNA-binding-incompetent conformation.
-
-We present this as an exploratory structural check, not an established result: the interface ipTM (0.31) is well below a confident threshold, and this single top-ranked model should not be read as a validated ToxT–DNA binding geometry. The allosteric mechanism it illustrates is independently grounded in the known ToxT domain architecture (Lowden et al., 2010; main-text Discussion), which does not depend on this model.
-
-![Figure S23](figures/fig11_dna_competition.png)
-
-**Figure S23.** AlphaFold3 model of the ToxT–DNA complex: toxbox DNA (teal), the C-terminal HTH DNA-binding domain (blue, residues 188–276), and the fatty-acid pocket (orange) with the native ligand (yellow, from 3GBG superposition) on the separate N-terminal domain (red dashes indicate the pocket–DNA separation). The domain separation is consistent with an allosteric inhibition mechanism. The ToxT fold is high-confidence (pTM 0.85); the DNA pose is low-confidence (ipTM 0.31) and is interpreted only at the domain level, not as a precise binding geometry. See Figure S22 for the underlying PAE/pLDDT confidence metrics.
-
----
-
-## Section S.14 / Figure S24 / Table S10. Inter-domain hinge-angle analysis: a direct, null test of the allosteric-restraint hypothesis
+## Section S.14 / Figure S23 / Table S10. Inter-domain hinge-angle analysis: a direct, null test of the allosteric-restraint hypothesis
 
 The apo-vs-holo RMSF comparison (main text Section 3.8, Figure 14) found no *domain-specific* rigidification (C-terminal HTH domain −0.16 Å vs. rest of protein −0.12 Å) — but RMSF only measures local fluctuation amplitude, not whether the two domains move in a coordinated, restrained way relative to each other, which is what the allosteric hypothesis actually claims. We therefore ran a more direct test on the same trajectories: the relative geometry between the N-terminal pocket domain and the C-terminal HTH domain (residues 188–273), for apo ToxT and the three headline free-acid holo systems (EPA, γ-linolenic acid, palmitic acid; n = 3 independent-seed 50 ns replicates each, production window >5 ns).
 
 **Method.** Each trajectory was superposed on its own frame 0 using only the N-terminal domain Cα atoms (residues ≤187) as the alignment reference, isolating true inter-domain motion from whole-molecule translation/rotation. Per frame we computed (i) the centroid–centroid distance between the N-domain and HTH-domain Cα atoms, and (ii) the hinge angle at the domain-boundary residue (Cα of residue 188) between vectors to each domain centroid — the standard "elbow angle" construction used for other hinged multi-domain proteins. Per replicate we report the frame-level mean (average relative geometry) and SD (the direct restraint readout: a narrower per-replicate SD in holo than apo would indicate occupancy restrains inter-domain motion, not just local jitter). Apo (n=3 replicate values) was compared against each holo system (n=3 replicate values) by Welch's t-test on both the mean angle and the within-replicate SD, matching the paper's existing replicate-level statistical convention; with n=3 per group these should be read as indicative, not confirmatory.
 
-**Result: no ligand-dependent inter-domain restraint was detected.** Centroid–centroid distance was essentially identical across all four systems (apo 19.1 ± 0.2 Å; EPA 19.2 ± 0.1; GLA 19.3 ± 0.3; palmitic 19.4 ± 0.3 Å). The mean hinge angle did not shift with ligand binding for any system (apo 36.4 ± 1.1°; EPA 36.3 ± 1.1°, p = 0.95; GLA 36.5 ± 1.0°, p = 0.91; palmitic 37.1 ± 0.9°, p = 0.43). The within-replicate angular SD — the direct restraint metric — was unchanged for both strong binders (EPA 1.32 ± 0.18° vs. apo 1.34 ± 0.16°, p = 0.87; GLA 1.22 ± 0.15°, p = 0.37) and only nominally narrower for the weak binder palmitic acid (0.97 ± 0.07°, p = 0.041; Table S10, Figure S24). We do not read this single marginal result as evidence of restraint: if pocket occupancy were driving an affinity-dependent allosteric effect, the two strong binders (EPA, GLA) — not the weak one — would be expected to show it most clearly; the observed pattern runs the opposite way, consistent with a false positive among three comparisons at n = 3.
+**Result: no ligand-dependent inter-domain restraint was detected.** Centroid–centroid distance was essentially identical across all four systems (apo 19.1 ± 0.2 Å; EPA 19.2 ± 0.1; GLA 19.3 ± 0.3; palmitic 19.4 ± 0.3 Å). The mean hinge angle did not shift with ligand binding for any system (apo 36.4 ± 1.1°; EPA 36.3 ± 1.1°, p = 0.95; GLA 36.5 ± 1.0°, p = 0.91; palmitic 37.1 ± 0.9°, p = 0.43). The within-replicate angular SD — the direct restraint metric — was unchanged for both strong binders (EPA 1.32 ± 0.18° vs. apo 1.34 ± 0.16°, p = 0.87; GLA 1.22 ± 0.15°, p = 0.37) and only nominally narrower for the weak binder palmitic acid (0.97 ± 0.07°, p = 0.041; Table S10, Figure S23). We do not read this single marginal result as evidence of restraint: if pocket occupancy were driving an affinity-dependent allosteric effect, the two strong binders (EPA, GLA) — not the weak one — would be expected to show it most clearly; the observed pattern runs the opposite way, consistent with a false positive among three comparisons at n = 3.
 
 **Interpretation.** This is a second, independent null result (alongside the RMSF domain-specificity test), obtained with a metric that measures the specific geometric quantity the allosteric hypothesis is about rather than a generic proxy for it. It does not contradict the structural fact that the fatty-acid pocket and the DNA-binding HTH domain sit on separate domains (Lowden et al., 2010) — that observation stands independently of this analysis — but it means we have no positive dynamical evidence, at the 50 ns/replicate timescale sampled here, that ligand occupancy constrains the relative motion of the two domains. Domain-hinge motions in multidomain proteins can occur on slower timescales than 50 ns, so this null result does not rule out the mechanism; it means our data neither support nor refute it beyond the static domain-separation argument.
 
-![Figure S24](figures/fig_interdomain_hinge.png)
+![Figure S23](figures/fig_interdomain_hinge.png)
 
-**Figure S24.** Inter-domain hinge angle (N-domain centroid — residue 188 Cα — HTH-domain centroid), pooled production frames, apo vs. the three headline holo systems (n = 3 replicates each). Distributions are visually and statistically indistinguishable between apo and the two strong binders (EPA, GLA); see Table S10 for replicate-level statistics.
+**Figure S23.** Inter-domain hinge angle (N-domain centroid — residue 188 Cα — HTH-domain centroid), pooled production frames, apo vs. the three headline holo systems (n = 3 replicates each). Distributions are visually and statistically indistinguishable between apo and the two strong binders (EPA, GLA); see Table S10 for replicate-level statistics.
 
 **Table S10. Inter-domain hinge-angle summary, per system (n = 3 replicates; `interdomain_hinge_summary.csv`).**
 
@@ -891,7 +890,7 @@ Limitations) was updated to reference it as such. No figure file was moved
 or renamed on disk (`figures/fig11_dna_competition.png` is unchanged); only
 its manuscript section and figure number changed.)*
 
-*(Also this revision: added Section S.14 / Figure S24 / Table S10, a new
+*(Also this revision: added Section S.14 / Figure S23 / Table S10, a new
 inter-domain hinge-angle analysis (`make_interdomain_hinge_analysis.py`,
 run on the existing apo + EPA/GLA/palmitic free-acid trajectories, `analysis`
 conda env) designed as a more direct test of the allosteric-restraint
@@ -905,3 +904,48 @@ main manuscript — added as an additional honest caveat alongside Section
 S.13, at the user's request. See that section's Interpretation paragraph
 for why this doesn't rule the mechanism out, just fails to detect it at the
 50 ns/replicate timescale sampled.)*
+
+*(2026-08-27, first pass: de-escalated the allosteric-mechanism discussion
+throughout the main manuscript (Abstract, Introduction aims, Section 3.8,
+Discussion, both Limitations bullets) to keep only the one citable fact —
+the fatty-acid pocket and DNA-binding domain are structurally separate
+(Lowden et al., 2010) — without arguing that this paper's own (largely
+null) evidence establishes an allosteric mechanism for these specific
+lipids. Also added a Chai-1 monomer ToxT–DNA model alongside a second
+AlphaFold3 attempt (same DNA input, different seed), with PLIP-based
+interaction profiling for both, as a then-new Section S.15 supplementing
+the original Section S.13 AlphaFold3 model. Superseded by the note
+immediately below within the same day.)*
+
+*(2026-08-27, second pass, same day: an inaccuracy in the first pass was
+caught and corrected. Checking git history (`418e872`) and the actual FASTA
+files established that the native El Tor *ctxAB* promoter sequence was never
+"unavailable" — it had been transcribed from Dittmer & Withey (2012) and
+verified three ways on 2026-08-19, then simply never submitted to any
+prediction tool. Every ToxT–DNA model produced up to that point — the
+2026-07-13 AlphaFold3 run, the AlphaFold3 rerun, and the Chai-1 run — had
+used a synthetic consensus placeholder duplex with no biological
+relationship to the study organism. Because that makes those runs
+uninformative for this manuscript's purpose regardless of how they compare
+to one another, all three were discarded rather than reported.)*
+
+*(2026-08-27, third pass, same day: AlphaFold3 was re-run on the verified
+native El Tor promoter duplex, and Section S.13 was rewritten around that
+model alone. The submitted job's own recorded input (`job_request.json`)
+was checked programmatically against the intended sequences before any
+analysis: protein exact match (276 aa), both DNA strands exact match, true
+reverse complements, paper landmark substring `ATTTCAAAT` present, and
+confirmed not the placeholder. Results: chain-A pTM 0.86 / overall pTM 0.79
+/ ipTM 0.48 — the highest interface confidence of any ToxT–DNA run in this
+project, with the top two of five ranked models returning identical scores
+(convergence rather than a single favourable pose), no clashes, and all 26
+DNA-contacting residues (and all 15 PLIP-detected bonding residues) falling
+within the C-terminal HTH domain, none in the fatty-acid pocket. Figure S22
+is now a single panel (`figures/fig_eltor_dna_competition.png`) and Table
+S11 reports confidence metrics for all five ranked models. Raw AlphaFold3
+output for this run is archived in `af3_toxt_dna_eltor/`. Superseded assets
+from the discarded placeholder runs (`figures/fig11_dna_competition.png`,
+`figures/af3_pae_plddt.png`, `figures/fig_af3_rerun_dna_competition.png`,
+`figures/fig_chai_dna_competition.png`) remain on disk but are no longer
+referenced by any current section. Figure and table numbering is unchanged
+from the second pass (Figures S1–S23, Tables S1–S11).)*

@@ -486,6 +486,73 @@ updated in both, docx regenerated. **`MANUSCRIPT_TODO_reps.md` item 7 is
 now fully closed — no author-supplied content or reference placeholders
 remain open anywhere in the manuscript.**
 
+**Option C implemented: de-escalated the allosteric-mechanism discussion,
+added a Chai-1 cross-check.** Discussed with the user whether to keep, cut,
+or trim the allosteric-mechanism material (three options laid out); user
+chose the middle path — keep the one citable fact (fatty-acid pocket and
+DNA-binding domain are structurally separate, Lowden et al. 2010) as
+context, drop everywhere the paper argued its own (largely null) evidence
+established the mechanism. Edited six main-text passages (Abstract,
+Introduction aims, Methods 2.12, Section 3.8, Discussion, both Limitations
+bullets) to remove the argued-mechanism framing while keeping the SI
+disclosure (Sections S.13/S.14) in place, retitled/reworded to match.
+Mirrored into `build_docx.js`.
+
+Separately, user asked why the existing AF3 monomer model stayed in SI
+while the new AF3/Chai dimer investigation was excluded — a fair challenge,
+since both involve AF3/Chai. Resolved by separating the monomer and dimer
+halves of that investigation on a clearer test ("does this defend/caveate a
+claim the paper makes"): the dimer half fails it (no dimerization claim in
+this paper), but the monomer half actually passes it — it independently
+corroborates the same domain-separation observation Section S.13 already
+uses, and better than AF3 alone (Chai's monomer model has higher confidence
+and a denser PLIP-detected interface). Added it as new **Section S.15 /
+Figure S25 / Table S11**: a second independent AlphaFold3 run (different
+seed) plus a Chai-1 run, same DNA input as Section S.13, both profiled with
+PLIP 3.0.1. Verified via git history (`418e872`) and the actual FASTA files
+that this DNA input — like the original Section S.13 model — is still the
+synthetic consensus toxbox placeholder, not the real El Tor *ctxAB*
+promoter sequence prepared back on 2026-08-19, which has never actually
+been run through either tool; flagged this prominently in the new section
+rather than letting it pass unnoticed. Rendered two new figures in the same
+visual style as Figure S23 (`fig_af3_rerun_dna_competition.png`,
+`fig_chai_dna_competition.png`, both with 3GBG native-ligand superposition)
+via PyMOL. Result: both tools converge on the same C-terminal HTH
+contact residues as Section S.13 and the main-text RMSF analysis (a fourth
+independent line of agreement on *where* DNA sits, still unresolved on
+*how*); Chai's interface remains denser and higher-confidence than AF3's,
+consistent with the earlier chat-only finding. TOC, index tables, and
+closing dated notes updated in `SUPPLEMENTARY.md`; docx regenerated (had to
+close Word again, with the user's go-ahead, to unblock the write).
+
+**Follow-up, same day: dropped the old July AF3 model entirely, corrected a
+factual error, cleaned up the resulting renumbering mess.** User asked to
+keep only the AF3-rerun/Chai-1 comparison, not the original July model
+alongside it — a fair simplification. Also asked to confirm the real El
+Tor promoter "wasn't used because none was found"; corrected this — it WAS
+found and verified (2026-08-19, `418e872`), just never actually submitted
+to either tool, which is a materially different (and more embarrassing)
+gap than "unavailable." Merged the former Section S.15 content up into
+Section S.13 (replacing the dropped July model rather than sitting next to
+it), which required renumbering: old Figure S22 (PAE/pLDDT, specific to
+the dropped run) and old Figure S23 (the dropped model's image) removed;
+hinge-angle analysis shifted S24→S23; AF3/Chai comparison now occupies
+Figure S22 (panels A/B) and Table S11 unchanged. First attempt at this used
+a blanket `sed 's/S24/S23/g'` which collided with content that already used
+S23, plus left the old Section S.15 block sitting there duplicated — caught
+in review, fixed by hand (deleted the leftover duplicate block, rewrote the
+TOC/index/anchors explicitly rather than trusting another blanket
+substitution). Verified with a final grep sweep: no duplicate figure
+headers, no dangling references to the two dropped image files outside the
+historical notes explaining why they're now unused. Fixed one real
+cross-reference bug this surfaced in the *main manuscript*: Section 3.8's
+RMSF paragraph cited "Supplementary Figure S23" for a specific residue list
+that came from the now-dropped July model — that figure number now points
+to the hinge-angle plot instead, so reworded to cite "Supplementary Section
+S.13" generically rather than a figure number tied to data that's no longer
+shown, in both `MANUSCRIPT_DRAFT.md` and `build_docx.js`. Both docx
+regenerated.
+
 **Title decision resolved.** Talked through the options (pocket-binding
 framing, drop-the-word, hedge-with-"candidate", leave-as-is, plus a few
 more variants on request); user picked a merge of two — lead with the
@@ -505,3 +572,46 @@ dataset titles (not a copy of the manuscript title), so no metadata
 mismatch there. Could not check the GitHub repo's own description field
 (`gh` not authenticated in this session) — worth a manual look if it
 duplicates the old title anywhere.
+
+**MAJOR CORRECTION (2026-08-27): every ToxT–DNA model to this point had used
+the wrong DNA sequence.** User asked why the real El Tor promoter wasn't
+being used; the answer turned out to be worse than "unavailable." Git
+history (`418e872`, 2026-08-19) shows the native *ctxAB* promoter sequence
+WAS transcribed from the user's screenshot of Dittmer & Withey (2012) and
+verified three independent ways, then saved as ready-to-run FASTA +
+submission guides — with the commit message stating plainly "nothing has
+been run yet, these are inputs only." The next day models were run using
+the OLD synthetic consensus placeholder instead; the prepared correct
+inputs were never submitted, and nothing flagged the gap. So the 2026-07-13
+AF3 run, this session's AF3 rerun, and the Chai-1 run were all on a
+biologically irrelevant sequence. Compounding this, when first summarising
+this session's AF3/Chai comparison I wrote "synthetic consensus toxbox" as
+a passing table footnote rather than stopping to flag that the input was
+wrong — user (rightly) called this out and instructed that placeholder/stub
+inputs must be surfaced prominently and confirmed, never buried as a
+caveat. Noting that here as standing guidance for this project.
+
+**Resolution: re-ran AlphaFold3 on the verified native El Tor promoter;
+Section S.13 rewritten around it; all three placeholder models discarded.**
+User ran the AF3 job (results at `OneDrive/Desktop/vibrio autodock/
+Predictive model/`, archived into `af3_toxt_dna_eltor/`). Verified the
+returned job's own `job_request.json` programmatically before analysing
+anything — protein exact match (276 aa), both DNA strands exact match to
+the intended El Tor duplex, true reverse complements, `ATTTCAAAT` landmark
+present, confirmed NOT the placeholder. Results are the best of any
+ToxT–DNA run in this project: chain-A pTM 0.86 / pTM 0.79 / **ipTM 0.48**
+(vs. 0.31 and 0.40 for the placeholder AF3 runs), top two of five ranked
+models scoring identically (convergence, not a lucky pose), no clashes,
+and — the substantive point — all 26 residues within 5 Å of DNA fall in the
+C-terminal HTH domain (188–276), with zero fatty-acid-pocket residues
+contacting DNA. PLIP agrees at bond level: 21 interactions (12 H-bonds, 7
+salt bridges, 2 hydrophobic) across 15 residues, all within the HTH domain.
+Rendered `figures/fig_eltor_dna_competition.png` in the established style.
+Rewrote Section S.13 entirely around this single model (dropping the
+AF3-vs-Chai placeholder comparison), updated Table S11 to report all five
+ranked models' confidence metrics, and updated Methods 2.12, the Results
+pointer, Discussion and Limitations in both `MANUSCRIPT_DRAFT.md` and
+`build_docx.js` to describe the native-promoter model rather than the
+placeholder ones. Figure/table numbering unchanged (S1–S23, S1–S11). Both
+docx regenerated (closed Word again to unblock the write). Superseded
+placeholder figures remain on disk, unreferenced. Not yet committed.
