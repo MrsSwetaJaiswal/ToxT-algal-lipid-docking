@@ -340,7 +340,7 @@ This study is entirely computational and is intended to provide a mechanistic ra
 
 ## 6. Reproducibility and data availability
 
-All steps are deterministic (fixed seed = 42). Residue numbering follows PDB 3GBG; shared MD topologies were renumbered to match. Code, inputs and small outputs are on GitHub (https://github.com/MrsSwetaJaiswal/ToxT-algal-lipid-docking, v1.0.0), archived on Zenodo, DOI: [10.5281/zenodo.21778158](https://doi.org/10.5281/zenodo.21778158); full molecular-dynamics trajectories, serialized systems and simulation topologies are archived separately on Zenodo, DOI: [10.5281/zenodo.21767402](https://doi.org/10.5281/zenodo.21767402) (see `DATA_AVAILABILITY.md`). Key scripts:
+All steps are deterministic (fixed seed = 42). Residue numbering follows PDB 3GBG; shared MD topologies were renumbered to match. Code, inputs and small outputs are on GitHub (https://github.com/MrsSwetaJaiswal/ToxT-algal-lipid-docking, v1.1.0), archived on Zenodo, DOI: [10.5281/zenodo.22204059](https://doi.org/10.5281/zenodo.22204059); full molecular-dynamics trajectories, serialized systems and simulation topologies are archived separately on Zenodo, DOI: [10.5281/zenodo.21767402](https://doi.org/10.5281/zenodo.21767402) (see `DATA_AVAILABILITY.md`). Key scripts:
 - **Receptor/box:** Meeko `mk_prepare_receptor` (box enveloping the crystal PAM, 5 Å padding).
 - **Ligand generation:** `generate_missing_3d.py` (RDKit ETKDG/MMFF from SMILES).
 - **Docking:** `dock_by_organism.py`; **validation:** `pam_control.py`; **blind:** `blind_dock.py`.

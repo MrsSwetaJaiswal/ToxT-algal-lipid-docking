@@ -12,10 +12,11 @@ This file has three parts:
 > **Data and code availability.** All code (docking, molecular-dynamics and
 > analysis scripts), input structures, configuration files and small outputs are
 > available at https://github.com/MrsSwetaJaiswal/ToxT-algal-lipid-docking
-> (v1.0.0, archived at Zenodo, DOI:
-> [10.5281/zenodo.21778158](https://doi.org/10.5281/zenodo.21778158)). Full
-> molecular-dynamics trajectories, serialized systems and simulation topologies
-> (~3.7 GB compressed) are archived separately at Zenodo (DOI:
+> (v1.1.0, archived at Zenodo, DOI:
+> [10.5281/zenodo.22204059](https://doi.org/10.5281/zenodo.22204059); all
+> versions: [10.5281/zenodo.21778157](https://doi.org/10.5281/zenodo.21778157)).
+> Full molecular-dynamics trajectories, serialized systems and simulation
+> topologies (~3.7 GB compressed) are archived separately at Zenodo (DOI:
 > [10.5281/zenodo.21767402](https://doi.org/10.5281/zenodo.21767402)). Docking
 > is deterministic (random seed = 42). Residue numbering follows PDB 3GBG;
 > shared topology files were renumbered to the same scheme. The ToxT structure
@@ -26,6 +27,14 @@ This file has three parts:
 (v1.0.0 release, Software resource type, CC-BY-4.0) and MD trajectory data
 (Dataset resource type). No placeholders remain in this statement; the "link
 GitHub to Zenodo" step in Section 3 below is done.)*
+
+*(Status 2026-08-31: code archive updated to v1.1.0 (native El Tor promoter
+structural checks, retitled manuscript, GC-MS/strain details — no MD data
+changed). New version-specific DOI: 10.5281/zenodo.22204059. The concept DOI
+10.5281/zenodo.21778157 always resolves to whichever version is latest, so
+citing it instead of a version-specific DOI avoids needing this update again
+for future releases. MD trajectory data DOI (21767402) is unchanged — no new
+simulations were run.)*
 
 ---
 
