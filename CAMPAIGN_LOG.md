@@ -614,4 +614,66 @@ pointer, Discussion and Limitations in both `MANUSCRIPT_DRAFT.md` and
 `build_docx.js` to describe the native-promoter model rather than the
 placeholder ones. Figure/table numbering unchanged (S1–S23, S1–S11). Both
 docx regenerated (closed Word again to unblock the write). Superseded
-placeholder figures remain on disk, unreferenced. Not yet committed.
+placeholder figures remain on disk, unreferenced. **Committed as `5067cfe`
+and pushed.**
+
+**2026-08-27, follow-up: removed the two dead placeholder figures.**
+`fig_af3_rerun_dna_competition.png` and `fig_chai_dna_competition.png` were
+untracked and unreferenced after the El Tor rewrite above; deleted both and
+corrected the Supplementary note that had claimed all superseded assets
+remained on disk. Committed as `5a06e2f`, pushed.
+
+**2026-08-31: Chai-1's server came back online; ran it on the same
+verified native El Tor sequence and added it to Section S.13 as a second,
+independent model alongside AlphaFold3.** Verified the returned structure
+independently before analysis — extracted the actual chain sequences from
+`pred.rank_0.cif` via PyMOL (not assumed from the submission) and confirmed
+byte-for-byte: protein exact match (276 aa), both DNA strands exact match,
+true reverse complements, `ATTTCAAAT` landmark present, confirmed not the
+placeholder.
+
+Chai-1's interface confidence (ipTM 0.671, aggregate 0.685) is markedly
+higher than AlphaFold3's on the identical input (ipTM 0.48) — the best
+ToxT–DNA interface confidence obtained anywhere in this project, though
+still short of a conclusively confident threshold. Domain-level placement
+agrees closely with AlphaFold3: 24 of 27 Chai-1 contact residues fall in
+the C-terminal HTH domain (188–276), the remaining three (Asn185, Trp186,
+Arg187) sitting immediately adjacent to the domain boundary rather than in
+the fatty-acid pocket. PLIP finds 20 interactions (14 H-bonds, 4 salt
+bridges, 2 hydrophobic) across 11 residues, 10 within the HTH domain.
+
+Section S.13 rewritten to present both models together: Table S11 now has
+AF3 and Chai-1 panels, Figure S22 is now two panels rendered in matching
+style. Methods 2.12, the Results pointer, Discussion, and both Limitations
+bullets updated in `MANUSCRIPT_DRAFT.md` and `build_docx.js` to describe
+both models rather than AF3 alone. Raw Chai-1 output (top model + all 5
+rank scores) archived in `chai_toxt_dna_eltor/`. Figure/table numbering
+unchanged (S1–S23, S1–S11) — this extends the existing Figure S22/Table
+S11 with panels rather than adding new ones. Both docx regenerated (no
+Word lock this time). Committed as `1cda871`, pushed.
+
+The dimer/stoichiometry test (2-copy protein run, both tools) was
+deliberately dropped at the user's request — not pursued, not planned.
+
+**2026-08-31, final consistency pass across the whole manuscript + SI,
+requested by the user before calling this finished.** Read both documents
+fully end to end. Checked: every figure/table number referenced in main
+text resolves and matches its content (Figure 11 is a deliberate, documented
+gap — moved to SI long ago); Methods/Results section cross-references
+(2.1–2.13, 3.1–3.12) are correct; Abstract numbers match the body
+(1.41 Å, 0.6 Å, r=-0.87/-0.70, ρ=0.83, CV/CCM means, 14 systems/42
+trajectories, blind-docking counts); reference list is sequential 1–21
+with no duplicates and nothing left as a bracketed placeholder; SI figure
+numbering is a complete, gapless S1–S23 and table numbering S1–S11;
+Section S.13's numbers match the raw archived JSON/PLIP output exactly
+(re-verified independently); no stale pre-Chai-integration figures
+(ipTM 0.585/0.40/≤0.59) survive anywhere in either document; both docx
+files are timestamped after their source files (confirmed actually
+regenerated, not stale copies); and the "Remaining Open Items" section in
+`SUPPLEMENTARY.md` is still accurate (nothing new left open by the Chai
+addition). **Found and fixed one real gap:** this campaign log itself had
+not been updated since the AF3-only rewrite — the Chai-1 integration
+(`1cda871`) and dead-figure cleanup (`5a06e2f`) were committed and pushed
+but never logged here. Backfilled both entries above. No other
+inconsistencies found. The manuscript, Supplementary Information, and this
+log are now in agreement with the actual git history.
