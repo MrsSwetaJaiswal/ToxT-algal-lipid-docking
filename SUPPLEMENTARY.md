@@ -8,8 +8,8 @@ Dynamics Study**
 (`MANUSCRIPT_DRAFT.md`). Figures are numbered S1–S23 and tables S1–S11, in the
 order they appear below; the single in-text SI citation in the main manuscript
 (Section 3.11, MM-GBSA) now points to Figure S18 by number. Section S.13
-(Figure S22, Table S11) presents an AlphaFold3 model of ToxT bound to the
-native El Tor *ctxAB* promoter. Section S.14 (Figure S23, Table S10) is a
+(Figure S22, Table S11) presents AlphaFold3 and Chai-1 models of ToxT bound
+to the native El Tor *ctxAB* promoter. Section S.14 (Figure S23, Table S10) is a
 supplementary-only analysis (not in the main manuscript at all) run to
 directly test the allosteric-restraint hypothesis on the existing MD
 trajectories; it is a null result — see its note for interpretation.*
@@ -25,14 +25,14 @@ trajectories; it is a null result — see its note for interpretation.*
 [S18–S19](#figures-s18s19-gla-carboxylate-gb-variance-diagnostic) (GLA carboxylate GB-variance diagnostic) ·
 [S20](#figure-s20-blind-docking-pose-galleries-whole-protein-search) (blind-docking pose galleries) ·
 [S21](#figure-s21-individual-vinardo-scored-docking-poses-22-lipids) (Vinardo pose gallery) ·
-[S22](#section-s13--figure-s22--table-s11-a-toxtctxab-promoter-model-on-the-native-el-tor-sequence) (ToxT–*ctxAB* promoter model, native El Tor) ·
+[S22](#section-s13--figure-s22--table-s11-toxtctxab-promoter-models-on-the-native-el-tor-sequence-alphafold3-and-chai-1) (ToxT–*ctxAB* promoter models, native El Tor: AF3 + Chai-1) ·
 [S23](#section-s14--figure-s23--table-s10-inter-domain-hinge-angle-analysis-a-direct-null-test-of-the-allosteric-restraint-hypothesis) (inter-domain hinge angle, null result)
 
 **Tables:**
 [S1](#table-s1-summary-mean--sd-across-n3-replicates-this-si-pipeline) (replicate MD summary, mean ± SD) ·
 [S2–S9](#tables-s2s9-supplementary-data-tables) (full docking/MM-GBSA result CSVs) ·
 [S10](#section-s14--figure-s23--table-s10-inter-domain-hinge-angle-analysis-a-direct-null-test-of-the-allosteric-restraint-hypothesis) (inter-domain hinge-angle summary) ·
-[S11](#section-s13--figure-s22--table-s11-a-toxtctxab-promoter-model-on-the-native-el-tor-sequence) (AlphaFold3 confidence metrics, all 5 models)
+[S11](#section-s13--figure-s22--table-s11-toxtctxab-promoter-models-on-the-native-el-tor-sequence-alphafold3-and-chai-1) (AlphaFold3 + Chai-1 confidence metrics, all 5 models each)
 
 **Other:** [Remaining open items](#remaining-open-items)
 
@@ -61,7 +61,7 @@ trajectories; it is a null result — see its note for interpretation.*
 | Figure S19 | GLA free-acid replicate check | related to Figure S18, not separately cited |
 | Figure S20 | Blind-docking pose galleries, all modes, 5 ligands | supports Table 6, Section 3.9 |
 | Figure S21 | Individual Vinardo-scored docking poses (22 lipids) | supports Figure 3, Section 3.6 |
-| Figure S22 | AlphaFold3 ToxT–*ctxAB* promoter model (native El Tor sequence) | Section 3.8 (RMSF) and Discussion/Limitations reference Section S.13 generally |
+| Figure S22 | AlphaFold3 + Chai-1 ToxT–*ctxAB* promoter models (native El Tor sequence) | Section 3.8 (RMSF) and Discussion/Limitations reference Section S.13 generally |
 | Figure S23 | Inter-domain hinge-angle distributions, apo vs. holo (null result) | supplementary-only analysis, not cited in main text |
 | Table S1 | Per-system MD replicate summary, mean ± SD (this SI pipeline) | independent cross-check on Figure 13 |
 | Table S2 | Full CV panel docking affinities (15) | source for Table 1 |
@@ -73,7 +73,7 @@ trajectories; it is a null result — see its note for interpretation.*
 | Table S8 | Full descriptor set, all 22 ligands | source for Table 3 |
 | Table S9 | Per-replicate MM-GBSA raw values, all 13 systems | source for Table 9 |
 | Table S10 | Inter-domain hinge-angle summary, apo vs. 3 holo systems (n=3 replicates each) | source for Figure S23 / Section S.14 |
-| Table S11 | AlphaFold3 confidence metrics, native El Tor promoter (all 5 models) | source for Figure S22 / Section S.13 |
+| Table S11 | AlphaFold3 + Chai-1 confidence metrics, native El Tor promoter (all 5 models each) | source for Figure S22 / Section S.13 |
 
 ---
 
@@ -782,9 +782,9 @@ Figures S1/S2 (organism-agnostic panel, matches Table 3 ranking).
 
 ---
 
-## Section S.13 / Figure S22 / Table S11. A ToxT–*ctxAB* promoter model on the native El Tor sequence
+## Section S.13 / Figure S22 / Table S11. ToxT–*ctxAB* promoter models on the native El Tor sequence: AlphaFold3 and Chai-1
 
-To probe how fatty-acid binding relates to virulence-gene activation, a ToxT–DNA complex was modelled with **AlphaFold3** using the full-length ToxT sequence and the **native El Tor *ctxAB* promoter duplex** (Methods 2.12). Protein–DNA interactions were profiled with **PLIP 3.0.1** (default automatic ligand detection, which identifies hydrogen bonds, salt bridges and hydrophobic contacts from bond geometry rather than a distance cutoff).
+To probe how fatty-acid binding relates to virulence-gene activation, a ToxT–DNA complex was modelled independently with **AlphaFold3** and with **Chai-1**, both using the full-length ToxT sequence and the **native El Tor *ctxAB* promoter duplex** (Methods 2.12). Protein–DNA interactions for both models were profiled with **PLIP 3.0.1** (default automatic ligand detection, which identifies hydrogen bonds, salt bridges and hydrophobic contacts from bond geometry rather than a distance cutoff).
 
 **DNA sequence and its provenance.** The duplex used is the 36-bp region spanning positions −76 to −41 of the *ctxAB* promoter:
 
@@ -793,11 +793,13 @@ top:    TTTTGATTTTTGATTTTTGATTTCAAATAATACAAA
 bottom: TTTGTATTATTTGAAATCAAAAATCAAAAATCAAAA
 ```
 
-This was transcribed from Dittmer & Withey (2012, *J Bacteriol* 194:5255–5263, Figure 1) and verified three independent ways before use: the `GATTTTT` heptad-repeat count of the parent classical O395 footprint region (6, matching the paper's stated count), the total span length of that region (69 bp, matching the stated −109..−41 span), and the presence of the literal substring `ATTTCAAAT` which the paper gives independently for positions −58..−49. The 36-bp El Tor-relevant subset above was extracted from that verified region: El Tor strains carry only the three promoter-proximal heptad repeats but otherwise share O395's *PctxAB* sequence, and this fragment matches the paper's `pJW211` construct, shown there to be fully ToxT-activated. It spans both experimentally mapped functional toxboxes (toxbox 1, −72..−60, strong copper-phenanthroline footprint; toxbox 2, −58..−46, weaker footprint). The two strands were confirmed to be exact reverse complements, and the submitted job's own recorded input was checked byte-for-byte against these sequences before any analysis.
+This was transcribed from Dittmer & Withey (2012, *J Bacteriol* 194:5255–5263, Figure 1) and verified three independent ways before use: the `GATTTTT` heptad-repeat count of the parent classical O395 footprint region (6, matching the paper's stated count), the total span length of that region (69 bp, matching the stated −109..−41 span), and the presence of the literal substring `ATTTCAAAT` which the paper gives independently for positions −58..−49. The 36-bp El Tor-relevant subset above was extracted from that verified region: El Tor strains carry only the three promoter-proximal heptad repeats but otherwise share O395's *PctxAB* sequence, and this fragment matches the paper's `pJW211` construct, shown there to be fully ToxT-activated. It spans both experimentally mapped functional toxboxes (toxbox 1, −72..−60, strong copper-phenanthroline footprint; toxbox 2, −58..−46, weaker footprint). The two strands were confirmed to be exact reverse complements, and **both** submitted jobs' own recorded/returned sequences were checked byte-for-byte against these strings before any analysis — protein and DNA exact matches confirmed for both the AlphaFold3 job (via its `job_request.json`) and the Chai-1 job (via the chains extracted from `pred.rank_0.cif`).
 
-**Confidence metrics (Table S11).** The ToxT fold was predicted with high confidence (chain-A pTM 0.86; overall pTM 0.79). The protein–DNA interface reached ipTM 0.48 — modest, still short of a confident threshold (~0.7–0.8), so the model is interpreted at the domain level rather than as a precise binding geometry. The top two of five ranked models returned identical scores (ranking 0.540, ipTM 0.480, pTM 0.790), indicating convergence rather than a single lucky pose. No model reported a clash, and only one protein–DNA atom pair falls below 2.0 Å in the top model.
+**Confidence metrics (Table S11).** AlphaFold3 predicted the ToxT fold with high confidence (chain-A pTM 0.86; overall pTM 0.79) and a modest interface (ipTM 0.48). Chai-1 predicted a **markedly more confident interface** — ipTM 0.671 (aggregate score 0.685) — approaching, though not conclusively reaching, the ~0.7–0.8 range conventionally read as a confident interface. Both tools' top-two-of-five ranked models were near-identical to each other (AlphaFold3: ipTM 0.480/0.480; Chai-1: ipTM 0.671/0.667), indicating convergence rather than a single favourable pose in either case. Neither tool reported a clash.
 
-**Table S11. AlphaFold3 confidence metrics, native El Tor *ctxAB* promoter (all five ranked models).**
+**Table S11. Confidence metrics, all five ranked models, AlphaFold3 and Chai-1 (same native El Tor DNA input).**
+
+*AlphaFold3:*
 
 | Model | Ranking score | Interface ipTM | pTM | Clash |
 |---|---|---|---|---|
@@ -807,13 +809,24 @@ This was transcribed from Dittmer & Withey (2012, *J Bacteriol* 194:5255–5263,
 | model_3 | 0.410 | 0.330 | 0.760 | none |
 | model_4 | 0.270 | 0.150 | 0.710 | none |
 
-**Where DNA contacts the protein.** The DNA is contacted **exclusively by the C-terminal AraC-family helix–turn–helix domain**: all 26 residues within 5 Å of DNA fall in the range 188–276, with **none** outside it and **none** belonging to the N-terminal fatty-acid pocket (Figure S22). PLIP's bond-level profiling agrees — 21 interactions total (12 hydrogen bonds, 7 salt bridges, 2 hydrophobic contacts) distributed over 15 residues (Arg199, Lys203, Lys212, Arg214, Glu215, Asn218, Lys235, Ile236, Lys237, Ser249, Tyr250, Lys256, Ser264, Glu275, Lys276), again all within the HTH domain. This places the regulatory pocket and the DNA-reading head on structurally distinct domains, consistent with the domain-separated architecture described by Lowden et al. (2010) — the structural basis cited in the main-text Discussion for why fatty-acid occupancy is unlikely to block DNA binding sterically — and is independently corroborated by the main-text apo/holo RMSF analysis (Section 3.8), which probed this same C-terminal region.
+*Chai-1:*
 
-We present this as an exploratory structural check, not an established result: the interface confidence (ipTM 0.48) remains below a confident threshold, and the model should not be read as a validated ToxT–DNA binding geometry. Additional caveats apply regardless of sequence accuracy: the duplex is a 36-bp fragment modelled in isolation, without flanking genomic context, RNA polymerase, or H-NS (which also binds this A/T-rich region and represses *ctxAB*), and the fatty acid is not co-modelled — the native ligand shown in Figure S22 is placed by superposition of the 3GBG crystal structure, not predicted in complex with the DNA. The domain-level observation is in any case independently grounded in the known ToxT domain architecture (Lowden et al., 2010; main-text Discussion), which does not depend on this model.
+| Model | Aggregate score | Interface ipTM | ptm | Clash |
+|---|---|---|---|---|
+| rank_0 (analysed) | 0.685 | 0.671 | 0.744 | none |
+| rank_1 | 0.682 | 0.667 | 0.740 | none |
+| rank_2 | 0.678 | 0.663 | 0.738 | none |
+| rank_3 | 0.631 | 0.622 | 0.668 | none |
+| rank_4 | 0.630 | 0.621 | 0.664 | none |
 
-![Figure S22](figures/fig_eltor_dna_competition.png)
+**Where DNA contacts the protein.** Both tools independently place the DNA on the **C-terminal AraC-family helix–turn–helix domain**, away from the N-terminal fatty-acid pocket (Figure S22). AlphaFold3: all 26 residues within 5 Å of DNA fall in the range 188–276, none outside it. Chai-1: 24 of 27 residues within 5 Å fall in the same range; the remaining three (Asn185, Trp186, Arg187) sit immediately adjacent to the 188 domain boundary rather than in the fatty-acid pocket itself — a minor boundary effect, not a contradiction of the domain-separation observation. Neither tool places any fatty-acid pocket residue in contact with DNA. PLIP's bond-level profiling agrees for both: AlphaFold3 finds 21 interactions (12 H-bonds, 7 salt bridges, 2 hydrophobic) over 15 residues, all within the HTH domain; Chai-1 finds 20 interactions (14 H-bonds, 4 salt bridges, 2 hydrophobic) over 11 residues, 10 of which are within the HTH domain (the eleventh, Arg187, is the same boundary-adjacent residue noted above). Contact residues largely overlap between tools (e.g. Lys203, Arg214, Asn218, Ser249, Tyr250, Ser264 identified by both). This places the regulatory pocket and the DNA-reading head on structurally distinct domains in two independent structure-prediction methods, consistent with the domain-separated architecture described by Lowden et al. (2010) — the structural basis cited in the main-text Discussion for why fatty-acid occupancy is unlikely to block DNA binding sterically — and is independently corroborated by the main-text apo/holo RMSF analysis (Section 3.8), which probed this same C-terminal region.
 
-**Figure S22.** AlphaFold3 model of ToxT bound to the native El Tor *ctxAB* promoter duplex (−76 to −41): DNA (teal), the C-terminal HTH DNA-binding domain (blue, residues 188–276), and the N-terminal domain (orange) carrying the fatty-acid pocket, with the native ligand (yellow, positioned by 3GBG superposition). The red dashes mark the separation between the fatty-acid pocket and the nearest DNA phosphate. All 26 DNA-contacting residues lie in the C-terminal domain; none are pocket residues. Fold confidence is high (chain-A pTM 0.86); the interface is of modest confidence (ipTM 0.48) and is interpreted only at the domain level.
+We present this as an exploratory structural check, not an established result: even Chai-1's higher interface confidence does not conclusively clear a confident threshold, and neither model should be read as a validated ToxT–DNA binding geometry. Additional caveats apply regardless of sequence accuracy or which tool is used: the duplex is a 36-bp fragment modelled in isolation, without flanking genomic context, RNA polymerase, or H-NS (which also binds this A/T-rich region and represses *ctxAB*), and the fatty acid is not co-modelled — the native ligand shown in Figure S22 is placed by superposition of the 3GBG crystal structure, not predicted in complex with the DNA. The domain-level observation is in any case independently grounded in the known ToxT domain architecture (Lowden et al., 2010; main-text Discussion), which does not depend on either model.
+
+![Figure S22A](figures/fig_eltor_dna_competition.png)
+![Figure S22B](figures/fig_eltor_chai_dna_competition.png)
+
+**Figure S22.** Independent models of ToxT bound to the native El Tor *ctxAB* promoter duplex (−76 to −41): DNA (teal), the C-terminal HTH DNA-binding domain (blue, residues 188–276), and the N-terminal domain (orange) carrying the fatty-acid pocket, with the native ligand (yellow, positioned by 3GBG superposition). Red dashes mark the separation between the fatty-acid pocket and the nearest DNA phosphate. **(A)** AlphaFold3 (chain-A pTM 0.86; interface ipTM 0.48). **(B)** Chai-1 (ptm 0.74; interface ipTM 0.671). Both place all DNA contacts in the C-terminal domain, none in the fatty-acid pocket, despite different underlying methods.
 
 ---
 
@@ -950,3 +963,28 @@ while `figures/fig11_dna_competition.png` and `figures/af3_pae_plddt.png`
 remain in git history from earlier commits but are no longer referenced by
 any current section. Figure and table numbering is unchanged
 from the second pass (Figures S1–S23, Tables S1–S11).)*
+
+*(2026-08-31: Chai-1's server came back online; the user ran it on the same
+verified native El Tor sequence and returned the results. Verified
+independently before any analysis — extracted the actual chain sequences
+from the returned `pred.rank_0.cif` via PyMOL (not assumed from the job
+submission) and confirmed byte-for-byte: protein exact match (276 aa), both
+DNA strands exact match, true reverse complements, `ATTTCAAAT` landmark
+present, confirmed not the placeholder. Result: Chai-1's interface
+confidence (ipTM 0.671, aggregate 0.685) is markedly higher than
+AlphaFold3's on the same input (ipTM 0.48) — the best ToxT–DNA interface
+confidence obtained in this project, though still short of a conclusively
+confident threshold. Domain-level placement agrees closely with AlphaFold3:
+24 of 27 Chai-1 contact residues fall in the C-terminal HTH domain (188–276),
+the remaining three sitting immediately adjacent to the domain boundary
+(185–187) rather than in the fatty-acid pocket; PLIP finds 20 interactions
+(14 H-bonds, 4 salt bridges, 2 hydrophobic) across 11 residues, 10 of which
+are in the HTH domain. Section S.13 rewritten to present both models
+together (Table S11 now has two panels, Figure S22 now has two panels).
+Rendered `figures/fig_eltor_chai_dna_competition.png` in the same style as
+the AlphaFold3 figure. Raw Chai-1 output (top-ranked model + all five
+scores.rank_N.json files) archived in `chai_toxt_dna_eltor/`. Methods 2.12,
+the Results pointer, Discussion, and Limitations updated in both
+`MANUSCRIPT_DRAFT.md` and `build_docx.js` to describe both models. Figure
+and table numbering unchanged (still S1–S23, S1–S11) since this extends
+existing Figure S22/Table S11 with panels rather than adding new ones.)*
